@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	outline: none;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "GothamPro";
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	width: vw(1400);
+
+	@include mobile {
+		padding: 0 vmin(20);
+		width: 100%;
+	}
+}
+
+.site-container {
+	position: relative;
+	overflow: hidden;
+}
