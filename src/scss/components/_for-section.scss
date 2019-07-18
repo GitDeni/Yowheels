@@ -1,4 +1,13 @@
 .for {
 	padding-top: vw(100);
-	height: vw(200);
+	height: vw(750);
+	background-image: url("../../images/for-bg.png");
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	.container {
+		width: 60%;
+		h2 {
+			
+		}
+	}
 }

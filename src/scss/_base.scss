@@ -9,6 +9,7 @@
 
 html {
 	box-sizing: border-box;
+	color: $main-font-color;
 }
 
 body {
@@ -121,4 +122,22 @@ a {
 	background-image: linear-gradient(-109deg, #fbb40a 0%, #fee4a6 100%);
 	opacity: 0;
 	transition: all 0.3s;
+}
+
+h2 {
+	font-family: $g-p-light;
+	font-size: vw(38);
+	text-transform: uppercase;
+	span {
+		font-family: $g-p-medium;
+	}
+}
+h2::before {
+	content: "";
+	position: absolute;
+	width: vw(146);
+	height: vw(21);
+	background-image: url("../images/logo-eng.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
