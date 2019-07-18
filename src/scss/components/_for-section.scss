@@ -2,55 +2,68 @@
 	padding-top: vw(125);
 	padding-bottom: vw(45);
 	background-image: url("../../images/for-bg.png");
-	background-repeat: no-repeat;
 	background-position: 90% -95%;
+	background-repeat: no-repeat;
+
 	.container {
 		justify-content: flex-start;
+
 		h2 {
 			margin-bottom: vw(75);
+
 			&::before {
 				top: vw(-30);
 			}
 		}
+
 		.cards {
-			width: 70%;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
+			width: 70%;
+
 			.card {
-				width: 50%;
 				display: flex;
 				justify-content: flex-start;
 				margin-bottom: vw(30);
+				width: 50%;
+
 				&-icon {
 					width: vw(100);
 					height: vw(130);
 					text-align: center;
 				}
+
 				&-content {
 					margin-left: vw(20);
 				}
+
 				&-header {
+					margin-bottom: vw(10);
 					font-family: $g-p-bold;
 					font-size: vw(14);
-					text-transform: uppercase;
 					line-height: vw(22);
-					margin-bottom: vw(10);
+					text-transform: uppercase;
+
 					span {
 						color: $sky-blue;
 					}
 				}
+
 				&-description {
 					font-family: $g-p-light;
 					font-size: vw(14);
 					line-height: vw(20);
-					& > span {
+
+					> span {
 						font-family: $g-p-medium;
 					}
+
 					.blue-link {
 						margin: vw(7) 0;
 					}
 				}
+
 				&:last-child {
 					margin-top: vw(30);
 				}

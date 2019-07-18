@@ -1,20 +1,26 @@
 .credit-section {
 	padding-top: vw(120);
+	padding-bottom: vw(280);
 	background-color: #f9f9f9;
+
 	h2 {
 		margin-bottom: vw(20);
 		width: 100%;
 		text-align: center;
+
 		&::before {
 			left: 45%;
 			top: vw(-30);
 		}
 	}
+
 	.blue-link {
 		margin-bottom: vw(60);
 	}
+
 	.blue-link-span {
 		font-size: vw(18);
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -26,11 +32,13 @@
 			background-repeat: no-repeat;
 		}
 	}
+
 	&__cards {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		width: 100%;
+
 		.card {
 			display: flex;
 			flex-flow: column;
@@ -40,21 +48,25 @@
 			width: vw(180);
 			text-align: center;
 			background-color: #fff;
+
 			&-img {
-				width: 100%;
 				margin-bottom: vw(25);
+				width: 100%;
 			}
+
 			&-header {
+				margin-bottom: vw(8);
 				font-family: $g-p-bold;
 				font-size: vw(13);
-				text-transform: uppercase;
 				line-height: vw(20);
-				margin-bottom: vw(8);
+				text-transform: uppercase;
 			}
+
 			&-description {
 				font-family: $g-p-light;
 				font-size: vw(13);
 				line-height: vw(18);
+
 				span {
 					font-family: $g-p-medium;
 				}

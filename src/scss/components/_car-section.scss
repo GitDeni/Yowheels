@@ -3,11 +3,14 @@
 	box-shadow: 0 vw(50) vw(50) 0 rgba(0, 0, 0, 0.02);
 	background-image: url("../../images/first-screen-bg.png");
 	background-repeat: no-repeat;
+
 	.container {
 		justify-content: space-between;
 	}
+
 	&_content {
 		padding-left: vw(100);
+
 		h1 {
 			margin-bottom: vw(10);
 			font-family: $g-p-light;
@@ -16,10 +19,12 @@
 			letter-spacing: vw(1.5);
 			text-transform: uppercase;
 			color: $main-font-color;
+
 			span {
 				font-family: $g-p-medium;
 			}
 		}
+
 		p {
 			position: relative;
 			padding-bottom: vw(40);
@@ -28,10 +33,12 @@
 			font-size: vw(18);
 			line-height: vw(30);
 			color: $main-font-color;
+
 			span {
 				font-family: $g-p-medium;
 			}
 		}
+
 		p::before {
 			content: "";
 			position: absolute;
@@ -43,8 +50,10 @@
 			background-repeat: no-repeat;
 		}
 	}
+
 	.car-section_right {
 		width: 32%;
+
 		.online-wrapper {
 			position: relative;
 			margin-top: vw(35);
@@ -56,14 +65,17 @@
 			font-size: vw(14);
 			line-height: vw(20);
 			color: $main-font-color;
+
 			span {
 				font-family: $g-p-medium;
 			}
+
 			img {
 				position: absolute;
 				right: vw(15);
 				top: vw(-10);
 			}
+
 			.percent {
 				position: absolute;
 				right: vw(15);
@@ -79,6 +91,7 @@
 				background-color: rgb(73, 178, 248);
 			}
 		}
+
 		.car1 {
 			position: absolute;
 			right: vw(-230);
@@ -86,6 +99,7 @@
 			z-index: 1;
 		}
 	}
+
 	.perks {
 		display: flex;
 		justify-content: space-around;
@@ -94,29 +108,35 @@
 		padding: vw(30) vw(10) vw(20);
 		width: 100%;
 		background-color: #121d25;
+
 		.card {
 			padding: vw(10) 0 vw(20) vw(80);
 			font-family: $g-p-light;
 			font-size: vw(14);
 			line-height: vw(22);
 			color: #fff;
+
 			span {
 				font-family: $g-p-medium;
 			}
 		}
+
 		.card-1 {
 			background-image: url("../../images/bank.png");
 			background-repeat: no-repeat;
 		}
+
 		.card-2 {
 			background-image: url("../../images/wallet.png");
 			background-repeat: no-repeat;
 		}
+
 		.card-3 {
 			background-image: url("../../images/click.png");
 			background-repeat: no-repeat;
 		}
 	}
+
 	.tree {
 		position: absolute;
 		right: 0;
