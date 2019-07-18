@@ -1,13 +1,15 @@
 .for {
-	padding-top: vw(100);
+	padding-top: vw(120);
 	height: vw(750);
 	background-image: url("../../images/for-bg.png");
 	background-repeat: no-repeat;
-	background-position: 100% 0;
+	background-position: 90% -50%;
 	.container {
-		width: 60%;
+		justify-content: flex-start;
 		h2 {
-			
+			&::before {
+				top: vw(-30);
+			}
 		}
 	}
 }

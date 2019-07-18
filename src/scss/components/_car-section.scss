@@ -7,7 +7,7 @@
 		justify-content: space-between;
 	}
 	&_content {
-		padding-left: vw(115);
+		padding-left: vw(100);
 		h1 {
 			margin-bottom: vw(10);
 			font-family: $g-p-light;
@@ -81,7 +81,7 @@
 		}
 		.car1 {
 			position: absolute;
-			right: vw(-220);
+			right: vw(-230);
 			top: vw(150);
 			z-index: 1;
 		}
