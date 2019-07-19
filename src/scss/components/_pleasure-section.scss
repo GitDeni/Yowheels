@@ -1,0 +1,10 @@
+.pleasure {
+	padding-top: vw(115);
+
+	h2::before {
+		left: 43%;
+		top: vw(-30);
+		width: vw(169);
+		background-image: url("../images/c-logo.png");
+	}
+}

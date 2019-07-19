@@ -45,8 +45,8 @@ a {
 	align-items: center;
 	justify-content: center;
 	border-radius: 35px;
-	width: 320px;
-	height: 70px;
+	width: vw(310);
+	height: vw(70);
 	box-shadow: 0 15px 40px rgba(255, 203, 77, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
 	font-family: sans-serif;
 	font-weight: 600;
@@ -54,7 +54,7 @@ a {
 	text-decoration: none;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
 	text-transform: uppercase;
-	color: #202020;
+	color: rgba(54, 49, 36, 0.9);
 	background-color: #ffcb4d;
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
@@ -79,6 +79,10 @@ a {
 	transition: all 0.3s ease-in-out;
 }
 
+.main-button:hover {
+	color: rgb(54, 49, 36);
+}
+
 .main-button:hover::before {
 	opacity: 1;
 	transition: all 0.3s ease-in-out;
@@ -90,11 +94,11 @@ a {
 	align-items: center;
 	justify-content: center;
 	border-radius: 35px;
-	width: 320px;
-	height: 70px;
+	width: vw(310);
+	height: vw(70);
 	box-shadow: 0 15px 40px rgba(246, 246, 246, 0.1), inset 4px 4px 10px rgba(255, 255, 255, 0.5);
 	font-family: sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 14px;
 	text-decoration: none;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
@@ -122,6 +126,10 @@ a {
 	background-color: #49b2f8;
 	opacity: 0;
 	transition: all 0.3s ease-in-out;
+}
+
+.white-blue-button:hover {
+	color: #fff;
 }
 
 .white-blue-button:hover::before {
