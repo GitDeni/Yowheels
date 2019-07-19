@@ -3,6 +3,7 @@
 	padding-bottom: vw(45);
 	background-image: url("../../images/for-bg.png");
 	background-position: 90% -95%;
+	// background-size: contain;
 	background-repeat: no-repeat;
 
 	.container {
@@ -32,6 +33,27 @@
 					width: vw(100);
 					height: vw(130);
 					text-align: center;
+
+					.card-i-1 {
+						width: vw(78);
+						height: vw(65);
+					}
+					.card-i-2 {
+						width: vw(100);
+						height: vw(55);
+					}
+					.card-i-3 {
+						width: vw(82);
+						height: vw(71);
+					}
+					.card-i-4 {
+						width: vw(46);
+						height: vw(117);
+					}
+					.card-i-5 {
+						width: vw(78);
+						height: vw(65);
+					}
 				}
 
 				&-content {

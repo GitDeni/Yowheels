@@ -92,6 +92,26 @@
 					justify-content: center;
 					width: vw(105);
 					height: vw(105);
+
+					&-1 {
+						width: vw(76);
+						height: vw(81);
+					}
+
+					&-2 {
+						width: vw(69);
+						height: vw(60);
+					}
+
+					&-3 {
+						width: vw(85);
+						height: vw(52);
+					}
+
+					&-4 {
+						width: vw(98);
+						height: vw(105);
+					}
 				}
 
 				&-text {
@@ -121,6 +141,8 @@
 				position: absolute;
 				left: vw(-110);
 				top: vw(-50);
+				width: vw(564);
+				height: vw(603);
 			}
 
 			.circle-link {

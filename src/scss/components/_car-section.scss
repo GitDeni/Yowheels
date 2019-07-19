@@ -47,6 +47,7 @@
 			width: vw(20);
 			height: vw(10);
 			background-image: url("../../images/blue-ellipse.png");
+			background-size: contain;
 			background-repeat: no-repeat;
 		}
 	}
@@ -74,6 +75,8 @@
 				position: absolute;
 				right: vw(15);
 				top: vw(-10);
+				width: vw(131);
+				height: vw(118);
 			}
 
 			.percent {
@@ -96,6 +99,8 @@
 			position: absolute;
 			right: vw(-230);
 			top: vw(150);
+			width: vw(866);
+			height: vw(434);
 			z-index: 1;
 		}
 	}

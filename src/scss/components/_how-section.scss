@@ -1,0 +1,24 @@
+.how {
+	padding-top: vw(90);
+	height: vw(880);
+	background-image: url("../../images/how-bg-1.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	h2 {
+		width: 100%;
+		text-align: center;
+		color: rgb(255, 255, 255);
+
+		&::before {
+			display: none;
+		}
+	}
+
+	.subtitle {
+		font-family: $g-p-light;
+		font-size: vw(18);
+		line-height: vw(30);
+		color: rgb(255, 255, 255);
+	}
+}

@@ -44,13 +44,13 @@ a {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 35px;
+	border-radius: vw(35);
 	width: vw(310);
 	height: vw(70);
-	box-shadow: 0 15px 40px rgba(255, 203, 77, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
+	box-shadow: 0 vw(15) vw(40) rgba(255, 203, 77, 0.4), inset 4px 4px vw(10) rgba(255, 255, 255, 0.4);
 	font-family: sans-serif;
 	font-weight: 600;
-	font-size: 14px;
+	font-size: vw(14);
 	text-decoration: none;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
 	text-transform: uppercase;
@@ -73,7 +73,7 @@ a {
 	top: 0;
 	bottom: 0;
 	border-radius: inherit;
-	box-shadow: 0 15px 40px rgba(255, 203, 77, 0.4), 0 3px 0 #e5b950, inset 4px 4px 10px rgba(255, 255, 255, 0.8);
+	box-shadow: 0 vw(15) vw(40) rgba(255, 203, 77, 0.4), 0 3px 0 #e5b950, inset 4px 4px vw(10) rgba(255, 255, 255, 0.8);
 	background-color: #fbb40a;
 	opacity: 0;
 	transition: all 0.3s ease-in-out;
@@ -93,13 +93,13 @@ a {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 35px;
+	border-radius: vw(35);
 	width: vw(310);
 	height: vw(70);
-	box-shadow: 0 15px 40px rgba(246, 246, 246, 0.1), inset 4px 4px 10px rgba(255, 255, 255, 0.5);
+	box-shadow: 0 vw(15) vw(40) rgba(246, 246, 246, 0.1), inset 4px 4px vw(10) rgba(255, 255, 255, 0.5);
 	font-family: sans-serif;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: vw(14);
 	text-decoration: none;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
 	text-transform: uppercase;
@@ -122,7 +122,7 @@ a {
 	top: 0;
 	bottom: 0;
 	border-radius: inherit;
-	box-shadow: 0 15px 40px rgba(246, 246, 246, 0.3), 0 3px 0 #40a3e4, inset 4px 4px 10px rgba(255, 255, 255, 0.8);
+	box-shadow: 0 vw(15) vw(40) rgba(246, 246, 246, 0.3), 0 3px 0 #40a3e4, inset 4px 4px vw(10) rgba(255, 255, 255, 0.8);
 	background-color: #49b2f8;
 	opacity: 0;
 	transition: all 0.3s ease-in-out;
@@ -155,7 +155,7 @@ h2::before {
 	width: vw(146);
 	height: vw(21);
 	background-image: url("../images/logo-eng.png");
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
