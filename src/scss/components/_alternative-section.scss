@@ -1,0 +1,38 @@
+.alternative {
+	padding-top: vw(135);
+	.alt-header {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 100%;
+
+		h2 {
+			width: 60%;
+
+			&::before {
+				top: vw(-25);
+			}
+
+		}
+
+		.alt-tip {
+			display: flex;
+			justify-content: space-between;
+
+			&__image {
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-end;
+				width: vw(70);
+				height: vw(70);
+				border-radius: 50%;
+				background-color: $sky-blue;
+
+				img {
+					width: vw(96);
+					height: vw(54);
+				}
+			}
+		}
+	}
+}

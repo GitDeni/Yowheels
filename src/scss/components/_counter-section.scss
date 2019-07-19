@@ -1,12 +1,90 @@
 .counter-section {
 	.container {
 		.banner {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
 			margin-top: vw(-210);
+			padding-top: vw(50);
 			width: 100%;
 			height: vw(420);
 			background-image: url("../../images/counter-bg.png");
 			background-size: cover;
 			background-repeat: no-repeat;
+
+			.counter {
+				width: 30%;
+				text-align: center;
+
+				&-m {
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					justify-content: space-between;
+				}
+
+				h3 {
+					margin-bottom: vw(50);
+					font-family: $g-p-light;
+					font-size: vw(28);
+					line-height: vw(55);
+					letter-spacing: vw(1.2);
+					text-transform: uppercase;
+					color: #fff;
+
+					.hours {
+						font-size: vw(52);
+						letter-spacing: vw(2);
+					}
+
+					.new-auto {
+						font-size: vw(24);
+						letter-spacing: vw(0.9);
+						text-transform: none;
+					}
+				}
+			}
+
+			.buttons {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				width: 58%;
+			}
+
+			.absolutes {
+				position: relative;
+
+				.watch-img {
+					position: absolute;
+					left: vw(-500);
+					top: vw(-150);
+				}
+
+				.dotted-banner {
+					position: absolute;
+					left: vw(325);
+					top: vw(-15);
+					display: flex;
+					flex-wrap: wrap;
+					align-content: space-between;
+					border: 1px dashed rgba(255, 255, 255, 0.4);
+					border-radius: vw(10);
+					padding: vw(24);
+					width: vw(212);
+					height: vw(119);
+					font-family: $g-p-light;
+					font-size: vw(13);
+					line-height: vw(16);
+					color: rgb(255, 255, 255);
+
+					span {
+						font-size: vw(36);
+						text-transform: uppercase;
+						color: $sky-blue;
+					}
+				}
+			}
 		}
 	}
 }

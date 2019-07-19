@@ -44,49 +44,95 @@ a {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: vw(35);
-	width: vw(320);
-	height: vw(70);
-	box-shadow: 0 vw(15) vw(40) rgba(255, 203, 77, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
+	border-radius: 35px;
+	width: 320px;
+	height: 70px;
+	box-shadow: 0 15px 40px rgba(255, 203, 77, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
 	font-family: sans-serif;
 	font-weight: 600;
-	font-size: vw(14);
-	letter-spacing: vw(0.4);
+	font-size: 14px;
 	text-decoration: none;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
 	text-transform: uppercase;
 	color: #202020;
 	background-color: #ffcb4d;
 	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
 
-	span {
-		position: relative;
-		z-index: 10;
-	}
+.main-button span {
+	position: relative;
+	z-index: 10;
+}
 
-	.main-button::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		border-radius: inherit;
-		box-shadow: 0 15px 40px rgba(255, 203, 77, 0.4), 0 3px 0 #e5b950, inset 4px 4px 10px rgba(255, 255, 255, 0.8);
-		background-color: #fbb40a;
-		opacity: 0;
-		transition: all 0.3s ease-in-out;
-	}
+.main-button::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: inherit;
+	box-shadow: 0 15px 40px rgba(255, 203, 77, 0.4), 0 3px 0 #e5b950, inset 4px 4px 10px rgba(255, 255, 255, 0.8);
+	background-color: #fbb40a;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
 
-	&:hover::before {
-		opacity: 1;
-		transition: all 0.3s ease-in-out;
-	}
+.main-button:hover::before {
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+
+.white-blue-button {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 35px;
+	width: 320px;
+	height: 70px;
+	box-shadow: 0 15px 40px rgba(246, 246, 246, 0.1), inset 4px 4px 10px rgba(255, 255, 255, 0.5);
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+	text-transform: uppercase;
+	color: #202020;
+	background-color: #f6f6f6;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.white-blue-button span {
+	position: relative;
+	z-index: 10;
+}
+
+.white-blue-button::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: inherit;
+	box-shadow: 0 15px 40px rgba(246, 246, 246, 0.3), 0 3px 0 #40a3e4, inset 4px 4px 10px rgba(255, 255, 255, 0.8);
+	background-color: #49b2f8;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.white-blue-button:hover::before {
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
 }
 
 h2 {
 	font-family: $g-p-light;
 	font-size: vw(38);
+	line-height: vw(55);
 	letter-spacing: vw(1.5);
 	text-transform: uppercase;
 
