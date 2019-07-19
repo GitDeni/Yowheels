@@ -3,10 +3,10 @@
 	padding-bottom: vw(100);
 
 	h2 {
+		margin-bottom: vw(60);
 		width: 100%;
 		text-align: center;
 		color: $main-font-color;
-		margin-bottom: vw(60);
 
 		&::before {
 			display: none;
@@ -18,18 +18,18 @@
 		justify-content: center;
 
 		&__card {
-			padding: vw(25);
 			display: flex;
 			justify-content: space-between;
 			border-radius: vw(10);
+			padding: vw(25);
 			box-shadow: 0 vw(15) vw(20) rgba(0, 0, 0, 0.05);
 
 			.c-card-img {
-				width: vw(110);
-				height: vw(115);
 				display: flex;
 				justify-content: center;
 				margin-right: vw(20);
+				width: vw(110);
+				height: vw(115);
 
 				.c-card-1 {
 					width: vw(72);
@@ -51,6 +51,7 @@
 				display: flex;
 				flex-wrap: wrap;
 				align-items: center;
+
 				.c-title {
 					font-family: $g-p-bold;
 					font-size: vw(14);
