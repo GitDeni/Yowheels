@@ -16,6 +16,8 @@
 	.catalog-header {
 		display: flex;
 		justify-content: center;
+		margin-bottom: vw(45);
+		width: 100%;
 
 		&__card {
 			display: flex;
@@ -112,6 +114,62 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		width: 100%;
 
+		&__item {
+			border-radius: vw(10);
+			width: vw(370);
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+			background-color: #fff;
+
+			&_img {
+
+				img {
+					width: vw(370);
+					height: vw(197);
+				}
+			}
+
+			&_heading {
+				padding: vw(15) vw(25);
+				font-family: $g-p-bold;
+				font-size: vw(16);
+				line-height: vw(25);
+				letter-spacing: vw(0.7);
+				text-transform: uppercase;
+			}
+
+			&_price-line {
+				display: flex;
+				margin-bottom: vw(15);
+
+				.price-box {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 40%;
+					font-family: $g-p-light;
+					font-size: vw(14);
+					color: #fff;
+					background-color: $main-font-color;
+
+					span {
+						font-size: vw(32);
+						margin: 0 vw(5);
+					}
+				}
+
+				.calc-link {
+					padding: vw(20) vw(30);
+					width: 60%;
+					font-family: $g-p-bold;
+					font-size: vw(13);
+					line-height: vw(18);
+					text-transform: uppercase;
+					color: rgb(87, 71, 39);
+					background-color: $gold;
+				}
+			}
+		}
 	}
 }
