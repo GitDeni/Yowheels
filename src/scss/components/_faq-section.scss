@@ -1,0 +1,12 @@
+.faq {
+	background-color: #f5f5f5;
+
+	h2 {
+		width: 100%;
+		color: $main-font-color;
+
+		&::before {
+			display: none;
+		}
+	}
+}
