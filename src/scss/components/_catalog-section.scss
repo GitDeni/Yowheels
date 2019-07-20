@@ -1,4 +1,4 @@
-.catalog {
+.catalog-section {
 	padding-top: vw(80);
 	padding-bottom: vw(100);
 
@@ -25,6 +25,7 @@
 			box-shadow: 0 vw(15) vw(20) rgba(0, 0, 0, 0.05);
 
 			.c-card-img {
+				position: relative;
 				display: flex;
 				justify-content: center;
 				margin-right: vw(20);
@@ -66,5 +67,51 @@
 				}
 			}
 		}
+
+		.circle-link {
+			left: 25%;
+			top: 60%;
+			align-content: center;
+			padding: vw(11);
+			width: vw(50);
+			height: vw(50);
+			line-height: vw(15);
+
+			.hover-tip {
+				position: absolute;
+				bottom: vw(-120);
+				border-radius: vw(10);
+				padding: vw(15);
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+				background-color: #fff;
+				opacity: 0;
+
+				ul {
+					list-style: none;
+					font-family: $g-p-light;
+					font-size: vw(12);
+					line-height: vw(20);
+					text-align: left;
+					color: $main-font-color;
+				}
+			}
+
+			&:hover .hover-tip {
+				opacity: 1;
+			}
+
+			&:hover span {
+				text-decoration: underline;
+				text-decoration-style: dashed;
+				text-decoration-color: rgba(77, 180, 248, 0.3);
+			}
+		}
+	}
+
+	.catalog {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
 	}
 }

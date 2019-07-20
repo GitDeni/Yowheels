@@ -144,37 +144,6 @@
 				width: vw(564);
 				height: vw(603);
 			}
-
-			.circle-link {
-				position: absolute;
-				left: vw(-25);
-				top: vw(185);
-				display: inline-flex;
-				flex-flow: column;
-				align-content: flex-end;
-				border-radius: 50%;
-				padding: vw(20) vw(18) vw(25);
-				width: vw(100);
-				height: vw(100);
-				box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
-				font-family: $g-p-light;
-				font-size: vw(12);
-				line-height: vw(16);
-				text-align: center;
-				color: #09263a;
-				background-color: #fff;
-
-				img {
-					margin: 0 auto vw(5);
-					width: vw(20);
-					height: vw(20);
-				}
-
-				&:hover {
-					box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-					color: #5cbaf9;
-				}
-			}
 		}
 	}
 }
