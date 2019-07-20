@@ -258,6 +258,7 @@
 
 		&__absolutes {
 			position: relative;
+			font-family: $g-p-light;
 
 			.ivan {
 				position: absolute;
@@ -265,6 +266,31 @@
 				top: vw(-25);
 				width: vw(294);
 				height: vw(445);
+			}
+
+			.name {
+				position: absolute;
+				left: vw(-150);
+				top: vw(280);
+				z-index: 5;
+				border-radius: vw(10);
+				padding: vw(15) vw(25);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+				font-size: vw(14);
+				line-height: vw(20);
+				background-color: #fff;
+			}
+
+			.job-title {
+				position: absolute;
+				left: vw(-80);
+				top: vw(315);
+				border-radius: vw(10);
+				padding: vw(20) vw(15) vw(15);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+				font-size: vw(13);
+				line-height: vw(20);
+				background-color: #fff;
 			}
 		}
 	}
