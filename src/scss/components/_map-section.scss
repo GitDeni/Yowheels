@@ -1,0 +1,25 @@
+.map {
+	.map-wrapper {
+		border-radius: vw(10);
+	}
+
+	.contacts-wrapper {
+		border-radius: vw(10);
+		padding: vw(10);
+		background-color: #fff;
+
+		.contacts {
+			border: 1px solid rgba(26, 33, 35, 0.1);
+			border-radius: vw(10);
+			padding: vw(20);
+
+			&__heading {
+				font-family: $g-p-bold;
+				font-size: vw(16);
+				line-height: vw(35);
+				letter-spacing: vw(0.6);
+				text-transform: uppercase;
+			}
+		}
+	}
+}
