@@ -121,9 +121,9 @@
 			width: vw(370);
 			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 			background-color: #fff;
+			transition: all 0.3s ease-in-out;
 
 			&_img {
-
 				img {
 					width: vw(370);
 					height: vw(197);
@@ -141,7 +141,6 @@
 
 			&_price-line {
 				display: flex;
-				margin-bottom: vw(15);
 
 				.price-box {
 					display: flex;
@@ -154,8 +153,8 @@
 					background-color: $main-font-color;
 
 					span {
-						font-size: vw(32);
 						margin: 0 vw(5);
+						font-size: vw(32);
 					}
 				}
 
@@ -169,6 +168,54 @@
 					color: rgb(87, 71, 39);
 					background-color: $gold;
 				}
+			}
+
+			&_details-box {
+				display: flex;
+				flex-wrap: wrap;
+				margin: 0 vw(25);
+				border-bottom: 1px solid rgb(245, 245, 245);
+
+				.detail {
+					padding: vw(20);
+					font-family: $g-p-light;
+					font-size: vw(14);
+					line-height: vw(20);
+
+					&-h {
+						margin-bottom: vw(5);
+						color: rgba(9, 38, 58, 0.5);
+					}
+
+					&-val {
+						display: flex;
+						align-items: center;
+
+						img {
+							margin-right: vw(5);
+							width: 5px;
+							height: 5px;
+							box-shadow: 0 5px 10px rgba(77, 180, 248, 0.6);
+						}
+					}
+
+					&:first-child {
+						padding-left: 0;
+					}
+				}
+			}
+
+			.blue-link {
+				margin: vw(30) vw(25);
+
+				img {
+					margin-right: vw(8);
+				}
+			}
+
+			&:hover {
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+				transform: translateY(vw(-5));
 			}
 		}
 	}
