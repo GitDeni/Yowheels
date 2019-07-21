@@ -1,0 +1,20 @@
+.footer {
+	padding-bottom: vw(60);
+	.container {
+		justify-content: space-between;
+	}
+
+	.left {
+		display: flex;
+	}
+
+	.lead-me {
+		display: flex;
+		align-items: center;
+		color: $main-font-color;
+
+		&__logo {
+			margin-left: vw(20);
+		}
+	}
+}
