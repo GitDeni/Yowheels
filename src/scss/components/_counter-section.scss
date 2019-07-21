@@ -6,8 +6,8 @@
 			align-items: center;
 			margin-top: vw(-210);
 			padding-top: vw(50);
+			padding-bottom: vw(80);
 			width: 100%;
-			height: vw(420);
 			background-image: url("../../images/counter-bg.png");
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -65,7 +65,7 @@
 
 				.dotted-banner {
 					position: absolute;
-					left: vw(325);
+					left: vw(340);
 					top: vw(-15);
 					display: flex;
 					flex-wrap: wrap;

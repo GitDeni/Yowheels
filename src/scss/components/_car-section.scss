@@ -99,9 +99,9 @@
 			position: absolute;
 			right: vw(-230);
 			top: vw(150);
+			z-index: 1;
 			width: vw(866);
 			height: vw(434);
-			z-index: 1;
 		}
 	}
 
@@ -110,35 +110,40 @@
 		justify-content: space-around;
 		margin-top: vw(80);
 		border-radius: vw(30) vw(30) 0 0;
-		padding: vw(30) vw(10) vw(20);
+		padding: vw(30) vw(10) 0;
 		width: 100%;
 		background-color: #121d25;
 
 		.card {
-			padding: vw(10) 0 vw(20) vw(80);
+			display: flex;
+			padding: vw(10) 0;
 			font-family: $g-p-light;
 			font-size: vw(14);
 			line-height: vw(22);
 			color: #fff;
+
+			.texts {
+				margin-top: vw(5);
+			}
 
 			span {
 				font-family: $g-p-medium;
 			}
 		}
 
-		.card-1 {
-			background-image: url("../../images/bank.png");
-			background-repeat: no-repeat;
+		.card-1 img {
+			width: vw(78);
+			height: vw(82);
 		}
 
-		.card-2 {
-			background-image: url("../../images/wallet.png");
-			background-repeat: no-repeat;
+		.card-2 img {
+			width: vw(82);
+			height: vw(82);
 		}
 
-		.card-3 {
-			background-image: url("../../images/click.png");
-			background-repeat: no-repeat;
+		.card-3 img {
+			width: vw(67);
+			height: vw(78);
 		}
 	}
 
