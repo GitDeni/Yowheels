@@ -40,20 +40,33 @@ a {
 }
 
 .button_taxi {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	margin-left: vw(30);
 	border: 1px solid rgba(26, 33, 35, 0.2);
 	border-radius: vw(26);
-	padding-left: vw(60);
-	width: vw(220);
-	height: vw(51);
+	padding: vw(18) vw(23);
 	font-family: $g-p-medium;
 	font-size: vw(13);
-	line-height: vw(48);
 	color: rgba(9, 38, 58, 0.8);
-	background-image: url("../../images/squares.png");
-	background-position: 10% 50%;
-	background-repeat: no-repeat;
+
+	img {
+		margin-right: vw(7);
+		width: vw(26);
+		height: vw(12);
+	}
+
+	&:hover {
+		border: none;
+		box-shadow: 0 15px 30px rgba(255, 203, 77, 0.3), inset 4px 4px 10px rgba(255, 255, 255, 0.8);
+		background-color: #ffcb4d;
+	}
+}
+
+.no-border {
+	border: none;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
 }
 
 .main-button {

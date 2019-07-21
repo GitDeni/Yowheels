@@ -1,6 +1,30 @@
 header.header
 	.container
-		.logo
-			img(src="images/logo.png")
-		a.button_taxi(href="#")
-			| Для водителей такси
+		.part-wrapper
+			.logo
+				img(src="images/logo.png")
+			a.button_taxi(href="#")
+				img(src="../../images/squares.png", alt="")
+				| Для водителей такси
+			address.header-address
+				img(src="../../images/mini-map.png", alt="")
+				.header-address__texts
+					.c-h
+						| Головной офис
+					.c-text
+						| Минск, пр-т Дзержинского, д. 22
+					.c-sub
+						img(src="../../images/dot.png", alt="")
+						| до закрытия 
+						span#closing-hour
+							| 3 
+						span#closing-text
+							| часа
+		.part-wrapper
+			.telephone
+				| +375 29 5-666-222#[br]
+				a.blue-link.open-popup(href="#consult")
+					span.blue-link-span
+						| Бесплатная косультация
+			a.button_taxi.open-popup.no-border(href="#")
+				| Оставить заявку
