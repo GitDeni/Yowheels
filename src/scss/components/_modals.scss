@@ -1,8 +1,8 @@
-// .modals {
-// 	overflow: hidden;
-// 	width: 0;
-// 	height: 0;
-// }
+.modals {
+	overflow: hidden;
+	width: 0;
+	height: 0;
+}
 
 .mfp-zoom-in {
 	&.mfp-bg {
@@ -41,8 +41,8 @@
 
 .modal {
 	position: relative;
-	margin: 5rem auto;
-	border-radius: 8px;
+	margin: vw(10) auto;
+	border-radius: vw(10);
 	background-color: #fff;
 
 	.wrapper {
@@ -50,9 +50,10 @@
 		left: 50%;
 		top: 50%;
 		border: 1px solid rgba(22, 22, 22, 0.05);
-		border-radius: 8px;
-		width: 96%;
-		height: 96%;
+		border-radius: vw(10);
+		width: 98%;
+		height: 98%;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 		transform: translate(-50%, -50%);
 	}
 
@@ -63,22 +64,47 @@
 
 .popup-close {
 	position: absolute;
-	left: 50%;
-	top: -8rem;
-	width: 5.7rem;
-	height: 5.7rem;
-	background-image: url("../img/close-modal.png");
+	right: vw(-60);
+	top: vw(-60);
+	width: vw(40);
+	height: vw(40);
+	background-image: url("../../images/close-modal.png");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	transform: translateX(-50%);
 }
 
-.white-popup {
-  position: relative;
-  background: #FFF;
-  padding: 20px;
-  width: auto;
-  max-width: 500px;
-  margin: 20px auto;
+.consult {
+	width: vw(1050);
+	height: vw(427);
+	font-family: $g-p-light;
+
+	.wrapper {
+		padding: vw(35) vw(20) vw(35) vw(35);
+	}
+
+	&__heading {
+		font-size: vw(18);
+
+		h3 {
+			margin-bottom: vw(15);
+		}
+	}
+
+	&__main {
+		display: flex;
+
+		.manager {
+			display: flex;
+			align-items: center;
+
+			.img {
+				border-radius: 50%;
+				width: vw(64);
+				height: vw(64);
+				background-color: #49b2f8;
+			}
+		}
+	}
 }

@@ -8,3 +8,4 @@ window.$ = $;
 window.jQuery = $;
 
 require('ninelines-ua-parser');
+require('./vendor/jquery.magnific-popup.min');
