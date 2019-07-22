@@ -204,3 +204,85 @@
 		}
 	}
 }
+
+.credit-leasing {
+	width: vw(969);
+	height: vw(690);
+
+	.wrapper {
+		padding: vw(35);
+	}
+
+	&__heading {
+		font-family: $g-p-medium;
+
+		.bottom-h {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: vw(20);
+			width: 70%;
+		}
+
+		.tab-nav {
+			ul {
+				display: flex;
+				list-style: none;
+
+				li {
+					position: relative;
+					display: inline-block;
+					margin-right: vw(30);
+
+					a {
+						display: inline-block;
+						margin-right: vw(30);
+						font-family: $g-p-light;
+						font-size: vw(24);
+						text-transform: uppercase;
+						color: $main-font-color;
+						opacity: 0.5;
+					}
+
+					&:hover a,
+					&:active a {
+						font-family: $g-p-bold;
+						color: $sky-blue;
+						opacity: 1;
+					}
+
+					&:hover::before,
+					&:active::before {
+						background-color: $sky-blue;
+					}
+
+					&::before {
+						content: "";
+						position: absolute;
+						left: vw(-30);
+						top: 50%;
+						width: vw(20);
+						height: 1px;
+						background-color: #b6b8ba;
+					}
+				}
+			}
+		}
+
+		.sub-heading {
+			display: flex;
+			align-items: center;
+			font-family: $g-p-bold;
+			font-size: vw(18);
+
+			img {
+				margin-right: vw(12);
+				width: vw(25);
+				height: vw(21);
+			}
+		}
+	}
+
+	.tabs {
+
+	}
+}
