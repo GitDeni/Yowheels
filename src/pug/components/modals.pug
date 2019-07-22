@@ -42,10 +42,94 @@
 		a.popup-close
 		.wrapper
 			h3
-				| fnbvjfbvobv jfcnbb 
+				| yowheels всегда 
+				span
+					| на стороне клиента 
+				| и предлагает лучшие условия
+			.subtitle
+				| Консультация менеджера займет не более 10 минут
+			.payment__main
+				.payment__main_box
+					.box-img
+						img(src="../../images/calendar.png", alt="").x3840
+					.box-text
+						span
+							| Выходные по платежам
+						| Раз в месяц есть выходные по платежам, #[br]
+						| время, когда вы ездите на авто бесплатно
+				.payment__main_box
+					.box-img
+						img(src="../../images/pay.png", alt="").p-i
+					.box-text
+						span
+							| Вы решаете, как и когда платить 
+						| Оплачивать ежедневно или одним платежом раз #[br]
+						| в месяц, так же можете дробить оплату как угодно
+						.s-sub
+							| За более подробной информацией обращайтесь к&nbspменеджеру
+				.payment__main_box
+					.box-img
+						img(src="../../images/bill.png", alt="").x3840
+					.box-text
+						span
+							| Удобная оплата
+						| Никаких очередей в банки, вы оплачиваете #[br]
+						| авто через ЕРИП по номеру договора
+				.payment__main_box
+					.box-img
+						img(src="../../images/calendar_1.png", alt="").x3840
+					.box-text
+						span
+							| Отсрочка платежа, до 2 недель
+						| Бывают разные ситуации, предоставляем отсрочку#[br]
+						| платежа до 2 недель, без процентов и комиссий,#[br]
+						| так же просрочка платежей не влияет на вашу#[br]
+						| кредитную историю 
+				.payment__main_box
+					.box-img
+						img(src="../../images/money.png", alt="").x4040
+					.box-text
+						span
+							| Фиксированная оплата
+						| На этапе заключения договора мы фиксируем #[br]
+						| оплату, после чего она не меняется, с yowheels #[br]
+						| вы защищены от процентов и комиссий
+				.payment__main_box
+					.box-img
+						img(src="../../images/time.png", alt="").x4040
+					.box-text
+						span
+							| Можете оплачивать наперед 
+							| или досрочно погасить
+						| Вы можете выплачивать платежи заранее #[br]
+						| или выкупить авто сразу после 3 месяцев аренды
+			.payment-application
+				.payment-application__heading
+					.left
+						h3
+							| Рассчитайте точную 
+							span
+								| стоимость 
+								| авто и размер платежей 
+							| для вас
+						a.blue-link.open-popup(href="#consult")
+							span.blue-link-span
+								| + консультацию от менеджера
+					.right
+						.img
+							img(src="../../images/Anna.png", alt="")
+						.text
+							| Вам перезвонит#[br]
+							span
+								| Анна Измайлова
+				.payment-application__form
+					input.main-input(type="tel")
+					button.main-button
+						span
+							| Рассчитать точную стоимость авто для вас
 	
 	
-	.modal.mfp-with-anim.credit-leasing#credit-leasing
+	.modal.mfp-with-anim.credit-leasing#credit-leasing(data-id="#credit-pane")
 		a.popup-close
 		.wrapper
 			.credit-leasing__heading
@@ -57,27 +141,209 @@
 					.tab-nav
 						ul
 							li
-								a(href="#")
+								a(href="#credit-pane").active
 									| Кредита
 							li
-								a(href="#")
+								a(href="#leasing-pane")
 									| Лизинга
 							li
-								a(href="#")
+								a(href="#rent-pane")
 									| Аренды
-				.sub-heading
-					img(src="../../images/mini-logo.png", alt="")
-					| YoWheels - лучше и проще, чем обычный лизинг
 			.tabs
 				.tab-content
 					.tab-pane.credit-pane.faded.in.active#credit-pane
-						.box
-							.img
-							.text
-								| Доступен #[br]
-								| для физических лиц
-					.tab-pane.leasing-pane.faded.in.active#leasing-pane
-		
+						.pane-main
+							.heading
+								.l
+									| Кредит
+								.r
+									img(src="../../images/mini-logo.png", alt="")
+									| YoWheels
+							.box
+								.img
+									img(src="../../images/cancel.png", alt="")
+								.text
+									| в 90% требуется#[br]
+									| первый взнос 10-20% #[br]
+									| от суммы
+							.box
+								.img
+									img(src="../../images/tick-circle.png", alt="")
+								.text.bold
+									| Первый взнос #[br]
+									| не требуется
+							.box
+								.img
+									img(src="../../images/cancel.png", alt="")
+								.text
+									| Требуется справка #[br]
+									| о доходах
+							.box
+								.img
+									img(src="../../images/tick-circle.png", alt="")
+								.text.bold
+									| Справка о доходах #[br]
+									| не нужна
+							.box
+								.img
+									img(src="../../images/cancel.png", alt="")
+								.text
+									| Нужна идеальная #[br]
+									| кредитная история
+							.box
+								.img
+									img(src="../../images/tick-circle.png", alt="")
+								.text.bold
+									| Кредитная история #[br]
+									| не имеет значения
+							.box
+								.img
+									img(src="../../images/cancel.png", alt="")
+								.text
+									| Разные размеры #[br]
+									| платежей
+							.box
+								.img
+									img(src="../../images/tick-circle.png", alt="")
+								.text.bold
+									| Фиксированный #[br]
+									| платеж на весь срок, #[br]
+									| без выплаты %
+							.box
+								.img
+									img(src="../../images/cancel.png", alt="")
+								.text
+									| Привязка #[br]
+									| к ежемесячной #[br]
+									| оплате
+							.box
+								.img
+									img(src="../../images/tick-circle.png", alt="")
+								.text.bold
+									| Можете оплачивать, #[br]
+									| как удобно, каждый #[br]
+									| день или раз в месяц
+							.box
+								.img
+									img(src="../../images/cancel.png", alt="")
+								.text
+									| Практически не реально #[br]
+									| отказаться + выплата % #[br]
+									| при отказе
+							.box
+								.img
+									img(src="../../images/tick-circle.png", alt="")
+								.text.bold
+									| Вы можете прекратить #[br]
+									| аренду, через 3 месяца #[br]
+									| без выплаты процентов
+							.box
+								.img
+									img(src="../../images/cancel.png", alt="")
+								.text
+									| Требуется КАСКО
+							.box
+								.img
+									img(src="../../images/tick-circle.png", alt="")
+								.text.bold
+									| Достаточно обычной #[br]
+									| страховки
+						.application
+							h3
+								| Оставить заявку на 
+								span
+									| бесплатную 
+									| консультацию 
+								| и выбор авто
+							.application__form
+								input.main-input(type="tel")
+								button.main-button
+									span
+										| Оставить заявку
+						
+					.tab-pane.leasing-pane.faded#leasing-pane
+						.sub-heading
+							img(src="../../images/mini-logo.png", alt="")
+							| YoWheels - лучше и проще, чем обычный лизинг
+						
+						.pane-main
+								.box
+									.img
+										img(src="../../images/tick-circle.png", alt="")
+									.text
+										| Доступен #[br]
+										| для физических лиц
+								.box
+									.img
+										img(src="../../images/tick-circle.png", alt="")
+									.text
+										| Отсутствует первый #[br]
+										| взнос
+								.box
+									.img
+										img(src="../../images/tick-circle.png", alt="")
+									.text
+										| Нет ограничений #[br]
+										| по оплате
+								.box
+									.img
+										img(src="../../images/tick-circle.png", alt="")
+									.text
+										| Не требуется КАСКО, #[br]
+										| достаточно обычной #[br]
+										| страховки
+								.box
+									.img
+										img(src="../../images/tick-circle.png", alt="")
+									.text
+										| Кредитная история #[br]
+										| не имеет значения
+								.box
+									.img
+										img(src="../../images/tick-circle.png", alt="")
+									.text
+										| Не требуется КАСКО, #[br]
+										| достаточно обычной #[br]
+										| страховки
+
+						.application
+							h3
+								| Оставить заявку на 
+								span
+									| бесплатную 
+									| консультацию 
+								| и выбор авто
+							.application__form
+								input.main-input(type="tel")
+								button.main-button
+									span
+										| Оставить заявку
+
+
+				.tab-pane.rent-pane.faded#rent-pane
+					.rent-box
+						img(src="../../images/car-key.png", alt="")
+						.rent-text
+							.rent-text-h
+								| Отличие в том, что вы 
+								span
+									| не просто 
+								| арендуете,
+							p.rent-text-p
+								| а постепенно выкупаете авто в собственность, тем самым мы помогаем 
+								| сохранить вам ваши деньги и уберечь от банков и кредитов:)
+					.application
+						h3
+							| Оставить заявку на 
+							span
+								| бесплатную 
+								| консультацию 
+							| и выбор авто
+						.application__form
+							input.main-input(type="tel")
+							button.main-button
+								span
+									| Оставить заявку
 	
 	.modal.mfp-with-anim.price#price
 		a.popup-close

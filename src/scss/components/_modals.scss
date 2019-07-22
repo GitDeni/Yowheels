@@ -62,7 +62,7 @@
 
 .popup-close {
 	position: absolute;
-	right: vw(-60);
+	right: vw(-80);
 	top: vw(-60);
 	width: vw(40);
 	height: vw(40);
@@ -205,10 +205,8 @@
 	}
 }
 
+// кредит-лизинг -- общие
 .credit-leasing {
-	width: vw(969);
-	height: vw(690);
-
 	.wrapper {
 		padding: vw(35);
 	}
@@ -220,7 +218,6 @@
 			display: flex;
 			justify-content: space-between;
 			margin-bottom: vw(20);
-			width: 70%;
 		}
 
 		.tab-nav {
@@ -238,35 +235,41 @@
 						margin-right: vw(30);
 						font-family: $g-p-light;
 						font-size: vw(24);
+						letter-spacing: vw(0.9);
 						text-transform: uppercase;
 						color: $main-font-color;
 						opacity: 0.5;
-					}
 
-					&:hover a,
-					&:active a {
-						font-family: $g-p-bold;
-						color: $sky-blue;
-						opacity: 1;
-					}
+						&::before {
+							content: "";
+							position: absolute;
+							left: vw(-30);
+							top: 50%;
+							width: vw(20);
+							height: 1px;
+							background-color: #b6b8ba;
+						}
 
-					&:hover::before,
-					&:active::before {
-						background-color: $sky-blue;
-					}
+						&:hover,
+						&.active {
+							border-bottom: 1px dashed #49b2f8;
+							font-family: $g-p-bold;
+							color: $sky-blue;
+							opacity: 1;
+						}
 
-					&::before {
-						content: "";
-						position: absolute;
-						left: vw(-30);
-						top: 50%;
-						width: vw(20);
-						height: 1px;
-						background-color: #b6b8ba;
+						&:hover::before,
+						&.active::before {
+							background-color: $sky-blue;
+						}
 					}
 				}
 			}
 		}
+	}
+
+	.tabs {
+		margin-bottom: vw(70);
 
 		.sub-heading {
 			display: flex;
@@ -280,9 +283,330 @@
 				height: vw(21);
 			}
 		}
+
+		.tab-pane {
+			display: none;
+		}
+
+		.faded {
+			opacity: 0;
+			transition: all 1s;
+		}
+
+		.faded.in {
+			opacity: 1;
+			transition: all 1s;
+		}
+
+		.tab-pane.active {
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 
-	.tabs {
+	.tab-pane {
+		flex-wrap: wrap;
+		justify-content: space-between;
 
+		.pane-main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: vw(50);
+		}
+
+		.box {
+			display: flex;
+			margin-top: vw(25);
+			border: 1px solid #f5f5f5;
+			border-radius: vw(10);
+			padding: vw(22);
+			width: vw(270);
+
+			.img {
+				margin-right: vw(17);
+
+				img {
+					width: vw(37);
+					height: vw(37);
+				}
+			}
+
+			.text {
+				font-family: $g-p-light;
+				font-size: vw(14);
+				line-height: vw(20);
+			}
+		}
+	}
+
+	// каждый таб
+	.leasing-pane {
+		.application {
+			h3 {
+				margin-bottom: vw(35);
+				width: 70%;
+			}
+
+			&__form {
+				display: flex;
+				justify-content: space-between;
+
+				.main-button,
+				.main-input {
+					width: vw(419);
+				}
+			}
+		}
+	}
+
+	.credit-pane {
+		.box {
+			margin-top: vw(20);
+			padding: vw(15) vw(15);
+
+			.bold {
+				font-family: $g-p-bold;
+			}
+		}
+
+		.application {
+			h3 {
+				margin-bottom: vw(35);
+				width: 100%;
+			}
+
+			&__form {
+				display: flex;
+				justify-content: space-between;
+
+				.main-button,
+				.main-input {
+					width: vw(270);
+				}
+			}
+		}
+	}
+}
+
+.rent-pane {
+	.rent-box {
+		display: flex;
+		align-items: center;
+		margin-top: vw(10);
+		margin-bottom: vw(30);
+		border: 1px solid #f5f5f5;
+		border-radius: vw(10);
+		padding: vw(20);
+
+		img {
+			margin-right: vw(20);
+			width: vw(80);
+			height: vw(82);
+		}
+
+		.rent-text {
+			font-family: $g-p-light;
+
+			&-h {
+				font-size: vw(18);
+
+				span {
+					font-family: $g-p-bold;
+				}
+			}
+
+			&-p {
+				font-size: vw(14);
+			}
+		}
+	}
+}
+
+// что меняем из общих частей модалки при переключении табов
+.credit-leasing[data-id="#credit-pane"] {
+	width: vw(670);
+	height: vw(1170);
+
+	.bottom-h {
+		width: 100%;
+
+		.tab-nav {
+			margin-left: vw(50);
+		}
+
+		.tab-nav li:last-child a {
+			margin-right: 0;
+		}
+	}
+
+	.heading {
+		display: flex;
+		justify-content: space-between;
+		width: 75%;
+		font-family: $g-p-bold;
+		font-size: vw(18);
+
+		img {
+			margin-right: vw(12);
+			width: vw(25);
+			height: vw(21);
+		}
+	}
+}
+
+.credit-leasing[data-id="#leasing-pane"] {
+	width: vw(969);
+	height: vw(690);
+
+	.bottom-h {
+		width: 72%;
+	}
+}
+
+.credit-leasing[data-id="#rent-pane"] {
+	width: vw(760);
+	height: vw(521);
+
+	.application {
+		h3 {
+			margin-bottom: vw(35);
+			width: 100%;
+		}
+
+		&__form {
+			display: flex;
+			justify-content: space-between;
+
+			.main-button,
+			.main-input {
+				width: vw(315);
+			}
+		}
+	}
+}
+
+//#payment
+
+.payment {
+	width: vw(1050);
+	height: vw(906);
+	font-family: $g-p-light;
+
+	.wrapper {
+		padding: vw(30) vw(50) vw(30) vw(40);
+	}
+
+	h3 {
+		display: block;
+		margin-bottom: vw(10);
+		padding-right: vw(100);
+	}
+
+	.subtitle {
+		margin-bottom: vw(40);
+		font-size: vw(18);
+	}
+
+	&__main {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: vw(35);
+
+		&_box {
+			display: flex;
+			margin-bottom: vw(50);
+			width: 50%;
+
+			.box-text {
+				margin-left: vw(26);
+				font-size: vw(14);
+				line-height: vw(22);
+
+				span {
+					display: block;
+					font-family: $g-p-medium;
+					text-transform: uppercase;
+				}
+			}
+
+			.x3840 {
+				width: vw(38);
+				height: vw(40);
+			}
+
+			.x4040 {
+				width: vw(40);
+				height: vw(40);
+			}
+
+			.p-i {
+				width: vw(40);
+				height: vw(32);
+			}
+
+			.s-sub {
+				font-size: vw(12);
+			}
+		}
+	}
+
+	.payment-application {
+		&__heading {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: vw(50);
+			width: 100%;
+
+			.left {
+				width: 70%;
+			}
+
+			.right {
+				display: flex;
+				align-items: center;
+				border: 1px solid #f2f2f2;
+				border-radius: vw(10);
+				padding: vw(15) vw(25) vw(15) vw(20);
+
+				.img {
+					display: flex;
+					align-items: flex-end;
+					justify-content: center;
+					margin-right: vw(15);
+					border-radius: 50%;
+					width: vw(64);
+					height: vw(64);
+					background-color: $sky-blue;
+
+					img {
+						widows: vw(55);
+						height: vw(71);
+					}
+				}
+
+				.text {
+					font-size: vw(12);
+
+					span {
+						font-family: $g-p-medium;
+						font-size: vw(13);
+						line-height: vw(28);
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+
+		&__form {
+			display: flex;
+			justify-content: space-between;
+
+			.main-button {
+				width: vw(550);
+			}
+		}
 	}
 }
