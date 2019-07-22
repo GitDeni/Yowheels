@@ -95,12 +95,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		margin-bottom: vw(80);
 		padding-top: vw(30);
-		padding-right: vw(100);
+		padding-right: vw(90);
 
 		.manager {
 			display: flex;
 			align-items: center;
+			margin-right: vw(20);
 
 			.img {
 				display: flex;
@@ -133,6 +135,7 @@
 
 		.middle {
 			display: flex;
+			align-items: center;
 			border: 1px solid #f2f2f2;
 			border-radius: vw(10);
 			padding: vw(12);
@@ -144,6 +147,7 @@
 			}
 
 			.text {
+				font-family: $g-p-light;
 				font-size: vw(14);
 				line-height: vw(20);
 
@@ -187,6 +191,16 @@
 			&:hover .circle {
 				box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 			}
+		}
+	}
+
+	&__form {
+		display: flex;
+		justify-content: space-between;
+		padding-right: vw(20);
+
+		.main-button {
+			width: vw(550);
 		}
 	}
 }
