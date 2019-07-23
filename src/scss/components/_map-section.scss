@@ -1,13 +1,17 @@
 .map {
-	background-color: bisque;
-	height: vw(550);
 	.map-wrapper {
+		overflow: hidden;
+		margin-top: vw(-300);
 		border-radius: vw(10);
+		width: 100%;
+		height: vw(600);
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 	}
 
 	.contacts-wrapper {
 		position: absolute;
 		left: vw(70);
+		top: vw(-250);
 		border-radius: vw(10);
 		padding: vw(7);
 		max-width: vw(430);

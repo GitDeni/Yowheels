@@ -1,34 +1,17 @@
-// if ($('.map').length > 0) {
-// 	ymaps.ready(init);
-// 	var myMap,
-// 		myPlacemark;
+import ymaps from 'ymaps';
 
-// 	function init() {
-// 		myMap = new ymaps.Map("map", {
-// 			center: [53.909551121403645, 27.52265794047538],
-// 			zoom: 17,
-// 			controls: []
-// 		}, {
-// 			suppressMapOpenBlock: true
-// 		});
-// 		myMap.behaviors.disable('scrollZoom');
-// 		myMap.controls.add('zoomControl', {
-// 			position: {
-// 				right: '10px',
-// 				top: '200px'
-// 			}
-// 		});
-// 		myPlacemark = new ymaps.Placemark([53.909551121403645, 27.52265794047538], {}, {
-// 			iconLayout: 'default#image',
-// 			iconImageHref: '../images/pin.png',
-// 			iconImageSize: [70, 77],
-// 			iconImageOffset: [-40, -75]
-// 		});
-
-// 		myMap.geoObjects.add(myPlacemark);
-
-// 	}
-
-// } else {
-// 	// не существует
-// }
+ymaps
+  .load('https://api-maps.yandex.ru/2.1/?lang=ru_RU')
+  .then(maps => {
+    const map = new maps.Map('map-wrapper', {
+      center: [53.88921557, 27.51963750],
+      zoom: 16
+    });
+	})
+	.catch(error => console.log('Failed to load Yandex Maps', error));
+// var myPlacemark = new ymaps.Placemark([55.75399400, 37.62209300], {}, {
+// 	iconLayout: 'default#image',
+// 	iconImageHref: '../../images/pin.png',
+// 	iconImageSize: [78, 98],
+// });
+// map.geoObjects.add(myPlacemark);

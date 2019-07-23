@@ -1,3 +1,6 @@
+import { nfapply } from "q";
+
+// табы в модалке
 $('body').on('click', '.tab-nav a', function () {
 	$('.tab-nav a').removeClass('active');
 	$(this).addClass('active');
@@ -11,17 +14,18 @@ $('body').on('click', '.tab-nav a', function () {
 	return false;
 });
 
-
-// $('body').on('click', '.testim-tab-nav a', function () {
-// 	$('.testim-tab-nav a').removeClass('active');
-// 	$(this).addClass('active');
-// 	var href = $(this).attr('href');
-// 	$('.tab-pane').removeClass('active').removeClass('in');
-// 	$(href).addClass('active');
-// 	swiper1.update();
-// 	setTimeout(function () {
-// 		$(href).addClass('in');
-// 	}, 200);
-// 	return false;
-// });
+// табы в отзывах
+$('body').on('click', '.testim-tab-nav a', function () {
+	$('.testim-tab-nav a').removeClass('active');
+	$(this).addClass('active');
+	var href = $(this).attr('href');
+	$('.tab-pane').removeClass('active').removeClass('in');
+	$(href).addClass('active');
+	swiper1.update();
+	swiper2.update();
+	setTimeout(function () {
+		$(href).addClass('in');
+	}, 200);
+	return false;
+});
 

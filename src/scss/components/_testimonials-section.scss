@@ -86,6 +86,15 @@
 			opacity: 1;
 			transition: all 0.3s ease-in-out;
 		}
+
+		&.active {
+			color: rgb(54, 49, 36);
+		}
+
+		&.active::before {
+			opacity: 1;
+			transition: all 0.3s ease-in-out;
+		}
 	}
 
 	.tabs {
@@ -94,15 +103,11 @@
 		width: 100%;
 	}
 
-	.video-swiper {
-		//overflow: hidden;
+	.video-swiper,
+	.photo-sviper {
 		width: 100%;
 		height: vw(400);
 	}
-
-	// .swiper-wrapper {
-	// 	overflow: hidden;
-	// }
 
 	.tab-footer {
 		display: flex;
@@ -139,6 +144,7 @@
 		}
 	}
 }
+
 .swiper-slide {
 	padding: vw(10);
 	height: vw(370);
@@ -146,7 +152,8 @@
 	background-repeat: no-repeat;
 }
 
-.video-swiper .swiper-slide {
+.video-swiper .swiper-slide,
+.photo-swiper .swiper-slide {
 	position: relative;
 
 	&::before {
@@ -161,13 +168,15 @@
 	}
 }
 
-.video-swiper .swiper-slide-active {
+.video-swiper .swiper-slide-active,
+.photo-swiper .swiper-slide-active {
 	&::before {
 		display: none;
 	}
 }
 
-.video-swiper .swiper-active-second {
+.video-swiper .swiper-active-second,
+.photo-swiper .swiper-active-second {
 	&::before {
 		display: none;
 	}
@@ -223,14 +232,3 @@
 	background-color: #3d444a;
 }
 
-// .swiper-slide::before {
-// 	content: "";
-// 	position: absolute;
-// 	left: vw(20);
-// 	bottom: vw(-20);
-// 	border-radius: 0 0 vw(10) vw(10);
-// 	width: vw(510);
-// 	height: vw(10);
-// 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-// 	background-color: #293239;
-// }

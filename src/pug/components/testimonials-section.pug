@@ -7,7 +7,7 @@ section.testimonials
 		.testim-tab-nav
 			ul
 				li
-					a(href="#video-pane").testim-main-button
+					a(href="#video-pane").testim-main-button.active
 						span
 							| видео
 				li
@@ -45,18 +45,24 @@ section.testimonials
 
 			.tab-pane.photo-pane.faded#photo-pane
 
-				.video-swiper
+				.photo-swiper
 					.swiper-wrapper
-						.swiper-slide(data-background="../../images/slide-1-bg.png")
+						.swiper-slide.swiper-lazy(data-background="../../images/photo-1.png")
 							a.open-popup.video-link(href="#video-1")
-								| cndsjbcfvb
-
-						.swiper-slide
-								| cndsjbcfvb
-						.swiper-slide
-								| cndsjbcfvb
-						.swiper-slide
-								| cndsjbcfvb
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
+						.swiper-slide.swiper-lazy(data-background="../../images/photo-1.png")
+							a.open-popup.video-link(href="#video-1")
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
+						.swiper-slide.swiper-lazy(data-background="../../images/photo-1.png")
+							a.open-popup.video-link(href="#video-1")
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
+						.swiper-slide.swiper-lazy(data-background="../../images/photo-1.png")
+							a.open-popup.video-link(href="#video-1")
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
 		.tab-footer
 			a(href="#").testim-main-button.open-popup
 				span

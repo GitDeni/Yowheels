@@ -1,5 +1,5 @@
 .faq {
-	padding-bottom: vw(100);
+	padding-bottom: vw(390);
 	background-color: #f5f5f5;
 
 	h2 {
@@ -103,11 +103,11 @@
 				}
 			}
 
-			.faq-card.closed {
+			.faq-card.card-closed {
 				padding-bottom: 0;
 			}
 
-			.faq-card.closed .faq-card__answer {
+			.faq-card.card-closed .faq-card__answer {
 				display: none;
 			}
 		}
