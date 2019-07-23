@@ -19,11 +19,32 @@ section.testimonials
 						span
 							| письменные
 		.tabs
-			.tab-pane.video-pane#video-pane
+			.tab-pane.video-pane.faded.in.active#video-pane
 
 				.video-swiper
 					.swiper-wrapper
-						.swiper-slide(data-background="img/slide-1-bg.png")
+						.swiper-slide.swiper-lazy(data-background="../../images/slide-1-bg.png")
+							a.open-popup.video-link(href="#video-1")
+								.main-circle
+									img(src="../../images/play.png", alt="")
+
+
+						.swiper-slide.swiper-lazy(data-background="../../images/slide-1-bg.png")
+							a.open-popup.video-link(href="#video-1")
+								.main-circle
+									img(src="../../images/play.png", alt="")
+						.swiper-slide.swiper-lazy(data-background="../../images/slide-1-bg.png")
+							a.open-popup.video-link(href="#video-1")
+								.main-circle
+									img(src="../../images/play.png", alt="")
+
+
+
+			.tab-pane.photo-pane.faded#photo-pane
+
+				.video-swiper
+					.swiper-wrapper
+						.swiper-slide(data-background="../../images/slide-1-bg.png")
 							a.open-popup.video-link(href="#video-1")
 								| cndsjbcfvb
 

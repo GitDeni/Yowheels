@@ -284,24 +284,24 @@
 			}
 		}
 
-		.tab-pane {
-			display: none;
-		}
+		// .tab-pane {
+		// 	display: none;
+		// }
 
-		.faded {
-			opacity: 0;
-			transition: all 1s;
-		}
+		// .faded {
+		// 	opacity: 0;
+		// 	transition: all 1s;
+		// }
 
-		.faded.in {
-			opacity: 1;
-			transition: all 1s;
-		}
+		// .faded.in {
+		// 	opacity: 1;
+		// 	transition: all 1s;
+		// }
 
-		.tab-pane.active {
-			display: flex;
-			justify-content: space-between;
-		}
+		// .tab-pane.active {
+		// 	display: flex;
+		// 	justify-content: space-between;
+		// }
 	}
 
 	.tab-pane {

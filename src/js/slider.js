@@ -1,15 +1,17 @@
 import Swiper from 'swiper';
-var mySwiper = new Swiper ('.video-swiper', {
-	// Optional parameters
-	slidesPreView: 1,
-	//loop: true,
+var swiper1 = new Swiper ('.video-swiper', {
+	slidesPerView: 2,
+	loop: true,
+	spaceBetween: 30,
+	lazy: {
+		loadPrevNext: true,
+		loadOnTransitionStart: true,
+	},
 
 	// Navigation arrows
 	navigation: {
-		nextEl: '.testim-prev',
-		prevEl: '.testim-next',
+		nextEl: '.testim-next',
+		prevEl: '.testim-prev',
 	},
-
-	spaceBetween: 0,
 
 })

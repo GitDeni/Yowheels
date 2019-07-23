@@ -315,3 +315,22 @@ h3 {
 		font-weight: 700;
 	}
 }
+
+.tab-pane {
+	display: none;
+}
+
+.faded {
+	opacity: 0;
+	transition: all 1s;
+}
+
+.faded.in {
+	opacity: 1;
+	transition: all 1s;
+}
+
+.tab-pane.active {
+	display: flex;
+	justify-content: space-between;
+}

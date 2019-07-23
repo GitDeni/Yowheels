@@ -91,26 +91,28 @@
 	.tabs {
 		margin-bottom: vw(60);
 		padding-top: vw(60);
+		width: 100%;
 	}
 
-	.swiper-wrapper {
-		width: vw(1170);
-		height: vw(380);
+	.video-swiper {
+		overflow: hidden;
+		width: 100%;
+		height: vw(400);
 	}
 
-	.video-pane {
-		border: 1px solid #fff;
-	}
+	// .swiper-wrapper {
+	// 	overflow: hidden;
+	// }
 
 	.tab-footer {
-		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		width: 100%;
 
 		.swiper-buttons {
-			width: vw(150);
 			display: flex;
 			justify-content: space-between;
+			width: vw(150);
 
 			.testim-prev,
 			.testim-next {
@@ -137,37 +139,58 @@
 		}
 	}
 }
-
+.swiper-slide {
+	padding: vw(10);
+	height: vw(370);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .video-link {
-	width: 94%;
-	height: 94%;
-	border: 1px solid #ffffff;
-	border-radius: vw(10);
+	width: 100%;
+	height: 100%;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	border: 1px solid #ffffff;
+	border-radius: vw(10);
+
+	.main-circle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: vw(90);
+		height: vw(90);
+		background-color: $sky-blue;
+		box-shadow: 0 15px 40px rgba(73, 178, 248, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
+		border-radius: 50%;
+
+		img {
+			width: vw(70);
+			height: vw(70);
+		}
+	}
 }
 
-// .swiper-slide::after {
-// 	content: "";
-// 	position: absolute;
-// 	left: vw(10);
-// 	bottom: vw(-10);
-// 	border-radius: 0 0 vw(10) vw(10);
-// 	width: vw(540);
-// 	height: vw(10);
-// 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-// 	background-color: #3d444a;
-// }
+.swiper-slide::after {
+	content: "";
+	position: absolute;
+	left: vw(10);
+	bottom: vw(-10);
+	border-radius: 0 0 vw(10) vw(10);
+	width: vw(540);
+	height: vw(10);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+	background-color: #3d444a;
+}
 
-// .swiper-slide::before {
-// 	content: "";
-// 	position: absolute;
-// 	left: vw(20);
-// 	bottom: vw(-20);
-// 	border-radius: 0 0 vw(10) vw(10);
-// 	width: vw(510);
-// 	height: vw(10);
-// 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-// 	background-color: #293239;
-// }
+.swiper-slide::before {
+	content: "";
+	position: absolute;
+	left: vw(20);
+	bottom: vw(-20);
+	border-radius: 0 0 vw(10) vw(10);
+	width: vw(510);
+	height: vw(10);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+	background-color: #293239;
+}
