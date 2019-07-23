@@ -486,8 +486,7 @@
 	}
 }
 
-//#payment
-
+// #payment
 .payment {
 	width: vw(1050);
 	height: vw(906);
@@ -606,6 +605,144 @@
 
 			.main-button {
 				width: vw(550);
+			}
+		}
+
+		.blue-link {
+			position: relative;
+
+			.consult-tip {
+				position: absolute;
+				left: vw(250);
+				top: 0;
+				z-index: 15;
+				border-radius: vw(10);
+				background-color: #fff;
+				opacity: 0;
+				transition: all 0.3s ease-in-out;
+
+				ul {
+					list-style-image: url("../../images/dot.png");
+					padding: vw(22) vw(25) 0 vw(30);
+					width: vw(250);
+					font-family: $g-p-light;
+					font-size: vw(13);
+
+					li {
+						margin-bottom: vw(25);
+					}
+				}
+			}
+
+			.blue-link-span {
+				font-size: vw(14);
+			}
+		}
+
+		.blue-link:hover .consult-tip {
+			opacity: 1;
+		}
+	}
+}
+
+// #characteristics
+.characteristics {
+	width: vw(690);
+	height: vw(1274);
+
+	.char-application {
+		&__heading {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: vw(50);
+			width: 100%;
+
+			.left {
+				width: 80%;
+			}
+
+			.blue-link {
+				position: relative;
+
+				.consult-tip {
+					position: absolute;
+					left: vw(250);
+					top: 0;
+					z-index: 15;
+					border-radius: vw(10);
+					background-color: #fff;
+					opacity: 0;
+					transition: all 0.3s ease-in-out;
+
+					ul {
+						list-style-image: url("../../images/dot.png");
+						padding: vw(22) vw(25) 0 vw(30);
+						width: vw(250);
+						font-family: $g-p-light;
+						font-size: vw(13);
+
+						li {
+							margin-bottom: vw(25);
+						}
+					}
+				}
+
+				.blue-link-span {
+					font-size: vw(14);
+				}
+			}
+
+			.blue-link:hover .consult-tip {
+				opacity: 1;
+			}
+		}
+
+		&__form {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+
+			.main-input {
+				width: vw(370);
+			}
+
+			.right {
+				display: flex;
+				align-items: center;
+				padding: vw(15) vw(25) vw(15) vw(20);
+
+				.img {
+					display: flex;
+					align-items: flex-end;
+					justify-content: center;
+					margin-right: vw(15);
+					border-radius: 50%;
+					width: vw(64);
+					height: vw(64);
+					background-color: $sky-blue;
+
+					img {
+						widows: vw(55);
+						height: vw(71);
+					}
+				}
+
+				.text {
+					font-size: vw(12);
+
+					span {
+						font-family: $g-p-medium;
+						font-size: vw(13);
+						line-height: vw(28);
+						text-transform: uppercase;
+					}
+				}
+			}
+
+			.main-button {
+				width: vw(474);
 			}
 		}
 	}

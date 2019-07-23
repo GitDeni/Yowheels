@@ -32,7 +32,8 @@
 					span
 						| что еще входит
 			.consult__form
-				input(type="tel").main-input
+				.main-input-wrapper
+					input(type="tel").main-input
 				button.main-button
 					span
 						| Оставить заявку на бесплатную консультацию
@@ -112,9 +113,24 @@
 								| стоимость 
 								| авто и размер платежей 
 							| для вас
-						a.blue-link.open-popup(href="#consult")
+						a.blue-link.open-popup
 							span.blue-link-span
 								| + консультацию от менеджера
+							.consult-tip
+								ul
+									li
+										| Совершит онлайн проверку 
+										| для одобрения аренды авто
+									li
+										| Ответит на все ваши 
+										| вопросы
+									li
+										| Расскажет о всех условиях 
+										| аренды, вы будете знать обо 
+										| всем перед заключением 
+										| договора
+									li
+										| Поможет с выбором авто
 					.right
 						.img
 							img(src="../../images/Anna.png", alt="")
@@ -123,7 +139,8 @@
 							span
 								| Анна Измайлова
 				.payment-application__form
-					input.main-input(type="tel")
+					.main-input-wrapper
+						input.main-input(type="tel")
 					button.main-button
 						span
 							| Рассчитать точную стоимость авто для вас
@@ -256,7 +273,8 @@
 									| консультацию 
 								| и выбор авто
 							.application__form
-								input.main-input(type="tel")
+								.main-input-wrapper
+									input.main-input(type="tel")
 								button.main-button
 									span
 										| Оставить заявку
@@ -314,7 +332,8 @@
 									| консультацию 
 								| и выбор авто
 							.application__form
-								input.main-input(type="tel")
+								.main-input-wrapper
+									input.main-input(type="tel")
 								button.main-button
 									span
 										| Оставить заявку
@@ -340,13 +359,54 @@
 								| консультацию 
 							| и выбор авто
 						.application__form
-							input.main-input(type="tel")
+							.main-input-wrapper
+								input.main-input(type="tel")
 							button.main-button
 								span
 									| Оставить заявку
 	
-	.modal.mfp-with-anim.price#price
+	.modal.mfp-with-anim.characteristics#characteristics
 		a.popup-close
 		.wrapper
 			h3
 				| fnbvjfbvobv jfcnbb 
+			.char-application
+				.char-application__heading
+					.left
+						h3
+							| Рассчитайте точную 
+							span
+								| стоимость 
+								| авто и размер платежей 
+							| для вас
+						a.blue-link
+							span.blue-link-span
+								| + консультацию от менеджера
+							.consult-tip
+								ul
+									li
+										| Совершит онлайн проверку 
+										| для одобрения аренды авто
+									li
+										| Ответит на все ваши 
+										| вопросы
+									li
+										| Расскажет о всех условиях 
+										| аренды, вы будете знать обо 
+										| всем перед заключением 
+										| договора
+									li
+										| Поможет с выбором авто
+				.char-application__form
+					.main-input-wrapper
+						input.main-input(type="tel")
+					.right
+						.img
+							img(src="../../images/Anna.png", alt="")
+						.text
+							| Вам перезвонит#[br]
+							span
+								| Анна Измайлова
+					button.main-button
+						span
+							| Рассчитать точную стоимость авто для вас

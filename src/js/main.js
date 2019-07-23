@@ -4,3 +4,5 @@ import './faq';
 import './map';
 import './popups';
 import './tabs';
+import './input-mask';
+import './slider';

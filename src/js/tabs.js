@@ -10,19 +10,3 @@ $('body').on('click', '.tab-nav a', function () {
 	}, 200);
 	return false;
 });
-
-
-
-
-// if ($('.credit-pane').hasClass('active')) {
-// 	$('.credit-leasing').css({
-// 		width: '670px',
-// 		height: '1225px',
-// 	});
-// }
-// else if ($('.leasing-pane').hasClass('active')) {
-// 	$('.credit-leasing').css({
-// 		width: '969px',
-// 		height: '690px',
-// 	});
-// };
