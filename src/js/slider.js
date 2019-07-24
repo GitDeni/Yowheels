@@ -52,3 +52,4 @@ $('.testim-prev').click(function () {
 	$('.photo-swiper .swiper-slide').removeClass('swiper-active-second');
 	$('.photo-swiper .swiper-slide-active').next().addClass('swiper-active-second');
 });
+export {swiper1, swiper2}

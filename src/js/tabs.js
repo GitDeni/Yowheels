@@ -1,4 +1,6 @@
 import { nfapply } from "q";
+import {swiper1} from "../js/slider";
+import {swiper2} from "../js/slider";
 
 // табы в модалке
 $('body').on('click', '.tab-nav a', function () {
