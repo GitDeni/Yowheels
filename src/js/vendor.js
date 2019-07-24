@@ -9,5 +9,5 @@ window.jQuery = $;
 
 require('ninelines-ua-parser');
 require('./vendor/jquery.magnific-popup.min');
-require('./vendor/jquery.inputmask.min');
+// require('./vendor/jquery.inputmask.min');
 require('./vendor/jquery.maskedinput.min');
