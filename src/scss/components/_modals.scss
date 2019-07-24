@@ -283,25 +283,6 @@
 				height: vw(21);
 			}
 		}
-
-		// .tab-pane {
-		// 	display: none;
-		// }
-
-		// .faded {
-		// 	opacity: 0;
-		// 	transition: all 1s;
-		// }
-
-		// .faded.in {
-		// 	opacity: 1;
-		// 	transition: all 1s;
-		// }
-
-		// .tab-pane.active {
-		// 	display: flex;
-		// 	justify-content: space-between;
-		// }
 	}
 
 	.tab-pane {
@@ -744,6 +725,65 @@
 			.main-button {
 				width: vw(474);
 			}
+		}
+	}
+}
+
+.users-modal {
+	width: vw(760);
+	height: vw(491);
+
+	.wrapper {
+		padding: vw(35) vw(40);
+	}
+
+	h3 {
+		margin-bottom: vw(35);
+	}
+
+	.user-card {
+		display: flex;
+		align-items: center;
+		margin-bottom: vw(30);
+		border: 1px solid #f5f5f5;
+		border-radius: vw(10);
+		padding: vw(20) vw(20);
+
+		.img {
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			margin-right: vw(20);
+			border-radius: 50%;
+			width: vw(80);
+			height: vw(80);
+			background-color: $sky-blue;
+
+			img {
+				width: vw(80);
+				height: vw(96);
+			}
+		}
+
+		.text {
+			font-family: $g-p-light;
+			font-size: vw(14);
+			line-height: vw(22);
+
+			span {
+				font-size: vw(18);
+				line-height: vw(30);
+			}
+		}
+	}
+
+	.application__form {
+		display: flex;
+		justify-content: space-between;
+
+		.main-input,
+		.main-button {
+			width: vw(315);
 		}
 	}
 }

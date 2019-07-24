@@ -1,6 +1,7 @@
 import { nfapply } from "q";
 import {swiper1} from "../js/slider";
 import {swiper2} from "../js/slider";
+import {swiper3} from "../js/slider";
 
 // табы в модалке
 $('body').on('click', '.tab-nav a', function () {
@@ -26,6 +27,7 @@ $('body').on('click', '.testim-tab-nav a', function () {
 	$(href).addClass('active');
 	swiper1.update();
 	swiper2.update();
+	swiper3.update();
 	setTimeout(function () {
 		$(href).addClass('in');
 	}, 200);

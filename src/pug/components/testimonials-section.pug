@@ -7,11 +7,11 @@ section.testimonials
 		.testim-tab-nav
 			ul
 				li
-					a(href="#video-pane").testim-main-button
+					a(href="#video-pane").testim-main-button.active
 						span
 							| видео
 				li
-					a(href="#photo-pane").testim-main-button.active
+					a(href="#photo-pane").testim-main-button
 						span
 							| фото
 				li
@@ -19,7 +19,7 @@ section.testimonials
 						span
 							| письменные
 		.tabs
-			.tab-pane.video-pane.faded#video-pane
+			.tab-pane.video-pane.faded.in.active#video-pane
 
 				.video-swiper
 					.swiper-wrapper
@@ -43,7 +43,7 @@ section.testimonials
 
 
 
-			.tab-pane.photo-pane.faded.in.active#photo-pane
+			.tab-pane.photo-pane.faded#photo-pane
 
 				.photo-swiper
 					.swiper-wrapper
@@ -63,8 +63,47 @@ section.testimonials
 							a.open-popup.video-link(href="#photo-1")
 								.main-circle
 									img(src="../../images/zoom.png", alt="")
+
+
+
+			.tab-pane.written-pane.faded#written-pane
+
+				.written-swiper
+					.swiper-wrapper
+						.swiper-slide.swiper-lazy(data-background="../../images/testimonial.png")
+							a.open-popup.video-link(href="#testimonial-1")
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
+						.swiper-slide.swiper-lazy(data-background="../../images/testimonial.png")
+							a.open-popup.video-link(href="#testimonial-1")
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
+						.swiper-slide.swiper-lazy(data-background="../../images/testimonial.png")
+							a.open-popup.video-link(href="#testimonial-1")
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
+						.swiper-slide.swiper-lazy(data-background="../../images/testimonial.png")
+							a.open-popup.video-link(href="#testimonial-1")
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
+						.swiper-slide.swiper-lazy(data-background="../../images/testimonial.png")
+							a.open-popup.video-link(href="#testimonial-1")
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
+						.swiper-slide.swiper-lazy(data-background="../../images/testimonial.png")
+							a.open-popup.video-link(href="#testimonial-1")
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
+						.swiper-slide.swiper-lazy(data-background="../../images/testimonial.png")
+							a.open-popup.video-link(href="#testimonial-1")
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
+						.swiper-slide.swiper-lazy(data-background="../../images/testimonial.png")
+							a.open-popup.video-link(href="#testimonial-1")
+								.main-circle
+									img(src="../../images/zoom.png", alt="")
 		.tab-footer
-			a(href="#").testim-main-button.open-popup
+			a(href="#users").testim-main-button.open-popup
 				span
 					| Узнать правду о yowheels от пользователей
 			.swiper-buttons

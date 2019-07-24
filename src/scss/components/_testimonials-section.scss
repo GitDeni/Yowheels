@@ -59,11 +59,6 @@
 		transition: all 0.3s ease-in-out;
 		cursor: pointer;
 
-		span {
-			position: relative;
-			z-index: 10;
-		}
-
 		&::before {
 			content: "";
 			position: absolute;
@@ -76,6 +71,11 @@
 			background-color: #49b2f8;
 			opacity: 0;
 			transition: all 0.3s ease-in-out;
+		}
+
+		span {
+			position: relative;
+			z-index: 10;
 		}
 
 		&:hover {
@@ -104,7 +104,8 @@
 	}
 
 	.video-swiper,
-	.photo-swiper {
+	.photo-swiper,
+	.written-swiper {
 		width: 100%;
 		height: vw(400);
 	}
@@ -146,6 +147,7 @@
 }
 
 .swiper-slide {
+	border-radius: vw(10);
 	padding: vw(10);
 	height: vw(370);
 	background-size: cover;
@@ -153,7 +155,8 @@
 }
 
 .video-swiper .swiper-slide,
-.photo-swiper .swiper-slide {
+.photo-swiper .swiper-slide,
+.written-swiper .swiper-slide {
 	position: relative;
 
 	&::before {
@@ -169,27 +172,29 @@
 }
 
 .video-swiper .swiper-slide-active,
-.photo-swiper .swiper-slide-active {
+.photo-swiper .swiper-slide-active,
+.written-swiper .swiper-slide-active {
 	&::before {
 		display: none;
 	}
 }
 
 .video-swiper .swiper-active-second,
-.photo-swiper .swiper-active-second {
+.photo-swiper .swiper-active-second,
+.written-swiper .swiper-active-second {
 	&::before {
 		display: none;
 	}
 }
 
 .video-link {
-	width: 100%;
-	height: 100%;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid #ffffff;
+	border: 1px solid #fff;
 	border-radius: vw(10);
+	width: 100%;
+	height: 100%;
 
 	&::before {
 		content: "";
@@ -207,17 +212,27 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		border-radius: 50%;
 		width: vw(90);
 		height: vw(90);
-		background-color: $sky-blue;
 		box-shadow: 0 15px 40px rgba(73, 178, 248, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
-		border-radius: 50%;
+		background-color: $sky-blue;
 
 		img {
 			width: vw(70);
 			height: vw(70);
 		}
 	}
+}
+
+.written-swiper .video-link::before {
+	left: vw(30);
+	width: vw(201);
+}
+
+.written-swiper .swiper-slide::after {
+	left: vw(15);
+	width: vw(231);
 }
 
 .swiper-slide::after {
@@ -231,4 +246,3 @@
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 	background-color: #3d444a;
 }
-
