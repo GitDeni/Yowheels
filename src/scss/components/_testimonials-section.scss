@@ -246,3 +246,16 @@
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 	background-color: #3d444a;
 }
+
+.testimonials .tab-pane {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	display: block;
+}
+
+.testimonials .tab-pane.active {
+	width: auto;
+	height: auto;
+	overflow: initial;
+}

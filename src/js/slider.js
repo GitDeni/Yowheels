@@ -50,21 +50,42 @@ var swiper3 = new Swiper ('.written-swiper', {
 // 	$('.video-swiper .swiper-slide-active').next().addClass('swiper-active-second');
 // }
 
-$('.video-swiper .swiper-slide-active').next().addClass('swiper-active-second');
-// $('.photo-swiper .swiper-slide-active').next().addClass('swiper-active-second');
-$('.testim-next').click(function () {
-	$('.video-swiper .swiper-slide').removeClass('swiper-active-second');
+function tabs() {
 	$('.video-swiper .swiper-slide-active').next().addClass('swiper-active-second');
-});
-$('.testim-prev').click(function () {
-	$('.video-swiper .swiper-slide').removeClass('swiper-active-second');
-	$('.video-swiper .swiper-slide-active').next().addClass('swiper-active-second');
-});
 
-// второй таб с отзывами
+	$('.written-swiper .swiper-slide-active').next().addClass('swiper-active-second');
+	$('.written-swiper .swiper-slide-active').next().next().addClass('swiper-active-second');
+	$('.written-swiper .swiper-slide-active').next().next().next().addClass('swiper-active-second');
+
+	$('.photo-swiper .swiper-slide-active').next().addClass('swiper-active-second');
+
+	$('.testim-next').click(function () {
+		$('.video-swiper .swiper-slide').removeClass('swiper-active-second');
+		$('.video-swiper .swiper-slide-active').next().addClass('swiper-active-second');
+
+		$('.photo-swiper .swiper-slide').removeClass('swiper-active-second');
+		$('.photo-swiper .swiper-slide-active').next().addClass('swiper-active-second');
+
+		$('.written-swiper .swiper-slide').removeClass('swiper-active-second');
+		$('.written-swiper .swiper-slide-active').next().addClass('swiper-active-second');
+		$('.written-swiper .swiper-slide-active').next().next().addClass('swiper-active-second');
+		$('.written-swiper .swiper-slide-active').next().next().next().addClass('swiper-active-second');
+	});
+	$('.testim-prev').click(function () {
+		$('.video-swiper .swiper-slide').removeClass('swiper-active-second');
+		$('.video-swiper .swiper-slide-active').next().addClass('swiper-active-second');
+
+		$('.photo-swiper .swiper-slide').removeClass('swiper-active-second');
+		$('.photo-swiper .swiper-slide-active').next().addClass('swiper-active-second');
+
+		$('.written-swiper .swiper-slide').removeClass('swiper-active-second');
+		$('.written-swiper .swiper-slide-active').next().addClass('swiper-active-second');
+		$('.written-swiper .swiper-slide-active').next().next().addClass('swiper-active-second');
+		$('.written-swiper .swiper-slide-active').next().next().next().addClass('swiper-active-second');
+	});
+}
 
 
-// $('.photo-swiper .swiper-slide-active').next().addClass('swiper-active-second')
 // $('.testim-next').click(function () {
 // 	$('.photo-swiper .swiper-slide').removeClass('swiper-active-second');
 // 	$('.photo-swiper .swiper-slide-active').next().addClass('swiper-active-second');
@@ -73,4 +94,4 @@ $('.testim-prev').click(function () {
 // 	$('.photo-swiper .swiper-slide').removeClass('swiper-active-second');
 // 	$('.photo-swiper .swiper-slide-active').next().addClass('swiper-active-second');
 // });
-export {swiper1, swiper2, swiper3}
+export {swiper1, swiper2, swiper3, tabs}
