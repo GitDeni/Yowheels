@@ -6,6 +6,7 @@ import './popups';
 import './slider';
 import './tabs';
 import './input-mask';
+import './how-tabs';
 
 
 var scene = document.getElementById('scene');

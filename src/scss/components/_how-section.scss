@@ -23,14 +23,166 @@
 	}
 
 	.road {
+		display: flex;
+		justify-content: space-between;
+		padding: vw(50) vw(60);
 		width: 100%;
 		height: vw(230);
 		background-image: url('../../images/road.png');
 		background-position: 0 bottom;
+		background-size: contain;
 		background-repeat: no-repeat;
+
+		.stage {
+			position: relative;
+			font-family: $g-p-light;
+			font-size: vw(14);
+			text-align: center;
+			color: #fff;
+
+			span {
+				opacity: 0.8;
+			}
+
+			img {
+				margin-right: vw(6);
+				width: vw(10);
+				height: vw(10);
+			}
+
+			// .abs-dot {
+			// 	position: absolute;
+			// 	left: 40%;
+			// 	top: vw(40);
+			// }
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: vw(50);
+				width: 1px;
+				height: vw(57);
+				background-color: #474f55;
+			}
+
+			// &::before {
+			// 	content: url('../../images/road-pin.png');
+			// 	position: absolute;
+			// 	left: 50%;
+			// 	top: vw(40);
+			// }
+		}
+
+		.stage.blurred {
+			opacity: 0.3;
+		}
 	}
 
-	.how-pane-1 {
-		
+	.tabs {
+		width: 100%;
 	}
+
+	.tab-pane {
+		.content {
+			padding: vw(100) vw(40);
+			width: 60%;
+		}
+
+		.image {
+			position: relative;
+		}
+	}
+
+	h4 {
+		position: relative;
+		margin-bottom: vw(15);
+		font-family: $g-p-light;
+		font-size: vw(24);
+		text-transform: uppercase;
+		color: #fff;
+
+		&::before {
+			content: url('../../images/blue-ellipse.png');
+			position: absolute;
+			left: vw(-40);
+		}
+	}
+
+	.tab-subtitle {
+		font-family: $g-p-light;
+		font-size: vw(16);
+		line-height: vw(28);
+		color: #fff;
+		margin-bottom: vw(45);
+
+		span {
+			font-family: $g-p-bold;
+		}
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: vw(50);
+		padding-right: vw(60);
+
+		.main-button {
+			width: vw(240);
+		}
+
+		.white-blue-button {
+			width: vw(290);
+		}
+	}
+
+	.how-next {
+		position: relative;
+		outline: none;
+		border: none;
+		font-family: $g-p-medium;
+		font-size: vw(12);
+		text-transform: uppercase;
+		color: #fff;
+		background-color: transparent;
+		opacity: 0.6;
+		cursor: pointer;
+
+		&::after {
+			content: url('../../images/how-arrow.png');
+			position: absolute;
+			right: vw(-70);
+			top: 0;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.how-1 {
+		position: absolute;
+		right: vw(-40);
+		top: vw(50);
+		width: vw(536);
+		height: vw(354);
+	}
+
+	.how-2 {
+		position: absolute;
+		right: vw(-40);
+		top: vw(30);
+		width: vw(456);
+		height: vw(445);
+	}
+
+	// .how-1-tree {
+	// 	left: vw(20);
+	// }
+
+	// .how-tree {
+	// 	position: absolute;
+	// 	width: vw(373);
+	// 	height: vw(281);
+	// }
 }

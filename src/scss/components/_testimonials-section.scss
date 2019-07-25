@@ -248,14 +248,14 @@
 }
 
 .testimonials .tab-pane {
+	display: block;
+	overflow: hidden;
 	width: 0;
 	height: 0;
-	overflow: hidden;
-	display: block;
 }
 
 .testimonials .tab-pane.active {
+	overflow: initial;
 	width: auto;
 	height: auto;
-	overflow: initial;
 }
