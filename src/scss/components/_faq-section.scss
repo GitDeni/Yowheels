@@ -148,6 +148,7 @@
 				font-family: $g-p-light;
 				font-size: vw(14);
 				line-height: vw(35);
+				text-align: center;
 			}
 
 			img {
@@ -167,6 +168,29 @@
 				outline: none;
 				border: none;
 			}
+
+			.main-input {
+				width: vw(320);
+				margin-bottom: vw(20);
+			}
+		}
+
+		.faq-tab-1 {
+			// display: none;
+		}
+
+		.faq-tab-2 {
+			color: #fff;
+			background-color: #121d25;
+
+			&::after {
+				background-color: #121d25;
+			}
+			// display: none;
+		}
+
+		.tab-pane.dn {
+			display: none;
 		}
 	}
 }

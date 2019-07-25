@@ -31,9 +31,49 @@
 						img(src="../../images/reload.png", alt="")
 					span
 						| что еще входит
+			form.consult__form
+				.main-input-wrapper
+					input(type="tel" maxlength="19" placeholder="+375  (XX) XXX-XX-XX").main-input
+				button.main-button(type="submit")
+					span
+						| Оставить заявку на бесплатную консультацию
+
+
+	.modal.mfp-with-anim.consult#consult1
+		a.popup-close
+		.wrapper
+			.consult__heading
+				h3
+					| Оставьте заявку на 
+					span
+						| бесплатную консультацию 
+					| от менеджера
+				| Консультация менеджера займет не более 10 минут
+			.consult__main
+				.manager
+					.img
+						img(src="../../images/Anna.png", alt="")
+					.name
+						| Вам перезвонит#[br]
+						span
+							| Анна Измайлова
+				.middle
+					img(src="../../images/chat.png", alt="")
+					.text
+						| Расскажет обо всех 
+						span
+							| условиях работы в такси #[br]
+							| и аренды авто, 
+						| вы будете знать обо всем #[br]
+						| перед заключением договора
+				a.what-else
+					.circle
+						img(src="../../images/reload.png", alt="")
+					span
+						| что еще входит
 			.consult__form
 				.main-input-wrapper
-					input(type="tel" maxlength="16" placeholder="+375  (XX) XXX-XX-XX").main-input
+					input(type="tel" maxlength="19" placeholder="+375  (XX) XXX-XX-XX").main-input
 				button.main-button(type="submit")
 					span
 						| Оставить заявку на бесплатную консультацию
@@ -113,7 +153,7 @@
 								| стоимость 
 								| авто и размер платежей 
 							| для вас
-						a.blue-link.open-popup
+						.blue-link
 							span.blue-link-span
 								| + консультацию от менеджера
 							.consult-tip
@@ -138,9 +178,9 @@
 							| Вам перезвонит#[br]
 							span
 								| Анна Измайлова
-				.payment-application__form
+				form.payment-application__form
 					.main-input-wrapper
-						input.main-input(type="tel" maxlength="16")
+						input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
 					button.main-button(type="submit")
 						span
 							| Рассчитать точную стоимость авто для вас
@@ -274,7 +314,7 @@
 								| и выбор авто
 							.application__form
 								.main-input-wrapper
-									input.main-input(type="tel" maxlength="16")
+									input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
 								button.main-button(type="submit")
 									span
 										| Оставить заявку
@@ -333,7 +373,7 @@
 								| и выбор авто
 							.application__form
 								.main-input-wrapper
-									input.main-input(type="tel" maxlength="16")
+									input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
 								button.main-button(type="submit")
 									span
 										| Оставить заявку
@@ -360,7 +400,7 @@
 							| и выбор авто
 						.application__form
 							.main-input-wrapper
-								input.main-input(type="tel" maxlength="16")
+								input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
 							button.main-button(type="submit")
 								span
 									| Оставить заявку
@@ -368,8 +408,306 @@
 	.modal.mfp-with-anim.characteristics#characteristics
 		a.popup-close
 		.wrapper
-			h3
-				| fnbvjfbvobv jfcnbb 
+			.char-header
+				.char-slider
+					.swiper-wrapper
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+				.descr
+					.d-h
+						| Volkswagen Polo #[br]
+						| Sedan Сonnect
+					.price-box
+						.left
+							| от
+						span
+							| 41
+						.right
+							| руб.#[br]
+							| день
+					.details-box
+						.detail
+							.detail-h
+								| Год:
+							.detail-val
+								img(src="../../images/dot.png", alt="")
+								| 2019
+						.detail
+							.detail-h
+								| Пробег:
+							.detail-val
+								img(src="../../images/dot.png", alt="")
+								| 200 км
+						.detail
+							.detail-h
+								| Состояние:
+							.detail-val
+								img(src="../../images/dot.png", alt="")
+								| Новый
+				.char-slider-buttons
+					.char-prev.char-button
+						img(src="../../images/char-prev.png", alt="")
+					.char-next.char-button
+						img(src="../../images/char-next.png", alt="")
+			.details-box.sb
+				.detail
+					.detail-h
+						| Двигатель:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Бензин, 90 л.с.
+				.detail
+					.detail-h
+						| Коробка:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Автомат
+				.detail
+					.detail-h
+						| Привод:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Передний
+				.detail
+					.detail-h
+						| Салон:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Темный
+				.detail
+					.detail-h
+						| Цвет:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Синий
+			.complect
+				| Комплектация
+				.complect-tab-nav
+					ul
+						li
+							a(href="#interior").charact-a.active
+								img(src="../../images/interior.png", alt="")
+								| Интерьер
+								span
+									| 4 опции
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6"><g><image width="13" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAYAAAAYLBS/AAAAi0lEQVQoU4XNsQqBYRQG4P9PGS0yuwI3YjAoMVpMFIvFBVgsFJPFSMqguBGXIYtRKc8Z/voGcer5OnXOe748y7ILO478q46Ffu6pc+bA/EdqZtalFaGoCnvuDHgl4bJ+S40ezyIUOyVWNGjzoMqJG2PesZiGiuMjzZApCzask5+/hmLeZMmEaxqI/gMqNxTb6MoNFgAAAABJRU5ErkJggg=="/></g></svg>
+						li
+							a(href="#exterior").charact-a
+								img(src="../../images/interior.png", alt="")
+								| Экстерьер
+								span
+									| 4 опции
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6"><g><image width="13" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAYAAAAYLBS/AAAAi0lEQVQoU4XNsQqBYRQG4P9PGS0yuwI3YjAoMVpMFIvFBVgsFJPFSMqguBGXIYtRKc8Z/voGcer5OnXOe748y7ILO478q46Ffu6pc+bA/EdqZtalFaGoCnvuDHgl4bJ+S40ezyIUOyVWNGjzoMqJG2PesZiGiuMjzZApCzask5+/hmLeZMmEaxqI/gMqNxTb6MoNFgAAAABJRU5ErkJggg=="/></g></svg>
+						li
+							a(href="#comfort").charact-a
+								img(src="../../images/comfort.png", alt="")
+								| Комфорт
+								span
+									| 4 опции
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6"><g><image width="13" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAYAAAAYLBS/AAAAi0lEQVQoU4XNsQqBYRQG4P9PGS0yuwI3YjAoMVpMFIvFBVgsFJPFSMqguBGXIYtRKc8Z/voGcer5OnXOe748y7ILO478q46Ffu6pc+bA/EdqZtalFaGoCnvuDHgl4bJ+S40ezyIUOyVWNGjzoMqJG2PesZiGiuMjzZApCzask5+/hmLeZMmEaxqI/gMqNxTb6MoNFgAAAABJRU5ErkJggg=="/></g></svg>
+						li
+							a(href="#safety").charact-a
+								img(src="../../images/safety.png", alt="")
+								| Безопасность
+								span
+									| 4 опции
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6"><g><image width="13" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAYAAAAYLBS/AAAAi0lEQVQoU4XNsQqBYRQG4P9PGS0yuwI3YjAoMVpMFIvFBVgsFJPFSMqguBGXIYtRKc8Z/voGcer5OnXOe748y7ILO478q46Ffu6pc+bA/EdqZtalFaGoCnvuDHgl4bJ+S40ezyIUOyVWNGjzoMqJG2PesZiGiuMjzZApCzask5+/hmLeZMmEaxqI/gMqNxTb6MoNFgAAAABJRU5ErkJggg=="/></g></svg>
+						li
+							a(href="#tech").charact-a
+								img(src="../../images/tech.png", alt="")
+								| Технические #[br]
+								| характеристики
+								span
+									| 4 опции
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6"><g><image width="13" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAYAAAAYLBS/AAAAi0lEQVQoU4XNsQqBYRQG4P9PGS0yuwI3YjAoMVpMFIvFBVgsFJPFSMqguBGXIYtRKc8Z/voGcer5OnXOe748y7ILO478q46Ffu6pc+bA/EdqZtalFaGoCnvuDHgl4bJ+S40ezyIUOyVWNGjzoMqJG2PesZiGiuMjzZApCzask5+/hmLeZMmEaxqI/gMqNxTb6MoNFgAAAABJRU5ErkJggg=="/></g></svg>
+				.tabs
+					.tab-pane.interior-pane.faded#interior
+						ul.main-ul
+							li
+								| Тканевый салон, черный
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+										//- .hover-tip
+										//- 	ul
+										//- 		li
+										//- 			| Аптечка
+										//- 		li
+										//- 			| Огнетушитель
+										//- 		li
+										//- 			| Набор&nbspинструментов
+										//- 		li
+										//- 			| Коврики
+										//- 		li
+										//- 			| Запасное&nbspколесо
+					.tab-pane.exterior-pane.faded.in.active#exterior
+						ul.main-ul
+							li
+								| Экстерьер
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+					.tab-pane.comfort-pane.faded#comfort
+						ul.main-ul
+							li
+								| Комфорт
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+					.tab-pane.safety-pane.faded#safety
+						ul.main-ul
+							li
+								| Безопасность
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+					.tab-pane.tech-pane.faded#tech
+						ul.main-ul
+							li
+								| Технические
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+
+
+						
+				
+
+
+
+
+
 			.char-application
 				.char-application__heading
 					.left
@@ -379,7 +717,7 @@
 								| стоимость 
 								| авто и размер платежей 
 							| для вас
-						a.blue-link
+						.blue-link
 							span.blue-link-span
 								| + консультацию от менеджера
 							.consult-tip
@@ -399,7 +737,7 @@
 										| Поможет с выбором авто
 				.char-application__form
 					.main-input-wrapper
-						input.main-input(type="tel" maxlength="16")
+						input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
 					.right
 						.img
 							img(src="../../images/Anna.png", alt="")
@@ -410,6 +748,51 @@
 					button.main-button(type="submit")
 						span
 							| Рассчитать точную стоимость авто для вас
+
+
+	.modal.mfp-with-anim.price-consult#price-consult
+		.wrapper
+			.price-consult-application
+				.price-consult-application__heading
+					.left
+						h3
+							| Рассчитайте точную 
+							span
+								| стоимость 
+								| авто и размер платежей 
+							| для вас
+						.blue-link
+							span.blue-link-span
+								| + консультацию от менеджера
+							.consult-tip
+								ul
+									li
+										| Совершит онлайн проверку 
+										| для одобрения аренды авто
+									li
+										| Ответит на все ваши 
+										| вопросы
+									li
+										| Расскажет о всех условиях 
+										| аренды, вы будете знать обо 
+										| всем перед заключением 
+										| договора
+									li
+										| Поможет с выбором авто
+				form.price-consult-application__form
+					.main-input-wrapper
+						input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
+					.right
+						.img
+							img(src="../../images/Anna.png", alt="")
+						.text
+							| Вам перезвонит#[br]
+							span
+								| Анна Измайлова
+					button.main-button(type="submit")
+						span
+							| Рассчитать точную стоимость авто для вас
+
 
 
 	.modal.mfp-with-anim.users-modal#users
@@ -435,7 +818,7 @@
 					| пользователей
 				.application__form
 					.main-input-wrapper
-						input.main-input(type="tel" maxlength="16")
+						input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
 					button.main-button(type="submit")
 						span
 							| Оставить заявку

@@ -46,9 +46,22 @@ var swiper3 = new Swiper ('.written-swiper', {
 	},
 })
 
-// if ($('.video-pane').hasClass('active')) {
-// 	$('.video-swiper .swiper-slide-active').next().addClass('swiper-active-second');
-// }
+
+var swiper4 = new Swiper ('.char-slider', {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	simulateTouch: false,
+	lazy: {
+		loadPrevNext: true,
+		loadOnTransitionStart: true,
+	},
+	// Navigation arrows
+	navigation: {
+		nextEl: '.char-next',
+		prevEl: '.char-prev',
+	},
+})
+
 
 function tabs() {
 	$('.video-swiper .swiper-slide-active').next().addClass('swiper-active-second');
@@ -86,12 +99,4 @@ function tabs() {
 }
 
 
-// $('.testim-next').click(function () {
-// 	$('.photo-swiper .swiper-slide').removeClass('swiper-active-second');
-// 	$('.photo-swiper .swiper-slide-active').next().addClass('swiper-active-second');
-// });
-// $('.testim-prev').click(function () {
-// 	$('.photo-swiper .swiper-slide').removeClass('swiper-active-second');
-// 	$('.photo-swiper .swiper-slide-active').next().addClass('swiper-active-second');
-// });
 export {swiper1, swiper2, swiper3, tabs}

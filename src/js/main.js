@@ -7,6 +7,7 @@ import './slider';
 import './tabs';
 import './input-mask';
 import './how-tabs';
+import './faq-form';
 
 
 var scene = document.getElementById('scene');

@@ -225,8 +225,8 @@ h2::before {
 
 .circle-link {
 	position: absolute;
-	left: vw(-25);
-	top: vw(185);
+	left: vw(60);
+	top: vw(230);
 	display: inline-flex;
 	flex-flow: column;
 	align-content: flex-end;
@@ -241,6 +241,7 @@ h2::before {
 	text-align: center;
 	color: #09263a;
 	background-color: #fff;
+	cursor: pointer;
 
 	img {
 		margin: 0 auto vw(5);

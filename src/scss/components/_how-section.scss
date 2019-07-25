@@ -23,6 +23,7 @@
 	}
 
 	.road {
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 		padding: vw(50) vw(60);
@@ -30,15 +31,21 @@
 		height: vw(230);
 		background-image: url('../../images/road.png');
 		background-position: 0 bottom;
-		background-size: contain;
+		// background-size: contain;
 		background-repeat: no-repeat;
 
 		.stage {
+			display: flex;
+			flex-flow: column;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: vw(30);
 			position: relative;
 			font-family: $g-p-light;
 			font-size: vw(14);
 			text-align: center;
 			color: #fff;
+			transition: all 0.3s ease-in-out;
 
 			span {
 				opacity: 0.8;
@@ -50,32 +57,64 @@
 				height: vw(10);
 			}
 
-			// .abs-dot {
-			// 	position: absolute;
-			// 	left: 40%;
-			// 	top: vw(40);
-			// }
-
-			&::after {
-				content: "";
-				position: absolute;
-				left: 50%;
-				top: vw(50);
+			.how-pin {
 				width: 1px;
-				height: vw(57);
+				height: vw(34);
 				background-color: #474f55;
 			}
 
-			// &::before {
-			// 	content: url('../../images/road-pin.png');
-			// 	position: absolute;
-			// 	left: 50%;
-			// 	top: vw(40);
-			// }
+			&::after {
+				content: url('../../images/dot.png');
+				position: absolute;
+				top: vw(55);
+				width: vw(5);
+				height: vw(5);
+				// box-shadow: 0 5px 10px rgba(77, 180, 248, 0.6);
+				transition: all 0.3s ease-in-out;
+			}
 		}
 
 		.stage.blurred {
 			opacity: 0.3;
+
+			&::after {
+				display: none;
+			}
+		}
+
+		.carrr {
+			position: absolute;
+			transition: all 0.3s ease-in-out;
+
+			img {
+				width: vw(185);
+				height: vw(54);
+			}
+		}
+
+		.carrr.mark-0 {
+			left: vw(40);
+			bottom: vw(20);
+		}
+
+		.carrr.mark-1 {
+			left: vw(230);
+			bottom: vw(20);
+		}
+
+		.carrr.mark-2 {
+			left: vw(490);
+			bottom: vw(20);
+		}
+
+		.carrr.mark-3 {
+			left: vw(750);
+			bottom: vw(20);
+		}
+
+		.carrr.mark-4 {
+			left: vw(980);
+			bottom: vw(20);
 		}
 	}
 
@@ -140,6 +179,7 @@
 		position: relative;
 		outline: none;
 		border: none;
+		padding-bottom: vw(5);
 		font-family: $g-p-medium;
 		font-size: vw(12);
 		text-transform: uppercase;
@@ -157,6 +197,7 @@
 
 		&:hover {
 			opacity: 1;
+			border-bottom: 1px dashed #fff;
 		}
 	}
 

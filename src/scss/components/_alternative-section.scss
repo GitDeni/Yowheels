@@ -1,6 +1,6 @@
 .alternative {
 	padding-top: vw(130);
-	padding-bottom: vw(105);
+	padding-bottom: vw(95);
 
 	.alt-header {
 		display: flex;
@@ -74,6 +74,7 @@
 	}
 
 	.alt-content {
+		position: relative;
 		display: flex;
 		justify-content: flex-start;
 		width: 100%;
@@ -135,12 +136,11 @@
 		}
 
 		.absolutes {
-			position: relative;
+			position: absolute;
+			left: vw(550);
+			top: vw(-50);
 
 			.paper {
-				position: absolute;
-				// left: vw(-110);
-				// top: vw(-50);
 				width: vw(564);
 				height: vw(603);
 			}

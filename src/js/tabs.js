@@ -39,3 +39,15 @@ $('body').on('click', '.testim-tab-nav a', function () {
 	return false;
 });
 
+// табы в модалке по характеристикам
+$('body').on('click', '.complect-tab-nav a', function () {
+	$('.complect-tab-nav a').removeClass('active');
+	$(this).addClass('active');
+	var href = $(this).attr('href');
+	$('.tab-pane').removeClass('active').removeClass('in');
+	$(href).addClass('active');
+	setTimeout(function () {
+		$(href).addClass('in');
+	}, 200);
+	return false;
+});

@@ -49,14 +49,28 @@ section.faq#faq
 						p
 							| Все автомобили из наличия уже застрахованы, пройдена диагностика и полное 
 							| тех. обслуживание.
-			aside.another-question
-				h3
-					| У вас другой#[br]
-					| вопрос?
-				.question-subtitle
-					| Задайте его нашему менеджеру
-				img(src="../../images/question-guy.png", alt="")
-				textarea.main-textarea(placeholder="Введите ваш вопрос")
-				button.main-button(type="submit")
-					span
-						| задать вопрос менеджеру
+			aside
+				form.faq-form
+					.tabs
+						.tab-pane.faded.in.active.faq-tab-1.another-question
+							h3
+								| У вас другой#[br]
+								| вопрос?
+							.question-subtitle
+								| Задайте его нашему менеджеру
+							img(src="../../images/question-guy.png", alt="")
+							textarea.main-textarea(placeholder="Введите ваш вопрос")
+							button.main-button.next-question
+								span
+									| задать вопрос менеджеру
+						.tab-pane.faded.faq-tab-2.dn.another-question
+							h3
+								| Введите ваш номер#[br]
+							.question-subtitle
+								| Чтобы Евгений смог ответить #[br]
+								| на ваш вопрос
+							img(src="../../images/question-guy.png", alt="")
+							input(type="tel" maxlength="19" placeholder="+375  (XX) XXX-XX-XX").main-input
+							button.main-button.form-submit(type="submit")
+								span
+									| задать вопрос менеджеру
