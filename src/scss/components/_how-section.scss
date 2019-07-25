@@ -185,4 +185,53 @@
 	// 	width: vw(373);
 	// 	height: vw(281);
 	// }
+
+	.name {
+		position: absolute;
+		left: vw(-470);
+		top: vw(245);
+		z-index: 5;
+		border-radius: vw(10);
+		padding: vw(15) vw(25);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+		font-size: vw(14);
+		line-height: vw(20);
+		background-color: #fff;
+	}
+
+	.job-title {
+		position: absolute;
+		left: vw(-400);
+		top: vw(280);
+		border-radius: vw(10);
+		padding: vw(20) vw(15) vw(15);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+		font-size: vw(13);
+		line-height: vw(20);
+		background-color: #fff;
+	}
+
+	.how-3 {
+		width: vw(584);
+		height: vw(458);
+		position: absolute;
+		right: vw(-130);
+		top: vw(45);
+	}
+
+	.how-4 {
+		width: vw(541);
+		height: vw(408);
+		position: absolute;
+		right: vw(-30);
+		top: vw(65);
+	}
+
+	.how-5 {
+		width: vw(825);
+		height: vw(489);
+		position: absolute;
+		right: vw(-325);
+		top: vw(30);
+	}
 }
