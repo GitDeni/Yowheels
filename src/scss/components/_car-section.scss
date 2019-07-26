@@ -26,7 +26,7 @@
 
 			@include mobile {
 				margin-bottom: vmin(10);
-				font-size: vmin(38);
+				font-size: vmin(36);
 				line-height: vmin(55);
 				letter-spacing: vmin(1.5);
 			}
@@ -50,6 +50,7 @@
 			}
 
 			@include mobile {
+				padding-left: 0;
 				padding-bottom: vmin(40);
 				font-size: vmin(18);
 				line-height: vmin(30);
@@ -97,8 +98,8 @@
 
 			@include mobile {
 				margin-top: vmin(35);
-				padding: vmin(24) vmin(35);
-				width: vmin(370);
+				padding: vmin(24) vmin(15);
+				width: vmin(300);
 				height: vmin(100);
 				font-size: vmin(14);
 				line-height: vmin(20);

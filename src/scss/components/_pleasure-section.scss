@@ -40,7 +40,7 @@
 
 		@include mobile {
 			flex-wrap: wrap;
-			padding-left: vmin(20);
+			padding-left: 0;
 		}
 
 		.col-l,
@@ -76,7 +76,8 @@
 					background-repeat: no-repeat;
 
 					@include mobile {
-						left: vmin(-30);
+						left: vmin(-10);
+						top: vmin(-30);
 						width: vmin(80);
 						height: vmin(95);
 					}

@@ -79,7 +79,7 @@
 	cursor: pointer;
 
 	@include mobile {
-		right: vmin(-80);
+		right: 40%;
 		top: vmin(-60);
 		width: vmin(40);
 		height: vmin(40);
@@ -93,7 +93,7 @@
 
 	@include mobile {
 		width: 100%;
-		height: vmin(427);
+		height: vmin(827);
 	}
 
 	.wrapper {
@@ -129,15 +129,21 @@
 		padding-right: vw(90);
 
 		@include mobile {
-			margin-bottom: vmin(80);
+			flex-wrap: wrap;
+			margin-bottom: vmin(30);
 			padding-top: vmin(30);
-			padding-right: vmin(90);
+			padding-right: 0;
 		}
 
 		.manager {
 			display: flex;
 			align-items: center;
 			margin-right: vw(20);
+
+			@include mobile {
+				flex-wrap: wrap;
+				margin-right: 0;
+			}
 
 			.img {
 				display: flex;
@@ -150,20 +156,41 @@
 				text-align: center;
 				background-color: #49b2f8;
 
+				@include mobile {
+					margin-right: vmin(10);
+					margin-bottom: vmin(20);
+					width: vmin(64);
+					height: vmin(64);
+				}
+
 				img {
 					width: vw(55);
 					height: vw(70);
+
+					@include mobile {
+						width: vmin(55);
+						height: vmin(70);
+					}
 				}
 			}
 
 			.name {
 				font-size: vw(12);
 
+				@include mobile {
+					font-size: vmin(12);
+				}
+
 				span {
 					font-family: $g-p-medium;
 					font-size: vw(13);
 					line-height: vw(22);
 					text-transform: uppercase;
+
+					@include mobile {
+						font-size: vmin(13);
+						line-height: vmin(22);
+					}
 				}
 			}
 		}
@@ -175,10 +202,21 @@
 			border-radius: vw(10);
 			padding: vw(12);
 
+			@include mobile {
+				border-radius: vmin(10);
+				padding: vmin(12);
+			}
+
 			img {
 				margin-right: vw(20);
 				width: vw(35);
 				height: vw(35);
+
+				@include mobile {
+					margin: 0 auto vmin(10);
+					width: vmin(35);
+					height: vmin(35);
+				}
 			}
 
 			.text {
@@ -186,8 +224,19 @@
 				font-size: vw(14);
 				line-height: vw(20);
 
+				@include mobile {
+					font-size: vmin(14);
+					line-height: vmin(20);
+				}
+
 				span {
 					font-family: $g-p-medium;
+
+					// br {
+					// 	@include mobile {
+					// 		display: none;
+					// 	}
+					// }
 				}
 			}
 		}
@@ -196,6 +245,10 @@
 			display: flex;
 			align-items: center;
 			cursor: pointer;
+
+			@include mobile {
+				flex-wrap: wrap;
+			}
 
 			.circle {
 				display: flex;
@@ -207,9 +260,20 @@
 				height: vw(61);
 				box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
 
+				@include mobile {
+					padding: vmin(16) vmin(18) vmin(15) vmin(17);
+					width: vmin(61);
+					height: vmin(61);
+				}
+
 				img {
 					width: vw(26);
 					height: vw(30);
+
+					@include mobile {
+						width: vmin(26);
+						height: vmin(30);
+					}
 				}
 			}
 
@@ -218,6 +282,11 @@
 				font-size: vw(13);
 				line-height: vw(18);
 				text-transform: uppercase;
+
+				@include mobile {
+					font-size: vmin(13);
+					line-height: vmin(18);
+				}
 			}
 
 			&:hover span {
@@ -235,8 +304,23 @@
 		justify-content: space-between;
 		padding-right: vw(20);
 
+		@include mobile {
+			flex-wrap: wrap;
+		}
+
+		.main-input {
+			@include mobile {
+				width: vmin(300);
+				margin-bottom: vmin(20);
+			}
+		}
+
 		.main-button {
 			width: vw(550);
+
+			@include mobile {
+				width: vmin(300);
+			}
 		}
 	}
 }
@@ -245,6 +329,10 @@
 .credit-leasing {
 	.wrapper {
 		padding: vw(35);
+
+		@include mobile {
+			padding: vmin(35);
+		}
 	}
 
 	&__heading {
@@ -254,6 +342,16 @@
 			display: flex;
 			justify-content: space-between;
 			margin-bottom: vw(20);
+
+			h3 {
+				@include mobile {
+					margin-right: vmin(30);
+				}
+			}
+
+			@include mobile {
+				margin-bottom: vmin(20);
+			}
 		}
 
 		.tab-nav {
@@ -261,10 +359,19 @@
 				display: flex;
 				list-style: none;
 
+				@include mobile {
+					flex-wrap: wrap;
+				}
+
 				li {
 					position: relative;
 					display: inline-block;
 					margin-right: vw(30);
+
+					@include mobile {
+						margin-right: 0;
+						margin-bottom: vmin(20);
+					}
 
 					a {
 						display: inline-block;
@@ -276,6 +383,12 @@
 						color: $main-font-color;
 						opacity: 0.5;
 
+						@include mobile {
+							margin-right: 0;
+							font-size: vmin(24);
+							letter-spacing: vmin(0.9);
+						}
+
 						&::before {
 							content: "";
 							position: absolute;
@@ -284,6 +397,11 @@
 							width: vw(20);
 							height: 1px;
 							background-color: #b6b8ba;
+
+							@include mobile {
+								width: vmin(20);
+								left: vmin(-30);
+							}
 						}
 
 						&:hover,
@@ -307,16 +425,30 @@
 	.tabs {
 		margin-bottom: vw(70);
 
+		@include mobile {
+			margin-bottom: vmin(70);
+		}
+
 		.sub-heading {
 			display: flex;
 			align-items: center;
 			font-family: $g-p-bold;
 			font-size: vw(18);
 
+			@include mobile {
+				font-size: vmin(18);
+			}
+
 			img {
 				margin-right: vw(12);
 				width: vw(25);
 				height: vw(21);
+
+				@include mobile {
+					margin-right: vmin(12);
+					width: vmin(25);
+					height: vmin(21);
+				}
 			}
 		}
 	}
@@ -330,6 +462,10 @@
 			flex-wrap: wrap;
 			justify-content: space-between;
 			margin-bottom: vw(50);
+
+			@include mobile {
+				margin-bottom: vmin(50);
+			}
 		}
 
 		.box {
@@ -340,12 +476,30 @@
 			padding: vw(22);
 			width: vw(270);
 
+			@include mobile {
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-top: vmin(25);
+				border-radius: vmin(10);
+				padding: vmin(22);
+				width: 45%;
+			}
+
 			.img {
 				margin-right: vw(17);
+
+				@include mobile {
+					margin-right: 0;
+				}
 
 				img {
 					width: vw(37);
 					height: vw(37);
+
+					@include mobile {
+						width: vmin(37);
+						height: vmin(37);
+					}
 				}
 			}
 
@@ -353,6 +507,12 @@
 				font-family: $g-p-light;
 				font-size: vw(14);
 				line-height: vw(20);
+
+				@include mobile {
+					text-align: center;
+					font-size: vmin(14);
+					line-height: vmin(20);
+				}
 			}
 		}
 	}
@@ -363,15 +523,29 @@
 			h3 {
 				margin-bottom: vw(35);
 				width: 70%;
+
+				@include mobile {
+					margin-bottom: vmin(35);
+					width: 100%;
+				}
 			}
 
 			&__form {
 				display: flex;
 				justify-content: space-between;
 
+				@include mobile {
+					flex-wrap: wrap;
+				}
+
 				.main-button,
 				.main-input {
 					width: vw(419);
+
+					@include mobile {
+						margin-bottom: vmin(20);
+						width: vmin(290);
+					}
 				}
 			}
 		}
@@ -382,6 +556,11 @@
 			margin-top: vw(20);
 			padding: vw(15) vw(15);
 
+			@include mobile {
+				margin-top: vmin(20);
+				padding: vmin(15) vmin(15);
+			}
+
 			.bold {
 				font-family: $g-p-bold;
 			}
@@ -391,15 +570,28 @@
 			h3 {
 				margin-bottom: vw(35);
 				width: 100%;
+
+				@include mobile {
+					margin-bottom: vmin(35);
+				}
 			}
 
 			&__form {
 				display: flex;
 				justify-content: space-between;
 
+				@include mobile {
+					flex-wrap: wrap;
+				}
+
 				.main-button,
 				.main-input {
 					width: vw(270);
+
+					@include mobile {
+						margin-bottom: vmin(20);
+						width: vmin(270);
+					}
 				}
 			}
 		}
@@ -416,10 +608,23 @@
 		border-radius: vw(10);
 		padding: vw(20);
 
+		@include mobile {
+			margin-top: vmin(10);
+			margin-bottom: vmin(30);
+			border-radius: vmin(10);
+			padding: vmin(20);
+		}
+
 		img {
 			margin-right: vw(20);
 			width: vw(80);
 			height: vw(82);
+
+			@include mobile {
+				margin-right: vmin(20);
+				width: vmin(80);
+				height: vmin(82);
+			}
 		}
 
 		.rent-text {
@@ -428,6 +633,10 @@
 			&-h {
 				font-size: vw(18);
 
+				@include mobile {
+					font-size: vmin(18);
+				}
+
 				span {
 					font-family: $g-p-bold;
 				}
@@ -435,6 +644,10 @@
 
 			&-p {
 				font-size: vw(14);
+
+				@include mobile {
+					font-size: vmin(14);
+				}
 			}
 		}
 	}
@@ -444,6 +657,11 @@
 .credit-leasing[data-id="#credit-pane"] {
 	width: vw(670);
 	height: vw(1170);
+
+	@include mobile {
+		width: 100%;
+		height: vmin(2030);
+	}
 
 	.bottom-h {
 		width: 100%;
@@ -464,10 +682,21 @@
 		font-family: $g-p-bold;
 		font-size: vw(18);
 
+		@include mobile {
+			width: 100%;
+			font-size: vmin(18);
+		}
+
 		img {
 			margin-right: vw(12);
 			width: vw(25);
 			height: vw(21);
+
+			@include mobile {
+				margin-right: vmin(12);
+				width: vmin(25);
+				height: vmin(21);
+			}
 		}
 	}
 }
@@ -476,8 +705,17 @@
 	width: vw(969);
 	height: vw(690);
 
+	@include mobile {
+		width: 100%;
+		height: vmin(1400);
+	}
+
 	.bottom-h {
 		width: 72%;
+
+		@include mobile {
+			width: 100%;
+		}
 	}
 }
 
@@ -485,19 +723,37 @@
 	width: vw(760);
 	height: vw(521);
 
+	@include mobile {
+		width: 100%;
+		height: vmin(950);
+	}
+
 	.application {
 		h3 {
 			margin-bottom: vw(35);
 			width: 100%;
+
+			@include mobile {
+				margin-bottom: vmin(35);
+			}
 		}
 
 		&__form {
 			display: flex;
 			justify-content: space-between;
 
+			@include mobile {
+				flex-wrap: wrap;
+			}
+
 			.main-button,
 			.main-input {
 				width: vw(315);
+
+				@include mobile {
+					width: vmin(290);
+					margin-bottom: vmin(20);
+				}
 			}
 		}
 	}
@@ -509,19 +765,38 @@
 	height: vw(906);
 	font-family: $g-p-light;
 
+	@include mobile {
+		width: 100%;
+		height: vmin(2150);
+	}
+
 	.wrapper {
 		padding: vw(30) vw(50) vw(30) vw(40);
+
+		@include mobile {
+			padding: vmin(30) vmin(20) vmin(30) vmin(30);
+		}
 	}
 
 	h3 {
 		display: block;
 		margin-bottom: vw(10);
 		padding-right: vw(100);
+
+		@include mobile {
+			margin-bottom: vmin(10);
+			padding-right: 0;
+		}
 	}
 
 	.subtitle {
 		margin-bottom: vw(40);
 		font-size: vw(18);
+
+		@include mobile {
+			margin-bottom: vmin(40);
+			font-size: vmin(18);
+		}
 	}
 
 	&__main {
@@ -530,15 +805,45 @@
 		justify-content: space-between;
 		margin-bottom: vw(35);
 
+		@include mobile {
+			align-items: flex-start;
+			margin-bottom: vmin(35);
+		}
+
 		&_box {
 			display: flex;
 			margin-bottom: vw(50);
 			width: 50%;
 
+			@include mobile {
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-bottom: vmin(50);
+				width: 100%;
+			}
+
+			.box-img {
+				@include mobile {
+					height: vmin(50);
+				}
+			}
+
 			.box-text {
 				margin-left: vw(26);
 				font-size: vw(14);
 				line-height: vw(22);
+
+				@include mobile {
+					margin-left: vmin(26);
+					font-size: vmin(14);
+					line-height: vmin(22);
+				}
+
+				br {
+					@include mobile {
+						display: none;
+					}
+				}
 
 				span {
 					display: block;
@@ -550,20 +855,39 @@
 			.x3840 {
 				width: vw(38);
 				height: vw(40);
+
+				@include mobile {
+					width: vmin(38);
+					height: vmin(40);
+				}
 			}
 
 			.x4040 {
 				width: vw(40);
 				height: vw(40);
+
+				@include mobile {
+					width: vmin(40);
+					height: vmin(40);
+				}
 			}
 
 			.p-i {
 				width: vw(40);
 				height: vw(32);
+
+				@include mobile {
+					width: vmin(40);
+					height: vmin(32);
+				}
 			}
 
 			.s-sub {
 				font-size: vw(12);
+
+				@include mobile {
+					font-size: vmin(12);
+				}
 			}
 		}
 	}
@@ -576,8 +900,17 @@
 			margin-bottom: vw(50);
 			width: 100%;
 
+			@include mobile {
+				flex-wrap: wrap;
+				margin-bottom: vmin(50);
+			}
+
 			.left {
 				width: 70%;
+
+				@include mobile {
+					width: 100%;
+				}
 			}
 
 			.right {
@@ -586,6 +919,11 @@
 				border: 1px solid #f2f2f2;
 				border-radius: vw(10);
 				padding: vw(15) vw(25) vw(15) vw(20);
+
+				@include mobile {
+					border-radius: vmin(10);
+					padding: vmin(15) vmin(25) vmin(15) vmin(20);
+				}
 
 				.img {
 					display: flex;
@@ -597,20 +935,40 @@
 					height: vw(64);
 					background-color: $sky-blue;
 
+					@include mobile {
+						margin-right: vmin(15);
+						width: vmin(64);
+						height: vmin(64);
+					}
+
 					img {
-						widows: vw(55);
+						width: vw(55);
 						height: vw(71);
+
+						@include mobile {
+							width: vmin(55);
+							height: vmin(71);
+						}
 					}
 				}
 
 				.text {
 					font-size: vw(12);
 
+					@include mobile {
+						font-size: vmin(12);
+					}
+
 					span {
 						font-family: $g-p-medium;
 						font-size: vw(13);
 						line-height: vw(28);
 						text-transform: uppercase;
+
+						@include mobile {
+							font-size: vmin(13);
+							line-height: vmin(28);
+						}
 					}
 				}
 			}
@@ -620,13 +978,32 @@
 			display: flex;
 			justify-content: space-between;
 
+			@include mobile {
+				flex-wrap: wrap;
+			}
+
+			.main-input {
+				@include mobile {
+					margin-bottom: vmin(20);
+					width: vmin(290);
+				}
+			}
+
 			.main-button {
 				width: vw(550);
+
+				@include mobile {
+					width: vmin(290);
+				}
 			}
 		}
 
 		.blue-link {
 			position: relative;
+
+			@include mobile {
+				margin-bottom: vmin(20);
+			}
 
 			.consult-tip {
 				position: absolute;
@@ -639,6 +1016,11 @@
 				visibility: hidden;
 				transition: all 0.3s ease-in-out;
 
+				@include mobile {
+					left: vmin(25);
+					border-radius: vmin(10);
+				}
+
 				ul {
 					list-style-image: url("../../images/dot.png");
 					padding: vw(22) vw(25) 0 vw(30);
@@ -646,14 +1028,28 @@
 					font-family: $g-p-light;
 					font-size: vw(13);
 
+					@include mobile {
+						padding: vmin(22) vmin(25) 0 vmin(30);
+						width: vmin(250);
+						font-size: vmin(13);
+					}
+
 					li {
 						margin-bottom: vw(25);
+
+						@include mobile {
+							margin-bottom: vmin(25);
+						}
 					}
 				}
 			}
 
 			.blue-link-span {
 				font-size: vw(14);
+
+				@include mobile {
+					font-size: vmin(14);
+				}
 			}
 		}
 
@@ -1034,12 +1430,25 @@
 	width: vw(760);
 	height: vw(491);
 
+	@include mobile {
+		width: 100%;
+		height: vmin(860);
+	}
+
 	.wrapper {
 		padding: vw(35) vw(40);
+
+		@include mobile {
+			padding: vmin(35) vmin(40);
+		}
 	}
 
 	h3 {
 		margin-bottom: vw(35);
+
+		@include mobile {
+			margin-bottom: vmin(35);
+		}
 	}
 
 	.user-card {
@@ -1049,6 +1458,14 @@
 		border: 1px solid #f5f5f5;
 		border-radius: vw(10);
 		padding: vw(20) vw(20);
+
+		@include mobile {
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-bottom: vmin(30);
+			border-radius: vmin(10);
+			padding: vmin(20) vmin(20);
+		}
 
 		.img {
 			display: flex;
@@ -1060,9 +1477,21 @@
 			height: vw(80);
 			background-color: $sky-blue;
 
+			@include mobile {
+				margin-right: 0;
+				margin-bottom: vmin(20);
+				width: vmin(80);
+				height: vmin(80);
+			}
+
 			img {
 				width: vw(80);
 				height: vw(96);
+
+				@include mobile {
+					width: vmin(80);
+					height: vmin(96);
+				}
 			}
 		}
 
@@ -1071,9 +1500,19 @@
 			font-size: vw(14);
 			line-height: vw(22);
 
+			@include mobile {
+				font-size: vmin(14);
+				line-height: vmin(22);
+			}
+
 			span {
 				font-size: vw(18);
 				line-height: vw(30);
+
+				@include mobile {
+					font-size: vmin(18);
+					line-height: vmin(30);
+				}
 			}
 		}
 	}
@@ -1082,9 +1521,18 @@
 		display: flex;
 		justify-content: space-between;
 
+		@include mobile {
+			flex-wrap: wrap;
+		}
+
 		.main-input,
 		.main-button {
 			width: vw(315);
+
+			@include mobile {
+				margin-bottom: vmin(20);
+				width: vmin(290);
+			}
 		}
 	}
 }
@@ -1092,11 +1540,20 @@
 .price-consult {
 	width: vw(690);
 	height: vw(399);
+
+	@include mobile {
+		width: 100%;
+		height: vmin(500);
+	}
 }
 
 .price-consult-application {
 	padding: vw(38) vw(10) vw(40) vw(38);
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+	@include mobile {
+		padding: vmin(38) vmin(10) vmin(40) vmin(38);
+	}
 
 	&__heading {
 		display: flex;
@@ -1105,8 +1562,16 @@
 		margin-bottom: vw(20);
 		width: 100%;
 
+		@include mobile {
+			margin-bottom: vmin(20);
+		}
+
 		.left {
 			width: 80%;
+
+			@include mobile {
+				width: 100%;
+			}
 		}
 
 		.blue-link {
@@ -1131,14 +1596,28 @@
 					font-family: $g-p-light;
 					font-size: vw(13);
 
+					@include mobile {
+						padding: vmin(22) vmin(25) 0 vmin(30);
+						width: vmin(250);
+						font-size: vmin(13);
+					}
+
 					li {
 						margin-bottom: vw(25);
+
+						@include mobile {
+							margin-bottom: vmin(25);
+						}
 					}
 				}
 			}
 
 			.blue-link-span {
 				font-size: vw(14);
+
+				@include mobile {
+					font-size: vmin(14);
+				}
 			}
 		}
 
@@ -1156,12 +1635,22 @@
 
 		.main-input {
 			width: vw(370);
+
+			@include mobile {
+				margin-bottom:  vmin(20);
+				width: vmin(290);
+			}
 		}
 
 		.right {
 			display: flex;
 			align-items: center;
 			padding: vw(15) 0 vw(15) vw(20);
+
+			@include mobile {
+				order: -1;
+				padding: vmin(15) 0 vmin(15) vmin(20);
+			}
 
 			.img {
 				display: flex;
@@ -1173,26 +1662,50 @@
 				height: vw(64);
 				background-color: $sky-blue;
 
+				@include mobile {
+					margin-right: vmin(15);
+					width: vmin(64);
+					height: vmin(64);
+				}
+
 				img {
-					widows: vw(55);
+					width: vw(55);
 					height: vw(71);
+
+					@include mobile {
+						width: vmin(55);
+						height: vmin(71);
+					}
 				}
 			}
 
 			.text {
 				font-size: vw(12);
 
+				@include mobile {
+					font-size: vmin(12);
+				}
+
 				span {
 					font-family: $g-p-medium;
 					font-size: vw(13);
 					line-height: vw(28);
 					text-transform: uppercase;
+
+					@include mobile {
+						font-size: vmin(13);
+						line-height: vmin(28);
+					}
 				}
 			}
 		}
 
 		.main-button {
 			width: vw(474);
+
+			@include mobile {
+				width: vmin(290);
+			}
 		}
 	}
 }

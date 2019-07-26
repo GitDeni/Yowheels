@@ -129,7 +129,7 @@ a {
 
 	@include mobile {
 		border-radius: vmin(35);
-		width: vmin(310);
+		width: vmin(280);
 		height: vmin(70);
 		font-size: vmin(14);
 	}
@@ -185,7 +185,7 @@ a {
 
 	@include mobile {
 		border-radius: vmin(35);
-		width: vmin(310);
+		width: vmin(300);
 		height: vmin(70);
 		font-size: vmin(14);
 		text-align: center;
@@ -232,7 +232,7 @@ h2 {
 	}
 
 	@include mobile {
-		font-size: vmin(38);
+		font-size: vmin(32);
 		line-height: vmin(55);
 		letter-spacing: vmin(1.5);
 	}
@@ -340,7 +340,7 @@ h2::before {
 	@include mobile {
 		border-radius: vmin(35);
 		padding: vmin(25);
-		width: vmin(320);
+		width: vmin(260);
 		height: vmin(70);
 		font-size: vmin(14);
 		line-height: vmin(20);
@@ -390,7 +390,7 @@ h2::before {
 	@include mobile {
 		border-radius: vmin(35);
 		padding: vmin(25);
-		width: vmin(370);
+		width: vmin(300);
 		height: vmin(70);
 		font-size: vmin(14);
 		line-height: vmin(20);
@@ -433,6 +433,12 @@ h3 {
 		font-family: $g-p-bold;
 		font-weight: 700;
 	}
+
+	@include mobile {
+		font-size: vmin(24);
+		line-height: vmin(35);
+		letter-spacing: vmin(0.7);
+	}
 }
 
 .tab-pane {
@@ -457,6 +463,17 @@ h3 {
 .middle-tab {
 	display: flex;
 	align-items: center;
+
+	@include mobile {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	br {
+		@include mobile {
+			display: none;
+		}
+	}
 }
 
 .middle-tab.hidden {

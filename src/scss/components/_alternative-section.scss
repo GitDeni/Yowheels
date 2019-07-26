@@ -23,6 +23,7 @@
 			width: 60%;
 
 			@include mobile {
+				width: 100%;
 				margin-bottom: vmin(15);
 			}
 
@@ -106,8 +107,8 @@
 					height: vw(54);
 
 					@include mobile {
-						width: vmin(96);
-						height: vmin(54);
+						width: vmin(70);
+						height: vmin(40);
 					}
 				}
 			}
