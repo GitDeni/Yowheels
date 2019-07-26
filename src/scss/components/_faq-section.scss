@@ -2,10 +2,18 @@
 	padding-bottom: vw(390);
 	background-color: #f5f5f5;
 
+	@include mobile {
+		padding-bottom: vmin(390);
+	}
+
 	h2 {
 		margin-bottom: vw(40);
 		width: 100%;
 		color: $main-font-color;
+
+		@include mobile {
+			margin-bottom: vmin(40);
+		}
 
 		&::before {
 			display: none;
@@ -19,6 +27,9 @@
 		width: 100%;
 
 		.list {
+			@include mobile {
+				width: 100%;
+			}
 			.faq-card {
 				position: relative;
 				border-radius: vw(10);
@@ -26,6 +37,12 @@
 				width: vw(770);
 				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 				background-color: #fff;
+
+				@include mobile {
+					border-radius: vmin(10);
+					padding: vmin(16) vmin(30) vmin(40);
+					width: 100%;
+				}
 
 				&::after {
 					content: "";
@@ -37,6 +54,14 @@
 					height: vw(10);
 					box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 					background-color: #f6f6f6;
+
+					@include mobile {
+						left: vmin(10);
+						bottom: vmin(-10);
+						border-radius: 0 0 vmin(10) vmin(10);
+						width: 95%;
+						height: vmin(10);
+					}
 				}
 
 				&__heading {
@@ -45,12 +70,30 @@
 					justify-content: space-between;
 					padding-bottom: vw(15);
 
+					@include mobile {
+						padding-bottom: vmin(15);
+					}
+
 					.title {
 						font-family: $g-p-bold;
 						font-size: vw(16);
 						line-height: vw(55);
 						letter-spacing: vw(0.6);
 						text-transform: uppercase;
+
+						br {
+							display: none;
+
+							@include mobile {
+								display: block;
+							}
+						}
+
+						@include mobile {
+							font-size: vmin(16);
+							line-height: vmin(55);
+							letter-spacing: vmin(0.6);
+						}
 					}
 
 					.faq-button {
@@ -64,6 +107,11 @@
 						height: vw(44);
 						background-color: #f5f5f5;
 						transition: all 0.3s ease-in-out;
+
+						@include mobile {
+							width: vmin(44);
+							height: vmin(44);
+						}
 
 						&:hover {
 							background-color: $sky-blue;
@@ -95,11 +143,28 @@
 						font-family: $g-p-light;
 						font-size: vw(14);
 						line-height: vw(20);
+
+						@include mobile {
+							padding-top: vmin(20);
+							padding-right: 0;
+							font-size: vmin(14);
+							line-height: vmin(20);
+						}
+
+						br {
+							@include mobile {
+								display: none;
+							}
+						}
 					}
 				}
 
 				&:not(:first-child) {
 					margin-top: vw(30);
+
+					@include mobile {
+						margin-top: vmin(30);
+					}
 				}
 			}
 
@@ -109,6 +174,12 @@
 
 			.faq-card.card-closed .faq-card__answer {
 				display: none;
+			}
+		}
+
+		.faq-form {
+			@include mobile {
+				width: vmin(340);
 			}
 		}
 
@@ -123,6 +194,13 @@
 			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 			background-color: #fff;
 
+			@include mobile {
+				margin-top: vmin(50);
+				border-radius: vmin(10);
+				padding: vmin(30);
+				height: vmin(550);
+			}
+
 			&::after {
 				content: "";
 				position: absolute;
@@ -133,6 +211,13 @@
 				height: vw(10);
 				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 				background-color: #f6f6f6;
+
+				@include mobile {
+					bottom: vmin(-8);
+					border-radius: 0 0 vmin(10) vmin(10);
+					width: vmin(333);
+					height: vmin(10);
+				}
 			}
 
 			h3 {
@@ -142,6 +227,12 @@
 				letter-spacing: vw(0.9);
 				text-align: center;
 				text-transform: uppercase;
+
+				@include mobile {
+					font-size: vmin(24);
+					line-height: vmin(35);
+					letter-spacing: vmin(0.9);
+				}
 			}
 
 			.question-subtitle {
@@ -149,15 +240,29 @@
 				font-size: vw(14);
 				line-height: vw(35);
 				text-align: center;
+
+				@include mobile {
+					font-size: vmin(16);
+					line-height: vmin(35);
+				}
 			}
 
 			img {
 				width: vw(205);
 				height: vw(187);
+
+				@include mobile {
+					width: vmin(205);
+					height: vmin(187);
+				}
 			}
 
 			.main-textarea {
 				margin-bottom: vw(20);
+
+				@include mobile {
+					margin-bottom: vmin(20);
+				}
 
 				&:hover {
 					background-color: #e4e4e4;
@@ -170,13 +275,17 @@
 			}
 
 			.main-input {
-				width: vw(320);
 				margin-bottom: vw(20);
+				width: vw(320);
+
+				@include mobile {
+					margin-bottom: vmin(20);
+					width: vmin(320);
+				}
 			}
 		}
 
 		.faq-tab-1 {
-			// display: none;
 		}
 
 		.faq-tab-2 {
@@ -186,7 +295,6 @@
 			&::after {
 				background-color: #121d25;
 			}
-			// display: none;
 		}
 
 		.tab-pane.dn {

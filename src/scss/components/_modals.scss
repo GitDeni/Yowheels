@@ -43,6 +43,11 @@
 	border-radius: vw(10);
 	background-color: #fff;
 
+	@include mobile {
+		margin: vmin(10) auto;
+		border-radius: vmin(10);
+	}
+
 	.wrapper {
 		position: absolute;
 		left: 50%;
@@ -72,6 +77,13 @@
 	background-repeat: no-repeat;
 	transform: translateX(-50%);
 	cursor: pointer;
+
+	@include mobile {
+		right: vmin(-80);
+		top: vmin(-60);
+		width: vmin(40);
+		height: vmin(40);
+	}
 }
 
 .consult {
@@ -79,15 +91,32 @@
 	height: vw(427);
 	font-family: $g-p-light;
 
+	@include mobile {
+		width: 100%;
+		height: vmin(427);
+	}
+
 	.wrapper {
 		padding: vw(35) vw(20) vw(35) vw(35);
+
+		@include mobile {
+			padding: vmin(35) vmin(20) vmin(35) vmin(35);
+		}
 	}
 
 	&__heading {
 		font-size: vw(18);
 
+		@include mobile {
+			font-size: vmin(18);
+		}
+
 		h3 {
 			margin-bottom: vw(15);
+
+			@include mobile {
+				margin-bottom: vmin(15);
+			}
 		}
 	}
 
@@ -98,6 +127,12 @@
 		margin-bottom: vw(80);
 		padding-top: vw(30);
 		padding-right: vw(90);
+
+		@include mobile {
+			margin-bottom: vmin(80);
+			padding-top: vmin(30);
+			padding-right: vmin(90);
+		}
 
 		.manager {
 			display: flex;

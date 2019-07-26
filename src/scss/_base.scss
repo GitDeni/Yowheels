@@ -297,10 +297,24 @@ h2::before {
 	background-color: #fff;
 	cursor: pointer;
 
+	@include mobile {
+		padding: vmin(20) vmin(18) vmin(25);
+		width: vmin(100);
+		height: vmin(100);
+		font-size: vmin(12);
+		line-height: vmin(16);
+	}
+
 	img {
 		margin: 0 auto vw(5);
 		width: vw(20);
 		height: vw(20);
+
+		@include mobile {
+			margin: 0 auto vmin(5);
+			width: vmin(20);
+			height: vmin(20);
+		}
 	}
 
 	&:hover {
@@ -322,6 +336,15 @@ h2::before {
 	text-align: center;
 	background-color: #f5f5f5;
 	resize: none;
+
+	@include mobile {
+		border-radius: vmin(35);
+		padding: vmin(25);
+		width: vmin(320);
+		height: vmin(70);
+		font-size: vmin(14);
+		line-height: vmin(20);
+	}
 }
 
 .main-input-wrapper {
@@ -337,6 +360,14 @@ h2::before {
 		font-size: vw(12);
 		text-align: center;
 		background-color: #fff;
+
+		@include mobile {
+			left: vmin(30);
+			top: vmin(-7);
+			width: vmin(150);
+			height: vmin(20);
+			font-size: vmin(12);
+		}
 	}
 }
 
@@ -349,13 +380,21 @@ h2::before {
 	font-family: $g-p-light;
 	font-size: vw(14);
 	line-height: vw(20);
-	// text-align: center;
 	text-transform: uppercase;
 	background-image: url("../images/phone-call.png");
 	background-position: 90% 50%;
 	background-repeat: no-repeat;
 	background-color: #fff;
 	transition: all 0.15s;
+
+	@include mobile {
+		border-radius: vmin(35);
+		padding: vmin(25);
+		width: vmin(370);
+		height: vmin(70);
+		font-size: vmin(14);
+		line-height: vmin(20);
+	}
 
 	&:hover {
 		border: 1px solid #000;

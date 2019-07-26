@@ -5,6 +5,12 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 
+	@include mobile {
+		padding-top: vmin(90);
+		height: vmin(800);
+		background-size: cover;
+	}
+
 	h2 {
 		width: 100%;
 		text-align: center;
@@ -20,6 +26,11 @@
 		font-size: vw(18);
 		line-height: vw(30);
 		color: rgb(255, 255, 255);
+
+		@include mobile {
+			font-size: vmin(18);
+			line-height: vmin(30);
+		}
 	}
 
 	.road {
@@ -33,6 +44,10 @@
 		background-position: 0 bottom;
 		// background-size: contain;
 		background-repeat: no-repeat;
+
+		@include mobile {
+			display: none;
+		}
 
 		.stage {
 			display: flex;
@@ -127,10 +142,19 @@
 		.content {
 			padding: vw(100) vw(40);
 			width: 60%;
+
+			@include mobile {
+				padding: vmin(50) vmin(40);
+				width: 100%;
+			}
 		}
 
 		.image {
 			position: relative;
+
+			@include mobile {
+				display: none;
+			}
 		}
 	}
 
@@ -142,19 +166,46 @@
 		text-transform: uppercase;
 		color: #fff;
 
+		@include mobile {
+			margin-bottom: vmin(15);
+			font-size: vmin(24);
+		}
+
+		br {
+			@include mobile {
+				display: none;
+			}
+		}
+
 		&::before {
 			content: url('../../images/blue-ellipse.png');
 			position: absolute;
 			left: vw(-40);
+
+			@include mobile {
+				left: vmin(-40);
+			}
 		}
 	}
 
 	.tab-subtitle {
+		margin-bottom: vw(45);
 		font-family: $g-p-light;
 		font-size: vw(16);
 		line-height: vw(28);
 		color: #fff;
-		margin-bottom: vw(45);
+
+		@include mobile {
+			margin-bottom: vmin(45);
+			font-size: vmin(16);
+			line-height: vmin(28);
+		}
+
+		br {
+			@include mobile {
+				display: none;
+			}
+		}
 
 		span {
 			font-family: $g-p-bold;
@@ -167,12 +218,27 @@
 		margin-bottom: vw(50);
 		padding-right: vw(60);
 
+		@include mobile {
+			flex-wrap: wrap;
+			margin-bottom: vmin(50);
+			padding-right: 0;
+		}
+
 		.main-button {
 			width: vw(240);
+			
+			@include mobile {
+				width: 100%;
+			}
 		}
 
 		.white-blue-button {
 			width: vw(290);
+
+			@include mobile {
+				margin-top: vmin(20);
+				width: 100%;
+			}
 		}
 	}
 
@@ -189,11 +255,20 @@
 		opacity: 0.6;
 		cursor: pointer;
 
+		@include mobile {
+			padding-bottom: vmin(5);
+			font-size: vmin(16);
+		}
+
 		&::after {
 			content: url('../../images/how-arrow.png');
 			position: absolute;
 			right: vw(-70);
 			top: 0;
+
+			@include mobile {
+				right: vmin(-90);
+			}
 		}
 
 		&:hover {
