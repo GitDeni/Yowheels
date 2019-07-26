@@ -42,3 +42,22 @@ $('body').on('click', '.to-5', function () {
 	}, 200);
 	return false;
 });
+
+$('body').on('click', '.stage', function () {
+	$(this).parents('.how').find('.tab-pane').removeClass('active');
+	$(this).parents('.how').find('.tab-pane').removeClass('in');
+	let index = $(this).attr('data-id');
+	console.log(index)
+	$("#idd-" + index).addClass('active');
+	$('.stage').addClass('blurred');
+	$(this).removeClass('blurred');
+	$('.carrr').removeClass('mark-0').removeClass('mark-1').removeClass('mark-2').removeClass('mark-3').removeClass('mark-4');
+	$('.carrr').addClass('mark-' + parseInt(index - 1));
+	// $('.carrr').removeClass('mark-3').addClass('mark-4');
+	// $('.stage-3').addClass('blurred');
+	// $('.stage-4').removeClass('blurred');
+	setTimeout(function () {
+		$("#idd-" + index).addClass('in');
+	}, 200);
+	return false;
+});

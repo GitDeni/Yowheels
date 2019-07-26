@@ -4,6 +4,10 @@
 	background-image: url("../../images/first-screen-bg.png");
 	background-repeat: no-repeat;
 
+	@include mobile {
+		padding-top: 0;
+	}
+
 	.container {
 		justify-content: space-between;
 	}
@@ -15,10 +19,17 @@
 			margin-bottom: vw(10);
 			font-family: $g-p-light;
 			font-size: vw(38);
-			line-height: 55px;
+			line-height: vw(55);
 			letter-spacing: vw(1.5);
 			text-transform: uppercase;
 			color: $main-font-color;
+
+			@include mobile {
+				margin-bottom: vmin(10);
+				font-size: vmin(38);
+				line-height: vmin(55);
+				letter-spacing: vmin(1.5);
+			}
 
 			span {
 				font-family: $g-p-medium;
@@ -37,6 +48,16 @@
 			span {
 				font-family: $g-p-medium;
 			}
+
+			@include mobile {
+				padding-bottom: vmin(40);
+				font-size: vmin(18);
+				line-height: vmin(30);
+
+				br {
+					display: none;
+				}
+			}
 		}
 
 		p::before {
@@ -49,6 +70,13 @@
 			background-image: url("../../images/blue-ellipse.png");
 			background-size: contain;
 			background-repeat: no-repeat;
+
+			@include mobile {
+				left: vmin(-25);
+				top: vmin(10);
+				width: vmin(20);
+				height: vmin(10);
+			}
 		}
 	}
 
@@ -67,6 +95,15 @@
 			line-height: vw(20);
 			color: $main-font-color;
 
+			@include mobile {
+				margin-top: vmin(35);
+				padding: vmin(24) vmin(35);
+				width: vmin(370);
+				height: vmin(100);
+				font-size: vmin(14);
+				line-height: vmin(20);
+			}
+
 			span {
 				font-family: $g-p-medium;
 			}
@@ -77,6 +114,13 @@
 				top: vw(-10);
 				width: vw(131);
 				height: vw(118);
+
+				@include mobile {
+					right: vmin(15);
+					top: vmin(-10);
+					width: vmin(131);
+					height: vmin(118);
+				}
 			}
 
 			.percent {
@@ -92,6 +136,16 @@
 				text-align: center;
 				color: rgb(255, 255, 255);
 				background-color: rgb(73, 178, 248);
+
+				@include mobile {
+					right: vmin(15);
+					top: vmin(60);
+					border-radius: vmin(10);
+					width: vmin(50);
+					height: vmin(30);
+					font-size: vmin(14);
+					line-height: vmin(30);
+				}
 			}
 		}
 
@@ -102,6 +156,12 @@
 			z-index: 1;
 			width: vw(866);
 			height: vw(434);
+
+			@include mobile {
+				top: vmin(50);
+				width: vmin(200);
+				height: vmin(100);
+			}
 		}
 	}
 
@@ -114,6 +174,13 @@
 		width: 100%;
 		background-color: #121d25;
 
+		@include mobile {
+			flex-wrap: wrap;
+			margin-top: vmin(40);
+			border-radius: vmin(30) vmin(30) 0 0;
+			padding: vmin(30) vmin(10) 0;
+		}
+
 		.card {
 			display: flex;
 			padding: vw(10) 0;
@@ -121,6 +188,13 @@
 			font-size: vw(14);
 			line-height: vw(22);
 			color: #fff;
+
+			@include mobile {
+				width: 100%;
+				padding: vmin(10) 0;
+				font-size: vmin(14);
+				line-height: vmin(22);
+			}
 
 			.texts {
 				margin-top: vw(5);
@@ -134,22 +208,44 @@
 		.card-1 img {
 			width: vw(78);
 			height: vw(82);
+
+			@include mobile {
+				width: vmin(78);
+				height: vmin(82);
+			}
 		}
 
 		.card-2 img {
 			width: vw(82);
 			height: vw(82);
+
+			@include mobile {
+				width: vmin(82);
+				height: vmin(82);
+			}
 		}
 
 		.card-3 img {
 			width: vw(67);
 			height: vw(78);
+
+			@include mobile {
+				width: vmin(67);
+				height: vmin(78);
+			}
 		}
 	}
 
 	.tree {
+		width: vw(141);
+		height: vw(417);
 		position: absolute;
 		right: 0;
 		top: 0;
+
+		@include mobile {
+			width: vmin(70);
+			height: vmin(207);
+		}
 	}
 }

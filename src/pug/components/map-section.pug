@@ -20,31 +20,33 @@
 							| Минск, пр-т Дзержинского, д. 22
 						.c-sub
 							img(src="../../images/dot.png", alt="")
-							| до закрытия 
-							span#closing-hour
+							.txt
+								| до закрытия 
+							span#closing-hour1
 								| 3 
-							span#closing-text
+							span#closing-text1
 								| часа
 					.contacts__main_card.tel
 						.c-h
 							| телефон
-						.c-text
+						a.c-text(href="tel:+375295666222")
 							| +375 29 5-666-222
-						a.viber
-							img(src="../../images/viber.png", alt="")
-							| Cвязаться в Viber#[br]
-						a.whatsapp
-							img(src="../../images/whatsapp.png", alt="")
-							| Cвязаться в WhatsApp#[br]
-						a.telegram
-							img(src="../../images/telegram.png", alt="")
-							| Cвязаться в Telegram
+						div
+							a.viber(href="#")
+								img(src="../../images/viber.png", alt="")
+								| Cвязаться в Viber#[br]
+							a.whatsapp(href="#")
+								img(src="../../images/whatsapp.png", alt="")
+								| Cвязаться в WhatsApp#[br]
+							a.telegram(href="#")
+								img(src="../../images/telegram.png", alt="")
+								| Cвязаться в Telegram
 					.contacts__main_card.mail
 						.c-h
 							| e-mail
 						.c-text
 							a(href="mailto:info@yowheels.by")
 								| info@yowheels.by
-				a.main-button.open-popup(href="#consult")
+				a.main-button.open-popup(href="#consult-11")
 					span
 						| задать вопрос менеджеру

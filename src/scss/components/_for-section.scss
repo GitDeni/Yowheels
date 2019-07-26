@@ -6,6 +6,12 @@
 	// background-size: contain;
 	background-repeat: no-repeat;
 
+	@include mobile {
+		padding-top: vmin(115);
+		padding-bottom: vmin(45);
+		background-image: none;
+	}
+
 	.container {
 		justify-content: flex-start;
 
@@ -14,6 +20,14 @@
 
 			&::before {
 				top: vw(-30);
+
+				@include mobile {
+					top: vmin(-30);
+				}
+			}
+
+			@include mobile {
+				margin-bottom: vmin(65);
 			}
 		}
 
@@ -23,41 +37,98 @@
 			justify-content: space-between;
 			width: 70%;
 
+			@include mobile {
+				width: 100%;
+			}
+
 			.card {
 				display: flex;
 				justify-content: flex-start;
 				margin-bottom: vw(30);
 				width: 50%;
 
+				@include mobile {
+					flex-wrap: wrap;
+					margin-bottom: vmin(60);
+					width: 100%;
+				}
+
+				&-icon.courier {
+					@include mobile {
+						height: vmin(120);
+					}
+				}
+
 				&-icon {
 					width: vw(100);
 					height: vw(130);
 					text-align: center;
 
+					@include mobile {
+						width: 100%;
+						height: vmin(80);
+						display: flex;
+						justify-content: center;
+					}
+
 					.card-i-1 {
 						width: vw(78);
 						height: vw(65);
+
+						@include mobile {
+							width: vmin(78);
+							height: vmin(65);
+						}
 					}
+
 					.card-i-2 {
 						width: vw(100);
 						height: vw(55);
+
+						@include mobile {
+							width: vmin(100);
+							height: vmin(55);
+						}
 					}
+
 					.card-i-3 {
 						width: vw(82);
 						height: vw(71);
+
+						@include mobile {
+							width: vmin(82);
+							height: vmin(71);
+						}
 					}
+
 					.card-i-4 {
 						width: vw(46);
 						height: vw(117);
+
+						@include mobile {
+							width: vmin(46);
+							height: vmin(117);
+						}
 					}
+
 					.card-i-5 {
 						width: vw(78);
 						height: vw(65);
+
+						@include mobile {
+							width: vmin(78);
+							height: vmin(65);
+						}
 					}
 				}
 
 				&-content {
 					margin-left: vw(20);
+
+					@include mobile {
+						width: 100%;
+						margin-left: vmin(20);
+					}
 				}
 
 				&-header {
@@ -70,6 +141,13 @@
 					span {
 						color: $sky-blue;
 					}
+
+					@include mobile {
+						text-align: center;
+						margin-bottom: vmin(10);
+						font-size: vmin(14);
+						line-height: vmin(22);
+					}
 				}
 
 				&-description {
@@ -77,12 +155,22 @@
 					font-size: vw(14);
 					line-height: vw(20);
 
+					@include mobile {
+						text-align: center;
+						font-size: vmin(14);
+						line-height: vmin(20);
+					}
+
 					> span {
 						font-family: $g-p-medium;
 					}
 
 					.blue-link {
 						margin: vw(7) 0;
+
+						@include mobile {
+							margin: vmin(7) 0;
+						}
 					}
 				}
 

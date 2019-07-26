@@ -18,28 +18,39 @@
 						span
 							| Анна Измайлова
 				.middle
-					img(src="../../images/chat.png", alt="")
-					.text
-						| Расскажет обо всех 
-						span
-							| условиях работы в такси #[br]
-							| и аренды авто, 
-						| вы будете знать обо всем #[br]
-						| перед заключением договора
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
 				a.what-else
 					.circle
 						img(src="../../images/reload.png", alt="")
 					span
 						| что еще входит
 			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
 				.main-input-wrapper
-					input(type="tel" maxlength="19" placeholder="+375  (XX) XXX-XX-XX").main-input
+					input(type="tel" name="Телефон" maxlength="19" placeholder="+375  (XX) XXX-XX-XX").main-input
 				button.main-button(type="submit")
 					span
 						| Оставить заявку на бесплатную консультацию
-
-
-	.modal.mfp-with-anim.consult#consult1
+	.modal.mfp-with-anim.consult#consult-1
 		a.popup-close
 		.wrapper
 			.consult__heading
@@ -58,25 +69,551 @@
 						span
 							| Анна Измайлова
 				.middle
-					img(src="../../images/chat.png", alt="")
-					.text
-						| Расскажет обо всех 
-						span
-							| условиях работы в такси #[br]
-							| и аренды авто, 
-						| вы будете знать обо всем #[br]
-						| перед заключением договора
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
 				a.what-else
 					.circle
 						img(src="../../images/reload.png", alt="")
 					span
 						| что еще входит
-			.consult__form
+			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
 				.main-input-wrapper
-					input(type="tel" maxlength="19" placeholder="+375  (XX) XXX-XX-XX").main-input
+					input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX").main-input
 				button.main-button(type="submit")
 					span
 						| Оставить заявку на бесплатную консультацию
+	.modal.mfp-with-anim.consult#consult-2
+		a.popup-close
+		.wrapper
+			.consult__heading
+				h3
+					| Оставьте заявку на 
+					span
+						| бесплатную консультацию 
+					| от менеджера
+				| Консультация менеджера займет не более 10 минут
+			.consult__main
+				.manager
+					.img
+						img(src="../../images/Anna.png", alt="")
+					.name
+						| Вам перезвонит#[br]
+						span
+							| Анна Измайлова
+				.middle
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+				a.what-else
+					.circle
+						img(src="../../images/reload.png", alt="")
+					span
+						| что еще входит
+			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+				.main-input-wrapper
+					input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX").main-input
+				button.main-button(type="submit")
+					span
+						| Оставить заявку на бесплатную консультацию
+	.modal.mfp-with-anim.consult#consult-3
+		a.popup-close
+		.wrapper
+			.consult__heading
+				h3
+					| Оставьте заявку на 
+					span
+						| бесплатную консультацию 
+					| от менеджера
+				| Консультация менеджера займет не более 10 минут
+			.consult__main
+				.manager
+					.img
+						img(src="../../images/Anna.png", alt="")
+					.name
+						| Вам перезвонит#[br]
+						span
+							| Анна Измайлова
+				.middle
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+				a.what-else
+					.circle
+						img(src="../../images/reload.png", alt="")
+					span
+						| что еще входит
+			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+				.main-input-wrapper
+					input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX").main-input
+				button.main-button(type="submit")
+					span
+						| Оставить заявку на бесплатную консультацию
+	.modal.mfp-with-anim.consult#consult-4
+		a.popup-close
+		.wrapper
+			.consult__heading
+				h3
+					| Оставьте заявку на 
+					span
+						| бесплатную консультацию 
+					| от менеджера
+				| Консультация менеджера займет не более 10 минут
+			.consult__main
+				.manager
+					.img
+						img(src="../../images/Anna.png", alt="")
+					.name
+						| Вам перезвонит#[br]
+						span
+							| Анна Измайлова
+				.middle
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+				a.what-else
+					.circle
+						img(src="../../images/reload.png", alt="")
+					span
+						| что еще входит
+			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+				.main-input-wrapper
+					input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX").main-input
+				button.main-button(type="submit")
+					span
+						| Оставить заявку на бесплатную консультацию
+	.modal.mfp-with-anim.consult#consult-5
+		a.popup-close
+		.wrapper
+			.consult__heading
+				h3
+					| Оставьте заявку на 
+					span
+						| бесплатную консультацию 
+					| от менеджера
+				| Консультация менеджера займет не более 10 минут
+			.consult__main
+				.manager
+					.img
+						img(src="../../images/Anna.png", alt="")
+					.name
+						| Вам перезвонит#[br]
+						span
+							| Анна Измайлова
+				.middle
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+				a.what-else
+					.circle
+						img(src="../../images/reload.png", alt="")
+					span
+						| что еще входит
+			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+				.main-input-wrapper
+					input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX").main-input
+				button.main-button(type="submit")
+					span
+						| Оставить заявку на бесплатную консультацию
+	.modal.mfp-with-anim.consult#consult-6
+		a.popup-close
+		.wrapper
+			.consult__heading
+				h3
+					| Оставьте заявку на 
+					span
+						| бесплатную консультацию 
+					| от менеджера
+				| Консультация менеджера займет не более 10 минут
+			.consult__main
+				.manager
+					.img
+						img(src="../../images/Anna.png", alt="")
+					.name
+						| Вам перезвонит#[br]
+						span
+							| Анна Измайлова
+				.middle
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+				a.what-else
+					.circle
+						img(src="../../images/reload.png", alt="")
+					span
+						| что еще входит
+			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+				.main-input-wrapper
+					input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX").main-input
+				button.main-button(type="submit")
+					span
+						| Оставить заявку на бесплатную консультацию
+	.modal.mfp-with-anim.consult#consult-7
+		a.popup-close
+		.wrapper
+			.consult__heading
+				h3
+					| Оставьте заявку на 
+					span
+						| бесплатную консультацию 
+					| от менеджера
+				| Консультация менеджера займет не более 10 минут
+			.consult__main
+				.manager
+					.img
+						img(src="../../images/Anna.png", alt="")
+					.name
+						| Вам перезвонит#[br]
+						span
+							| Анна Измайлова
+				.middle
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+				a.what-else
+					.circle
+						img(src="../../images/reload.png", alt="")
+					span
+						| что еще входит
+			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+				.main-input-wrapper
+					input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX").main-input
+				button.main-button(type="submit")
+					span
+						| Оставить заявку на бесплатную консультацию
+	.modal.mfp-with-anim.consult#consult-8
+		a.popup-close
+		.wrapper
+			.consult__heading
+				h3
+					| Оставьте заявку на 
+					span
+						| бесплатную консультацию 
+					| от менеджера
+				| Консультация менеджера займет не более 10 минут
+			.consult__main
+				.manager
+					.img
+						img(src="../../images/Anna.png", alt="")
+					.name
+						| Вам перезвонит#[br]
+						span
+							| Анна Измайлова
+				.middle
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+				a.what-else
+					.circle
+						img(src="../../images/reload.png", alt="")
+					span
+						| что еще входит
+			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+				.main-input-wrapper
+					input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX").main-input
+				button.main-button(type="submit")
+					span
+						| Оставить заявку на бесплатную консультацию
+	.modal.mfp-with-anim.consult#consult-9
+		a.popup-close
+		.wrapper
+			.consult__heading
+				h3
+					| Оставьте заявку на 
+					span
+						| бесплатную консультацию 
+					| от менеджера
+				| Консультация менеджера займет не более 10 минут
+			.consult__main
+				.manager
+					.img
+						img(src="../../images/Anna.png", alt="")
+					.name
+						| Вам перезвонит#[br]
+						span
+							| Анна Измайлова
+				.middle
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+				a.what-else
+					.circle
+						img(src="../../images/reload.png", alt="")
+					span
+						| что еще входит
+			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+				.main-input-wrapper
+					input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX").main-input
+				button.main-button(type="submit")
+					span
+						| Оставить заявку на бесплатную консультацию
+	.modal.mfp-with-anim.consult#consult-10
+		a.popup-close
+		.wrapper
+			.consult__heading
+				h3
+					| Оставьте заявку на 
+					span
+						| бесплатную консультацию 
+					| от менеджера
+				| Консультация менеджера займет не более 10 минут
+			.consult__main
+				.manager
+					.img
+						img(src="../../images/Anna.png", alt="")
+					.name
+						| Вам перезвонит#[br]
+						span
+							| Анна Измайлова
+				.middle
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+				a.what-else
+					.circle
+						img(src="../../images/reload.png", alt="")
+					span
+						| что еще входит
+			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+				.main-input-wrapper
+					input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX").main-input
+				button.main-button(type="submit")
+					span
+						| Оставить заявку на бесплатную консультацию
+	.modal.mfp-with-anim.consult#consult-11
+		a.popup-close
+		.wrapper
+			.consult__heading
+				h3
+					| Оставьте заявку на 
+					span
+						| бесплатную консультацию 
+					| от менеджера
+				| Консультация менеджера займет не более 10 минут
+			.consult__main
+				.manager
+					.img
+						img(src="../../images/Anna.png", alt="")
+					.name
+						| Вам перезвонит#[br]
+						span
+							| Анна Измайлова
+				.middle
+					.middle-tab(data-index="1")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+					.middle-tab.hidden(data-index="2")
+						img(src="../../images/chat.png", alt="")
+						.text
+							| Расскажет обо всех 
+							span
+								| условиях работы в такси #[br]
+								| и аренды авто, 
+							| вы будете знать обо всем #[br]
+							| перед заключением договора
+				a.what-else
+					.circle
+						img(src="../../images/reload.png", alt="")
+					span
+						| что еще входит
+			form.consult__form
+				input(type="hidden" name="project_name" value="Youwheels")
+				input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+				input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+				.main-input-wrapper
+					input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX").main-input
+				button.main-button(type="submit")
+					span
+						| Оставить заявку на бесплатную консультацию
+
+
+
 
 
 	.modal.mfp-with-anim.payment#payment
@@ -179,8 +716,11 @@
 							span
 								| Анна Измайлова
 				form.payment-application__form
+					input(type="hidden" name="project_name" value="Youwheels")
+					input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+					input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
 					.main-input-wrapper
-						input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
+						input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
 					button.main-button(type="submit")
 						span
 							| Рассчитать точную стоимость авто для вас
@@ -312,9 +852,12 @@
 									| бесплатную 
 									| консультацию 
 								| и выбор авто
-							.application__form
+							form.application__form
+								input(type="hidden" name="project_name" value="Youwheels")
+								input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+								input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
 								.main-input-wrapper
-									input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
+									input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
 								button.main-button(type="submit")
 									span
 										| Оставить заявку
@@ -371,9 +914,12 @@
 									| бесплатную 
 									| консультацию 
 								| и выбор авто
-							.application__form
+							form.application__form
+								input(type="hidden" name="project_name" value="Youwheels")
+								input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+								input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
 								.main-input-wrapper
-									input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
+									input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
 								button.main-button(type="submit")
 									span
 										| Оставить заявку
@@ -398,9 +944,12 @@
 								| бесплатную 
 								| консультацию 
 							| и выбор авто
-						.application__form
+						form.application__form
+							input(type="hidden" name="project_name" value="Youwheels")
+							input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+							input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
 							.main-input-wrapper
-								input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
+								input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
 							button.main-button(type="submit")
 								span
 									| Оставить заявку
@@ -496,28 +1045,28 @@
 								| Интерьер
 								span
 									| 4 опции
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6"><g><image width="13" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAYAAAAYLBS/AAAAi0lEQVQoU4XNsQqBYRQG4P9PGS0yuwI3YjAoMVpMFIvFBVgsFJPFSMqguBGXIYtRKc8Z/voGcer5OnXOe748y7ILO478q46Ffu6pc+bA/EdqZtalFaGoCnvuDHgl4bJ+S40ezyIUOyVWNGjzoMqJG2PesZiGiuMjzZApCzask5+/hmLeZMmEaxqI/gMqNxTb6MoNFgAAAABJRU5ErkJggg=="/></g></svg>
+								+svg("charact-arrow")
 						li
 							a(href="#exterior").charact-a
 								img(src="../../images/interior.png", alt="")
 								| Экстерьер
 								span
 									| 4 опции
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6"><g><image width="13" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAYAAAAYLBS/AAAAi0lEQVQoU4XNsQqBYRQG4P9PGS0yuwI3YjAoMVpMFIvFBVgsFJPFSMqguBGXIYtRKc8Z/voGcer5OnXOe748y7ILO478q46Ffu6pc+bA/EdqZtalFaGoCnvuDHgl4bJ+S40ezyIUOyVWNGjzoMqJG2PesZiGiuMjzZApCzask5+/hmLeZMmEaxqI/gMqNxTb6MoNFgAAAABJRU5ErkJggg=="/></g></svg>
+								+svg("charact-arrow")
 						li
 							a(href="#comfort").charact-a
 								img(src="../../images/comfort.png", alt="")
 								| Комфорт
 								span
 									| 4 опции
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6"><g><image width="13" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAYAAAAYLBS/AAAAi0lEQVQoU4XNsQqBYRQG4P9PGS0yuwI3YjAoMVpMFIvFBVgsFJPFSMqguBGXIYtRKc8Z/voGcer5OnXOe748y7ILO478q46Ffu6pc+bA/EdqZtalFaGoCnvuDHgl4bJ+S40ezyIUOyVWNGjzoMqJG2PesZiGiuMjzZApCzask5+/hmLeZMmEaxqI/gMqNxTb6MoNFgAAAABJRU5ErkJggg=="/></g></svg>
+								+svg("charact-arrow")
 						li
 							a(href="#safety").charact-a
 								img(src="../../images/safety.png", alt="")
 								| Безопасность
 								span
 									| 4 опции
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6"><g><image width="13" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAYAAAAYLBS/AAAAi0lEQVQoU4XNsQqBYRQG4P9PGS0yuwI3YjAoMVpMFIvFBVgsFJPFSMqguBGXIYtRKc8Z/voGcer5OnXOe748y7ILO478q46Ffu6pc+bA/EdqZtalFaGoCnvuDHgl4bJ+S40ezyIUOyVWNGjzoMqJG2PesZiGiuMjzZApCzask5+/hmLeZMmEaxqI/gMqNxTb6MoNFgAAAABJRU5ErkJggg=="/></g></svg>
+								+svg("charact-arrow")
 						li
 							a(href="#tech").charact-a
 								img(src="../../images/tech.png", alt="")
@@ -525,9 +1074,9 @@
 								| характеристики
 								span
 									| 4 опции
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="6" viewBox="0 0 13 6"><g><image width="13" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAGCAYAAAAYLBS/AAAAi0lEQVQoU4XNsQqBYRQG4P9PGS0yuwI3YjAoMVpMFIvFBVgsFJPFSMqguBGXIYtRKc8Z/voGcer5OnXOe748y7ILO478q46Ffu6pc+bA/EdqZtalFaGoCnvuDHgl4bJ+S40ezyIUOyVWNGjzoMqJG2PesZiGiuMjzZApCzask5+/hmLeZMmEaxqI/gMqNxTb6MoNFgAAAABJRU5ErkJggg=="/></g></svg>
+								+svg("charact-arrow")
 				.tabs
-					.tab-pane.interior-pane.faded#interior
+					.tab-pane.interior-pane.faded.in.active#interior
 						ul.main-ul
 							li
 								| Тканевый салон, черный
@@ -556,22 +1105,21 @@
 								li
 									| Набор для комфортной #[br]
 									| эксплуатации #[br]
-									span
+									div
 										| В подарок
 										img(src="../../images/info.png", alt="")
-										//- .hover-tip
-										//- 	ul
-										//- 		li
-										//- 			| Аптечка
-										//- 		li
-										//- 			| Огнетушитель
-										//- 		li
-										//- 			| Набор&nbspинструментов
-										//- 		li
-										//- 			| Коврики
-										//- 		li
-										//- 			| Запасное&nbspколесо
-					.tab-pane.exterior-pane.faded.in.active#exterior
+										//- ul.hover-tip
+										//- 	li
+										//- 		| Аптечка
+										//- 	li
+										//- 		| Огнетушитель
+										//- 	li
+										//- 		| Набор&nbsp;инструментов
+										//- 	li
+										//- 		| Коврики
+										//- 	li
+										//- 		| Запасное&nbsp;колесо
+					.tab-pane.exterior-pane.faded#exterior
 						ul.main-ul
 							li
 								| Экстерьер
@@ -699,17 +1247,8 @@
 									span
 										| В подарок
 										img(src="../../images/info.png", alt="")
-
-
-						
-				
-
-
-
-
-
-			.char-application
-				.char-application__heading
+			.price-consult-application
+				.price-consult-application__heading
 					.left
 						h3
 							| Рассчитайте точную 
@@ -735,9 +1274,12 @@
 										| договора
 									li
 										| Поможет с выбором авто
-				.char-application__form
+				form.price-consult-application__form
+					input(type="hidden" name="project_name" value="Youwheels")
+					input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+					input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
 					.main-input-wrapper
-						input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
+						input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
 					.right
 						.img
 							img(src="../../images/Anna.png", alt="")
@@ -749,8 +1291,682 @@
 						span
 							| Рассчитать точную стоимость авто для вас
 
+	.modal.mfp-with-anim.characteristics#characteristics-1
+		a.popup-close
+		.wrapper
+			.char-header
+				.char-slider
+					.swiper-wrapper
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+				.descr
+					.d-h
+						| Volkswagen Polo #[br]
+						| Sedan Сonnect
+					.price-box
+						.left
+							| от
+						span
+							| 41
+						.right
+							| руб.#[br]
+							| день
+					.details-box
+						.detail
+							.detail-h
+								| Год:
+							.detail-val
+								img(src="../../images/dot.png", alt="")
+								| 2019
+						.detail
+							.detail-h
+								| Пробег:
+							.detail-val
+								img(src="../../images/dot.png", alt="")
+								| 200 км
+						.detail
+							.detail-h
+								| Состояние:
+							.detail-val
+								img(src="../../images/dot.png", alt="")
+								| Новый
+				.char-slider-buttons
+					.char-prev.char-button
+						img(src="../../images/char-prev.png", alt="")
+					.char-next.char-button
+						img(src="../../images/char-next.png", alt="")
+			.details-box.sb
+				.detail
+					.detail-h
+						| Двигатель:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Бензин, 90 л.с.
+				.detail
+					.detail-h
+						| Коробка:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Автомат
+				.detail
+					.detail-h
+						| Привод:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Передний
+				.detail
+					.detail-h
+						| Салон:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Темный
+				.detail
+					.detail-h
+						| Цвет:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Синий
+			.complect
+				| Комплектация
+				.complect-tab-nav
+					ul
+						li
+							a(href="#interior").charact-a.active
+								img(src="../../images/interior.png", alt="")
+								| Интерьер
+								span
+									| 4 опции
+								+svg("charact-arrow")
+						li
+							a(href="#exterior").charact-a
+								img(src="../../images/interior.png", alt="")
+								| Экстерьер
+								span
+									| 4 опции
+								+svg("charact-arrow")
+						li
+							a(href="#comfort").charact-a
+								img(src="../../images/comfort.png", alt="")
+								| Комфорт
+								span
+									| 4 опции
+								+svg("charact-arrow")
+						li
+							a(href="#safety").charact-a
+								img(src="../../images/safety.png", alt="")
+								| Безопасность
+								span
+									| 4 опции
+								+svg("charact-arrow")
+						li
+							a(href="#tech").charact-a
+								img(src="../../images/tech.png", alt="")
+								| Технические #[br]
+								| характеристики
+								span
+									| 4 опции
+								+svg("charact-arrow")
+				.tabs
+					.tab-pane.interior-pane.faded.in.active#interior
+						ul.main-ul
+							li
+								| Тканевый салон, черный
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									div
+										| В подарок
+										img(src="../../images/info.png", alt="")
+										//- ul.hover-tip
+										//- 	li
+										//- 		| Аптечка
+										//- 	li
+										//- 		| Огнетушитель
+										//- 	li
+										//- 		| Набор&nbsp;инструментов
+										//- 	li
+										//- 		| Коврики
+										//- 	li
+										//- 		| Запасное&nbsp;колесо
+					.tab-pane.exterior-pane.faded#exterior
+						ul.main-ul
+							li
+								| Экстерьер
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+					.tab-pane.comfort-pane.faded#comfort
+						ul.main-ul
+							li
+								| Комфорт
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+					.tab-pane.safety-pane.faded#safety
+						ul.main-ul
+							li
+								| Безопасность
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+					.tab-pane.tech-pane.faded#tech
+						ul.main-ul
+							li
+								| Технические
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+			.price-consult-application
+				.price-consult-application__heading
+					.left
+						h3
+							| Рассчитайте точную 
+							span
+								| стоимость 
+								| авто и размер платежей 
+							| для вас
+						.blue-link
+							span.blue-link-span
+								| + консультацию от менеджера
+							.consult-tip
+								ul
+									li
+										| Совершит онлайн проверку 
+										| для одобрения аренды авто
+									li
+										| Ответит на все ваши 
+										| вопросы
+									li
+										| Расскажет о всех условиях 
+										| аренды, вы будете знать обо 
+										| всем перед заключением 
+										| договора
+									li
+										| Поможет с выбором авто
+				form.price-consult-application__form
+					input(type="hidden" name="project_name" value="Youwheels")
+					input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+					input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+					.main-input-wrapper
+						input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
+					.right
+						.img
+							img(src="../../images/Anna.png", alt="")
+						.text
+							| Вам перезвонит#[br]
+							span
+								| Анна Измайлова
+					button.main-button(type="submit")
+						span
+							| Рассчитать точную стоимость авто для вас
+
+	.modal.mfp-with-anim.characteristics#characteristics-2
+		a.popup-close
+		.wrapper
+			.char-header
+				.char-slider
+					.swiper-wrapper
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+						.swiper-slide.swiper-lazy
+							img(src="../../images/charact-details-img.png", alt="")
+				.descr
+					.d-h
+						| Volkswagen Polo #[br]
+						| Sedan Сonnect
+					.price-box
+						.left
+							| от
+						span
+							| 41
+						.right
+							| руб.#[br]
+							| день
+					.details-box
+						.detail
+							.detail-h
+								| Год:
+							.detail-val
+								img(src="../../images/dot.png", alt="")
+								| 2019
+						.detail
+							.detail-h
+								| Пробег:
+							.detail-val
+								img(src="../../images/dot.png", alt="")
+								| 200 км
+						.detail
+							.detail-h
+								| Состояние:
+							.detail-val
+								img(src="../../images/dot.png", alt="")
+								| Новый
+				.char-slider-buttons
+					.char-prev.char-button
+						img(src="../../images/char-prev.png", alt="")
+					.char-next.char-button
+						img(src="../../images/char-next.png", alt="")
+			.details-box.sb
+				.detail
+					.detail-h
+						| Двигатель:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Бензин, 90 л.с.
+				.detail
+					.detail-h
+						| Коробка:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Автомат
+				.detail
+					.detail-h
+						| Привод:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Передний
+				.detail
+					.detail-h
+						| Салон:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Темный
+				.detail
+					.detail-h
+						| Цвет:
+					.detail-val
+						img(src="../../images/dot.png", alt="")
+						| Синий
+			.complect
+				| Комплектация
+				.complect-tab-nav
+					ul
+						li
+							a(href="#interior").charact-a.active
+								img(src="../../images/interior.png", alt="")
+								| Интерьер
+								span
+									| 4 опции
+								+svg("charact-arrow")
+						li
+							a(href="#exterior").charact-a
+								img(src="../../images/interior.png", alt="")
+								| Экстерьер
+								span
+									| 4 опции
+								+svg("charact-arrow")
+						li
+							a(href="#comfort").charact-a
+								img(src="../../images/comfort.png", alt="")
+								| Комфорт
+								span
+									| 4 опции
+								+svg("charact-arrow")
+						li
+							a(href="#safety").charact-a
+								img(src="../../images/safety.png", alt="")
+								| Безопасность
+								span
+									| 4 опции
+								+svg("charact-arrow")
+						li
+							a(href="#tech").charact-a
+								img(src="../../images/tech.png", alt="")
+								| Технические #[br]
+								| характеристики
+								span
+									| 4 опции
+								+svg("charact-arrow")
+				.tabs
+					.tab-pane.interior-pane.faded.in.active#interior
+						ul.main-ul
+							li
+								| Тканевый салон, черный
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									div
+										| В подарок
+										img(src="../../images/info.png", alt="")
+										//- ul.hover-tip
+										//- 	li
+										//- 		| Аптечка
+										//- 	li
+										//- 		| Огнетушитель
+										//- 	li
+										//- 		| Набор&nbsp;инструментов
+										//- 	li
+										//- 		| Коврики
+										//- 	li
+										//- 		| Запасное&nbsp;колесо
+					.tab-pane.exterior-pane.faded#exterior
+						ul.main-ul
+							li
+								| Экстерьер
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+					.tab-pane.comfort-pane.faded#comfort
+						ul.main-ul
+							li
+								| Комфорт
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+					.tab-pane.safety-pane.faded#safety
+						ul.main-ul
+							li
+								| Безопасность
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+					.tab-pane.tech-pane.faded#tech
+						ul.main-ul
+							li
+								| Технические
+							li
+								| Спортивный руль
+							li
+								| Полная регулировка сидений
+						.bottom-descr
+							.title
+								| Авто готов #[br]
+								| к эксплуатации #[br]
+								span
+									| Забрал, сел, поехал
+							ul.bottom-ul
+								li
+									| Пройден тех. осмотр
+								li
+									| Зимняя и летняя резина #[br]
+									| в комплекта
+								li
+									| Застрахован
+								li
+									| Зарегистрирован в ГАИ
+								li
+									| Обслужен
+								li
+									| Набор для комфортной #[br]
+									| эксплуатации #[br]
+									span
+										| В подарок
+										img(src="../../images/info.png", alt="")
+			.price-consult-application
+				.price-consult-application__heading
+					.left
+						h3
+							| Рассчитайте точную 
+							span
+								| стоимость 
+								| авто и размер платежей 
+							| для вас
+						.blue-link
+							span.blue-link-span
+								| + консультацию от менеджера
+							.consult-tip
+								ul
+									li
+										| Совершит онлайн проверку 
+										| для одобрения аренды авто
+									li
+										| Ответит на все ваши 
+										| вопросы
+									li
+										| Расскажет о всех условиях 
+										| аренды, вы будете знать обо 
+										| всем перед заключением 
+										| договора
+									li
+										| Поможет с выбором авто
+				form.price-consult-application__form
+					input(type="hidden" name="project_name" value="Youwheels")
+					input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+					input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+					.main-input-wrapper
+						input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
+					.right
+						.img
+							img(src="../../images/Anna.png", alt="")
+						.text
+							| Вам перезвонит#[br]
+							span
+								| Анна Измайлова
+					button.main-button(type="submit")
+						span
+							| Рассчитать точную стоимость авто для вас
 
 	.modal.mfp-with-anim.price-consult#price-consult
+		a.popup-close
 		.wrapper
 			.price-consult-application
 				.price-consult-application__heading
@@ -780,8 +1996,11 @@
 									li
 										| Поможет с выбором авто
 				form.price-consult-application__form
+					input(type="hidden" name="project_name" value="Youwheels")
+					input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+					input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
 					.main-input-wrapper
-						input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
+						input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
 					.right
 						.img
 							img(src="../../images/Anna.png", alt="")
@@ -793,7 +2012,146 @@
 						span
 							| Рассчитать точную стоимость авто для вас
 
+	.modal.mfp-with-anim.price-consult#price-consult-1
+		a.popup-close
+		.wrapper
+			.price-consult-application
+				.price-consult-application__heading
+					.left
+						h3
+							| Рассчитайте точную 
+							span
+								| стоимость 
+								| авто и размер платежей 
+							| для вас
+						.blue-link
+							span.blue-link-span
+								| + консультацию от менеджера
+							.consult-tip
+								ul
+									li
+										| Совершит онлайн проверку 
+										| для одобрения аренды авто
+									li
+										| Ответит на все ваши 
+										| вопросы
+									li
+										| Расскажет о всех условиях 
+										| аренды, вы будете знать обо 
+										| всем перед заключением 
+										| договора
+									li
+										| Поможет с выбором авто
+				form.price-consult-application__form
+					input(type="hidden" name="project_name" value="Youwheels")
+					input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+					input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+					.main-input-wrapper
+						input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
+					.right
+						.img
+							img(src="../../images/Anna.png", alt="")
+						.text
+							| Вам перезвонит#[br]
+							span
+								| Анна Измайлова
+					button.main-button(type="submit")
+						span
+							| Рассчитать точную стоимость авто для вас
 
+	.modal.mfp-with-anim.price-consult#price-consult-2
+		a.popup-close
+		.wrapper
+			.price-consult-application
+				.price-consult-application__heading
+					.left
+						h3
+							| Рассчитайте точную 
+							span
+								| стоимость 
+								| авто и размер платежей 
+							| для вас
+						.blue-link
+							span.blue-link-span
+								| + консультацию от менеджера
+							.consult-tip
+								ul
+									li
+										| Совершит онлайн проверку 
+										| для одобрения аренды авто
+									li
+										| Ответит на все ваши 
+										| вопросы
+									li
+										| Расскажет о всех условиях 
+										| аренды, вы будете знать обо 
+										| всем перед заключением 
+										| договора
+									li
+										| Поможет с выбором авто
+				form.price-consult-application__form
+					input(type="hidden" name="project_name" value="Youwheels")
+					input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+					input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+					.main-input-wrapper
+						input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
+					.right
+						.img
+							img(src="../../images/Anna.png", alt="")
+						.text
+							| Вам перезвонит#[br]
+							span
+								| Анна Измайлова
+					button.main-button(type="submit")
+						span
+							| Рассчитать точную стоимость авто для вас
+
+	.modal.mfp-with-anim.price-consult#price-consult-3
+		a.popup-close
+		.wrapper
+			.price-consult-application
+				.price-consult-application__heading
+					.left
+						h3
+							| Рассчитайте точную 
+							span
+								| стоимость 
+								| авто и размер платежей 
+							| для вас
+						.blue-link
+							span.blue-link-span
+								| + консультацию от менеджера
+							.consult-tip
+								ul
+									li
+										| Совершит онлайн проверку 
+										| для одобрения аренды авто
+									li
+										| Ответит на все ваши 
+										| вопросы
+									li
+										| Расскажет о всех условиях 
+										| аренды, вы будете знать обо 
+										| всем перед заключением 
+										| договора
+									li
+										| Поможет с выбором авто
+				form.price-consult-application__form
+					input(type="hidden" name="project_name" value="Youwheels")
+					input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+					input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+					.main-input-wrapper
+						input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
+					.right
+						.img
+							img(src="../../images/Anna.png", alt="")
+						.text
+							| Вам перезвонит#[br]
+							span
+								| Анна Измайлова
+					button.main-button(type="submit")
+						span
+							| Рассчитать точную стоимость авто для вас
 
 	.modal.mfp-with-anim.users-modal#users
 		a.popup-close
@@ -816,9 +2174,23 @@
 						| получение #[br]
 						| контактов 
 					| пользователей
-				.application__form
+				form.application__form
+					input(type="hidden" name="project_name" value="Youwheels")
+					input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+					input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
 					.main-input-wrapper
-						input.main-input(type="tel" maxlength="19", placeholder="+375  (XX) XXX-XX-XX")
+						input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
 					button.main-button(type="submit")
 						span
 							| Оставить заявку
+
+	.modal.thanks-modal.mfp-with-anim#thanks-modal
+		a.modal-close(href="#")
+			img(src="/images/close-modal.png" alt="")
+		.title
+			| Спасибо! За доверие, #[br]
+			| ваша заявка принята
+		.descr
+			| В рабочее время в течение 5 минут  с вами свяжется наш #[br]
+			| менеджер, если вы не хотите ожидать звонка вы можете #[br]
+			| позвонить по номеру +375 (XX) XXX-XX-XX

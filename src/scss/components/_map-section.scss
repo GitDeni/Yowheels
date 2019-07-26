@@ -53,6 +53,10 @@
 				justify-content: space-between;
 				margin-bottom: vw(20);
 
+				a {
+					color: $main-font-color;
+				}
+
 				&_card {
 					margin-bottom: vw(10);
 				}
