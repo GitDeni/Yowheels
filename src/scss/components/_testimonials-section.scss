@@ -3,12 +3,23 @@
 	height: vw(800);
 	background-color: #121c24;
 
+	@include mobile {
+		padding-top: vmin(90);
+		height: vmin(1100);
+	}
+
 	.swiper-slide {
 		border-radius: vw(10);
 		padding: vw(10);
 		height: vw(370);
 		background-size: cover;
 		background-repeat: no-repeat;
+
+		@include mobile {
+			border-radius: vmin(10);
+			padding: vmin(10);
+			height: vmin(370);
+		}
 	}
 
 	.swiper-slide::after {
@@ -21,6 +32,14 @@
 		height: vw(10);
 		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 		background-color: #3d444a;
+
+		@include mobile {
+			left: vmin(10);
+			bottom: vmin(-10);
+			border-radius: 0 0 vmin(10) vmin(10);
+			width: vmin(320);
+			height: vmin(10);
+		}
 	}
 
 	.container {
@@ -31,15 +50,29 @@
 	h3 {
 		font-size: vw(38);
 		color: #fff;
+
+		@include mobile {
+			font-size: vmin(38);
+			line-height: vmin(50);
+		}
 	}
 
 	.testim-tab-nav {
 		width: 40%;
 
+		@include mobile {
+			width: 100%;
+		}
+
 		.testim-main-button {
 			padding: vw(15) vw(40);
 			font-size: vw(14);
 			text-transform: uppercase;
+
+			@include mobile {
+				padding: vmin(15) vmin(40);
+				font-size: vmin(14);
+			}
 
 			&::before {
 				content: "";
@@ -61,6 +94,10 @@
 		margin-block-end: 0;
 		margin-block-start: 0;
 		padding-inline-start: 0;
+
+		@include mobile {
+			flex-wrap: wrap;
+		}
 	}
 
 	.testim-main-button {
@@ -78,6 +115,13 @@
 		color: #fff;
 		transition: all 0.3s ease-in-out;
 		cursor: pointer;
+
+		@include mobile {
+			margin-top: vmin(20);
+			border-radius: vmin(35);
+			padding: vmin(20) vmin(40);
+			font-size: vmin(13);
+		}
 
 		&::before {
 			content: "";
@@ -121,6 +165,11 @@
 		margin-bottom: vw(60);
 		padding-top: vw(60);
 		width: 100%;
+
+		@include mobile {
+			margin-bottom: vmin(40);
+			padding-top: vmin(60);
+		}
 	}
 
 	.video-swiper,
@@ -128,6 +177,10 @@
 	.written-swiper {
 		width: 100%;
 		height: vw(400);
+
+		@include mobile {
+			height: vmin(400);
+		}
 	}
 
 	.tab-footer {
@@ -135,10 +188,21 @@
 		justify-content: space-between;
 		width: 100%;
 
+		@include mobile {
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
+
 		.swiper-buttons {
 			display: flex;
 			justify-content: space-between;
 			width: vw(150);
+
+			@include mobile {
+				order: -1;
+				margin-bottom: vmin(50);
+				width: vmin(150);
+			}
 
 			.testim-prev,
 			.testim-next {
@@ -152,9 +216,19 @@
 				transition: all 0.3s ease-in-out;
 				cursor: pointer;
 
+				@include mobile {
+					width: vmin(60);
+					height: vmin(60);
+				}
+
 				img {
 					width: vw(9);
 					height: vw(16);
+
+					@include mobile {
+						width: vmin(9);
+						height: vmin(16);
+					}
 				}
 
 				&:hover {
@@ -165,14 +239,6 @@
 		}
 	}
 }
-
-// .swiper-slide {
-// 	border-radius: vw(10);
-// 	padding: vw(10);
-// 	height: vw(370);
-// 	background-size: cover;
-// 	background-repeat: no-repeat;
-// }
 
 .video-swiper .swiper-slide,
 .photo-swiper .swiper-slide,
@@ -188,6 +254,10 @@
 		width: 100%;
 		height: 100%;
 		background-color: rgba(#000, 0.7);
+
+		@include mobile {
+			display: none;
+		}
 	}
 }
 
@@ -216,6 +286,10 @@
 	width: 100%;
 	height: 100%;
 
+	@include mobile {
+		border-radius: vmin(10);
+	}
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -226,6 +300,14 @@
 		height: vw(10);
 		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 		background-color: #293239;
+
+		@include mobile {
+			left: vmin(20);
+			bottom: vmin(-20);
+			border-radius: 0 0 vmin(10) vmin(10);
+			width: vmin(300);
+			height: vmin(10);
+		}
 	}
 
 	.main-circle {
@@ -238,9 +320,19 @@
 		box-shadow: 0 15px 40px rgba(73, 178, 248, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
 		background-color: $sky-blue;
 
+		@include mobile {
+			width: vmin(90);
+			height: vmin(90);
+		}
+
 		img {
 			width: vw(70);
 			height: vw(70);
+
+			@include mobile {
+				width: vmin(70);
+				height: vmin(70);
+			}
 		}
 	}
 }
@@ -248,24 +340,22 @@
 .written-swiper .video-link::before {
 	left: vw(30);
 	width: vw(201);
+
+	@include mobile {
+		left: vmin(30);
+		width: vmin(290);
+	}
 }
 
 .written-swiper .swiper-slide::after {
 	left: vw(15);
 	width: vw(231);
-}
 
-// .swiper-slide::after {
-// 	content: "";
-// 	position: absolute;
-// 	left: vw(10);
-// 	bottom: vw(-10);
-// 	border-radius: 0 0 vw(10) vw(10);
-// 	width: vw(540);
-// 	height: vw(10);
-// 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-// 	background-color: #3d444a;
-// }
+	@include mobile {
+		left: vmin(15);
+		width: vmin(310);
+	}
+}
 
 .testimonials .tab-pane {
 	display: block;

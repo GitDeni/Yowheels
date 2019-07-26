@@ -9,6 +9,12 @@ var swiper1 = new Swiper ('.video-swiper', {
 		loadPrevNext: true,
 		loadOnTransitionStart: true,
 	},
+	breakpoints: {
+		1024: {
+			slidesPerView: 1,
+			spaceBetween: 50,
+		},
+	},
 	// Navigation arrows
 	navigation: {
 		nextEl: '.testim-next',
@@ -24,6 +30,12 @@ var swiper2 = new Swiper ('.photo-swiper', {
 		loadPrevNext: true,
 		loadOnTransitionStart: true,
 	},
+	breakpoints: {
+		1024: {
+			slidesPerView: 1,
+			spaceBetween: 50,
+		},
+	},
 	// Navigation arrows
 	navigation: {
 		nextEl: '.testim-next',
@@ -38,6 +50,12 @@ var swiper3 = new Swiper ('.written-swiper', {
 	lazy: {
 		loadPrevNext: true,
 		loadOnTransitionStart: true,
+	},
+	breakpoints: {
+		1024: {
+			slidesPerView: 1,
+			spaceBetween: 50,
+		},
 	},
 	// Navigation arrows
 	navigation: {

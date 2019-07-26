@@ -89,6 +89,12 @@
 				flex-wrap: wrap;
 				justify-content: space-between;
 				width: 55%;
+
+				.white-blue-button {
+					@include mobile {
+						margin-top: vmin(40);
+					}
+				}
 			}
 
 			.absolutes {
