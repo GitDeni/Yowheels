@@ -32,9 +32,9 @@
 		margin-left: vw(20);
 		font-family: $g-p-light;
 		font-style: normal;
-		display: none;
-
+		
 		@include mobile {
+			display: none;
 			margin-left: vmin(20);
 		}
 
