@@ -203,7 +203,7 @@
 			@include mobile {
 				margin-bottom: vmin(20);
 				border-radius: vmin(10);
-				width: vmin(300);
+				width: 100%;
 			}
 
 			&_img {
@@ -212,7 +212,7 @@
 					height: vw(197);
 
 					@include mobile {
-						width: vmin(300);
+						width: 100%;
 						height: vmin(170);
 					}
 				}
