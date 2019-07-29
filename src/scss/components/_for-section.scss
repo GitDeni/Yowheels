@@ -2,14 +2,26 @@
 	padding-top: vw(115);
 	padding-bottom: vw(45);
 	background-image: url("../../images/for-bg.png");
-	background-position: 90% -95%;
-	// background-size: contain;
+	background-position: 90% vw(90);
+	// background-size: 1078px 939px;
+	background-size: contain;
 	background-repeat: no-repeat;
 
 	@include mobile {
 		padding-top: vmin(115);
 		padding-bottom: vmin(45);
 		background-image: none;
+	}
+
+	.for-bg {
+		position: absolute;
+		top: vw(100);
+		right: 0;
+
+		img {
+			width: vw(1078);
+			height: vw(939);
+		}
 	}
 
 	.container {
