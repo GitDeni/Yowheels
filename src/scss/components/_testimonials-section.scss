@@ -4,9 +4,16 @@
 	background-color: #121c24;
 
 	@include mobile {
-		padding-top: vmin(90);
-		height: vmin(1100);
-	}
+		padding-top: vmin(60);
+		height: vmin(1000);
+  }
+  
+  .container {
+    @include mobile {
+      padding-left: vmin(80);
+      padding-right: vmin(80);
+    }
+  }
 
 	.swiper-slide {
 		border-radius: vw(10);
@@ -18,7 +25,8 @@
 		@include mobile {
 			border-radius: vmin(10);
 			padding: vmin(10);
-			height: vmin(370);
+      height: vmin(370);
+      max-width: vmin(320);
 		}
 	}
 
@@ -52,8 +60,10 @@
 		color: #fff;
 
 		@include mobile {
-			font-size: vmin(38);
-			line-height: vmin(50);
+			font-size: vmin(29);
+      line-height: vmin(42);
+      // padding-left: vmin(60);
+      width: 90%;
 		}
 	}
 
@@ -61,7 +71,9 @@
 		width: 40%;
 
 		@include mobile {
-			width: 100%;
+      // margin: 0 auto;
+      width: 90%;
+      
 		}
 
 		.testim-main-button {
@@ -190,7 +202,7 @@
 
 		@include mobile {
 			flex-wrap: wrap;
-			justify-content: flex-end;
+			// justify-content: flex-end;
 		}
 
 		.swiper-buttons {
@@ -200,7 +212,7 @@
 
 			@include mobile {
 				order: -1;
-				margin-bottom: vmin(50);
+        margin-bottom: vmin(10);
 				width: vmin(150);
 			}
 
@@ -236,7 +248,21 @@
 					background-color: $sky-blue;
 				}
 			}
-		}
+    }
+    
+    .find-out {
+      @include mobile {
+        width: vmin(320);
+        height: vmin(60);
+        padding: 0;
+      }
+
+      span {
+        @include mobile {
+          font-size: vmin(12);
+        }
+      }
+    }
 	}
 }
 

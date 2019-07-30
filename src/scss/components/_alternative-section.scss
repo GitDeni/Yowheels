@@ -3,7 +3,7 @@
 	padding-bottom: vw(95);
 
 	@include mobile {
-		padding-top: vmin(100);
+		padding-top: vmin(200);
 		padding-bottom: vmin(95);
 	}
 
@@ -15,6 +15,7 @@
 		width: 100%;
 
 		@include mobile {
+      width: 60%;
 			margin-bottom: vmin(40);
 		}
 
@@ -46,10 +47,11 @@
 			line-height: vw(25);
 
 			@include mobile {
-				margin-right: 0;
-				padding-top: vmin(5);
-				font-size: vmin(16);
-				line-height: vmin(25);
+        display: none;
+				// margin-right: 0;
+				// padding-top: vmin(5);
+				// font-size: vmin(16);
+				// line-height: vmin(25);
 			}
 
 			span {
@@ -76,11 +78,11 @@
 				height: vw(70);
 				background-color: $sky-blue;
 
-				@include mobile {
-					margin-right: vmin(30);
-					width: vmin(70);
-					height: vmin(70);
-				}
+				// @include mobile {
+				// 	margin-right: vmin(30);
+				// 	width: vmin(70);
+				// 	height: vmin(70);
+				// }
 
 				&::before {
 					content: "";
@@ -93,13 +95,11 @@
 					background-size: contain;
 					background-repeat: no-repeat;
 
-					@include mobile {
-						display: none;
-						// left: vw(-120);
-						// bottom: vw(-120);
-						width: vmin(103);
-						height: vmin(158);
-					}
+					// @include mobile {
+					// 	display: none;
+					// 	width: vmin(103);
+					// 	height: vmin(158);
+					// }
 				}
 
 				img {
@@ -121,7 +121,8 @@
 
 			@include mobile {
 				font-size: vmin(18);
-				line-height: vmin(30);
+        line-height: vmin(30);
+        text-align: center;
 			}
 		}
 	}
@@ -133,14 +134,15 @@
 		width: 100%;
 
 		@include mobile {
-			flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: center;
 		}
 
 		.box-wrapper {
 			width: 55%;
 
 			@include mobile {
-				width: 100%;
+				width: 80%;
 			}
 
 			.box {
@@ -149,8 +151,15 @@
 				justify-content: flex-start;
 
 				@include mobile {
+          justify-content: space-between;
 					margin-bottom: vmin(30);
-				}
+        }
+        
+        br {
+          @include mobile {
+            display: none;
+          }
+        }
 
 				&-img {
 					display: flex;
@@ -161,7 +170,8 @@
 
 					@include mobile {
 						width: vmin(105);
-						height: vmin(105);
+            height: vmin(105);
+            margin-right: vmin(30);
 					}
 
 					&-1 {

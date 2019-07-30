@@ -12,7 +12,7 @@ var swiper1 = new Swiper ('.video-swiper', {
 	breakpoints: {
 		1024: {
 			slidesPerView: 1,
-			spaceBetween: 50,
+			spaceBetween: 80,
 		},
 	},
 	// Navigation arrows
@@ -33,7 +33,7 @@ var swiper2 = new Swiper ('.photo-swiper', {
 	breakpoints: {
 		1024: {
 			slidesPerView: 1,
-			spaceBetween: 50,
+			spaceBetween: 80,
 		},
 	},
 	// Navigation arrows
@@ -54,7 +54,7 @@ var swiper3 = new Swiper ('.written-swiper', {
 	breakpoints: {
 		1024: {
 			slidesPerView: 1,
-			spaceBetween: 50,
+			spaceBetween: 80,
 		},
 	},
 	// Navigation arrows
