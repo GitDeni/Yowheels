@@ -13,7 +13,7 @@
 			background-repeat: no-repeat;
 
 			@include mobile {
-				// margin-top: vmin(-210);
+				margin-top: 0;
 				padding-top: vmin(50);
 				padding-bottom: vmin(80);
 			}

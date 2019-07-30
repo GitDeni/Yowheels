@@ -53,11 +53,13 @@ a {
 	transition: all 0.3s ease-in-out;
 
 	@include mobile {
-		margin-left: vmin(30);
 		border-radius: vmin(26);
-		padding: vmin(18) vmin(23);
-		font-size: vmin(13);
-		display: none;
+		padding: vmin(18);
+    font-size: vmin(13);
+    width: vmin(220);
+    height: vmin(51);
+    // margin-bottom: vmin(10);
+		// display: none;
 	}
 
 	img {
@@ -232,9 +234,10 @@ h2 {
 	}
 
 	@include mobile {
-		font-size: vmin(32);
-		line-height: vmin(55);
-		letter-spacing: vmin(1.5);
+		font-size: vmin(29);
+		line-height: vmin(42);
+    letter-spacing: vmin(1.5);
+    text-align: center;
 	}
 }
 

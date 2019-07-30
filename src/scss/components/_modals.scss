@@ -320,6 +320,8 @@
 			width: vw(550);
 
 			@include mobile {
+        font-size: vmin(12);
+        line-height: vmin(20);
 				width: vmin(300);
 			}
 		}
@@ -994,7 +996,11 @@
 				width: vw(550);
 
 				@include mobile {
-					width: vmin(290);
+          width: vmin(290);
+          font-size: vmin(12);
+          line-height: vmin(20);
+          padding-left: vmin(10);
+          padding-right: vmin(20);
 				}
 			}
 		}
@@ -1870,7 +1876,10 @@
 			width: vw(474);
 
 			@include mobile {
-				width: vmin(290);
+        width: vmin(290);
+        font-size: vmin(12);
+        padding-left: vmin(10);
+        padding-right: vmin(10);
 			}
 		}
 	}

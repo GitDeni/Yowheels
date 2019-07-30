@@ -4,6 +4,7 @@
 	background-color: #f9f9f9;
 
 	@include mobile {
+    display: none;
 		padding-top: vmin(100);
 		padding-bottom: vmin(100);
 	}

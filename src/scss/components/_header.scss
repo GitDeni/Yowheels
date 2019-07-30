@@ -1,4 +1,8 @@
 .header {
+
+  @include mobile {
+    padding-top: vmin(30);
+  }
 	padding-top: vw(25);
 
 	.container {
@@ -11,7 +15,9 @@
 		align-items: center;
 
 		@include mobile {
-			flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
 		}
 	}
 
@@ -24,7 +30,11 @@
 				width: vmin(187);
 				height: vmin(43);
 			}
-		}
+    }
+    
+    @include mobile {
+      margin: 0 vmin(26) vmin(23);
+    }
 	}
 
 	.header-address {
@@ -109,7 +119,7 @@
 
 		@include mobile {
 			font-size: vmin(16);
-			margin: vmin(20);
+			margin: vmin(15);
 		}
 
 		.blue-link {

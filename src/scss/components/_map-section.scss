@@ -35,18 +35,22 @@
 
 		.contacts {
 			border: 1px solid rgba(26, 33, 35, 0.1);
-			border-radius: vw(10);
+      border-radius: vw(10);
 			padding: vw(30) vw(40) vw(30) vw(35);
 
 			@include mobile {
+        display: flex;
+        flex-flow: column;
 				border-radius: vmin(10);
-				padding: vmin(30) vmin(40) vmin(30) vmin(35);
+        padding-top: vmin(30);
+        padding-bottom: vmin(30);
 			}
 
 			&__heading {
-				margin-bottom: vw(15);
+        margin-bottom: vw(15);
 
 				@include mobile {
+          padding-left: vmin(30);
 					margin-bottom: vmin(15);
 				}
 
@@ -68,12 +72,12 @@
 					font-family: $g-p-light;
 					font-size: vw(12);
 					letter-spacing: vw(0.4);
-					text-transform: uppercase;
+          text-transform: uppercase;
 
 					@include mobile {
 						font-size: vmin(14);
 						line-height: vmin(28);
-						letter-spacing: vmin(0.4);
+            letter-spacing: vmin(0.4);
 					}
 
 					.ask {
@@ -89,12 +93,14 @@
 			}
 
 			&__main {
+        padding-left: vw(30);
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-between;
 				margin-bottom: vw(20);
 
 				@include mobile {
+          padding-left: vmin(30);
 					margin-bottom: vmin(20);
 				}
 
@@ -184,7 +190,8 @@
 				width: vw(350);
 
 				@include mobile {
-					width: vmin(250);
+          width: vmin(290);
+          margin: 0 auto;
 				}
 			}
 		}
