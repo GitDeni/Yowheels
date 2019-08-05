@@ -6,7 +6,7 @@
 	background-repeat: no-repeat;
 
 	@include mobile {
-		padding-top: vmin(130);
+		padding-top: vmin(100);
 		padding-bottom: vmin(100);
 		background-image: none;
 	}
@@ -15,8 +15,6 @@
 		margin-bottom: vw(70);
 
 		@include mobile {
-      width: 80%;
-      text-align: center;
 			margin-bottom: vmin(30);
 		}
 	}
@@ -28,7 +26,7 @@
 		background-image: url("../images/c-logo.png");
 
 		@include mobile {
-			left: 32%;
+			left: vmin(10);
 			top: vmin(-40);
 			width: vmin(169);
 		}
@@ -41,10 +39,9 @@
 		width: 100%;
 
 		@include mobile {
-      flex-wrap: wrap;
-      justify-content: center;
+			flex-wrap: wrap;
 			padding-left: 0;
-    }
+		}
 
 		.col-l,
 		.col-r {
@@ -54,10 +51,10 @@
 			background-color: #fff;
 
 			@include mobile {
-				width: vmin(309);
-				padding: 0;
-      }
-     
+				width: 100%;
+				padding: vmin(10) 0;
+			}
+
 			.card {
 				position: relative;
 				padding: vw(30) vw(30) vw(20);
@@ -65,15 +62,8 @@
 				box-shadow: 0 vw(28) vw(25) vw(-20) rgba(0, 0, 0, 0.1);
 
 				@include mobile {
-          padding: vmin(40) vmin(10) vmin(20) vmin(20);
-          box-shadow: 0 vmin(28) vmin(25) vmin(-20) rgba(0, 0, 0, 0.1);
-        }
-        
-        br {
-          @include mobile {
-            display: none;
-          }
-        }
+					padding: vmin(40) vmin(10) vmin(20) vmin(60);
+				}
 
 				&::before {
 					content: "";
@@ -86,10 +76,10 @@
 					background-repeat: no-repeat;
 
 					@include mobile {
-						left: vmin(20);
-						top: vmin(60);
-						width: vmin(50);
-						height: vmin(80);
+						left: vmin(-10);
+						top: vmin(-30);
+						width: vmin(80);
+						height: vmin(95);
 					}
 				}
 
@@ -103,11 +93,9 @@
 
 					@include mobile {
 						margin-bottom: vmin(10);
-						font-size: vmin(12);
+						font-size: vmin(14);
 						line-height: vmin(20);
-            letter-spacing: vmin(0.7);
-            margin-left: vmin(70);
-            padding-top: vmin(10);
+						letter-spacing: vmin(0.7);
 					}
 				}
 
@@ -120,24 +108,13 @@
 					@include mobile {
 						padding-bottom: vmin(20);
 						font-size: vmin(14);
-            line-height: vmin(20);
-            margin-left: vmin(70);
-          }
-          
-          br {
-            @include mobile {
-              display: none;
-            }
-          }
+						line-height: vmin(20);
+					}
 				}
 
 				&:last-child {
 					padding-bottom: 0;
-          box-shadow: none;
-          
-          @include mobile {
-            box-shadow: 0 vmin(28) vmin(25) vmin(-20) rgba(0, 0, 0, 0.1);
-          }
+					box-shadow: none;
 				}
 			}
 

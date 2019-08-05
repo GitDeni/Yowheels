@@ -221,7 +221,7 @@
 				@include mobile {
 					bottom: vmin(-8);
 					border-radius: 0 0 vmin(10) vmin(10);
-					width: 98%;
+					width: vmin(285);
 					height: vmin(10);
 				}
 			}
