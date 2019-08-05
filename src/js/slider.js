@@ -12,7 +12,7 @@ var swiper1 = new Swiper ('.video-swiper', {
 	breakpoints: {
 		1024: {
 			slidesPerView: 1,
-			spaceBetween: 50,
+			spaceBetween: 100,
 		},
 	},
 	// Navigation arrows
@@ -33,7 +33,7 @@ var swiper2 = new Swiper ('.photo-swiper', {
 	breakpoints: {
 		1024: {
 			slidesPerView: 1,
-			spaceBetween: 50,
+			spaceBetween: 100,
 		},
 	},
 	// Navigation arrows
@@ -54,7 +54,7 @@ var swiper3 = new Swiper ('.written-swiper', {
 	breakpoints: {
 		1024: {
 			slidesPerView: 1,
-			spaceBetween: 50,
+			spaceBetween: 100,
 		},
 	},
 	// Navigation arrows
@@ -65,21 +65,41 @@ var swiper3 = new Swiper ('.written-swiper', {
 })
 
 
-var swiper4 = new Swiper ('.char-slider', {
-	slidesPerView: 1,
-	spaceBetween: 30,
-	simulateTouch: false,
-	lazy: {
-		loadPrevNext: true,
-		loadOnTransitionStart: true,
-	},
-	// Navigation arrows
-	navigation: {
-		nextEl: '.char-next',
-		prevEl: '.char-prev',
-	},
-})
+// var swiper4 = new Swiper ('.char-slider', {
+// 	slidesPerView: 1,
+// 	spaceBetween: 30,
+// 	simulateTouch: false,
+// 	loop: true,
+// 	lazy: {
+// 		loadPrevNext: true,
+// 		loadOnTransitionStart: true,
+// 	},
+// 	// Navigation arrows
+// 	navigation: {
+// 		nextEl: '.char-next',
+// 		prevEl: '.char-prev',
+// 	},
+// })
 
+
+$('body').on('click', '.make-swiper', function () {
+	var swiper4 = new Swiper ('.char-slider', {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		simulateTouch: false,
+		loop: true,
+		lazy: {
+			loadPrevNext: true,
+			loadOnTransitionStart: true,
+		},
+		// Navigation arrows
+		navigation: {
+			nextEl: '.char-next',
+			prevEl: '.char-prev',
+		},
+	})
+	// swiper4.update();
+});
 
 function tabs() {
 	$('.video-swiper .swiper-slide-active').next().addClass('swiper-active-second');

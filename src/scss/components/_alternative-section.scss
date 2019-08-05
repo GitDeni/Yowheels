@@ -3,7 +3,7 @@
 	padding-bottom: vw(95);
 
 	@include mobile {
-		padding-top: vmin(200);
+		padding-top: vmin(100);
 		padding-bottom: vmin(95);
 	}
 
@@ -33,6 +33,7 @@
 
 				@include mobile {
 					top: vmin(-25);
+					left: 35%;
 				}
 			}
 		}
@@ -240,6 +241,7 @@
 
 				@include mobile {
 					flex-wrap: wrap;
+					justify-content: center;
 				}
 
 				.white-blue-button {

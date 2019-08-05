@@ -748,7 +748,7 @@
 									| Аренды
 			.tabs
 				.tab-content
-					.tab-pane.credit-pane.faded.in.active#credit-pane
+					.tab-pane.modal-pane.credit-pane.faded.in.active#credit-pane
 						.pane-main
 							.heading
 								.l
@@ -862,7 +862,7 @@
 									span
 										| Оставить заявку
 						
-					.tab-pane.leasing-pane.faded#leasing-pane
+					.tab-pane.modal-pane.leasing-pane.faded#leasing-pane
 						.sub-heading
 							img(src="../../images/mini-logo.png", alt="")
 							| YoWheels - лучше и проще, чем обычный лизинг
@@ -925,34 +925,34 @@
 										| Оставить заявку
 
 
-				.tab-pane.rent-pane.faded#rent-pane
-					.rent-box
-						img(src="../../images/car-key.png", alt="")
-						.rent-text
-							.rent-text-h
-								| Отличие в том, что вы 
+					.tab-pane.modal-pane.rent-pane.faded#rent-pane
+						.rent-box
+							img(src="../../images/car-key.png", alt="")
+							.rent-text
+								.rent-text-h
+									| Отличие в том, что вы 
+									span
+										| не просто 
+									| арендуете,
+								p.rent-text-p
+									| а постепенно выкупаете авто в собственность, тем самым мы помогаем 
+									| сохранить вам ваши деньги и уберечь от банков и кредитов:)
+						.application
+							h3
+								| Оставить заявку на 
 								span
-									| не просто 
-								| арендуете,
-							p.rent-text-p
-								| а постепенно выкупаете авто в собственность, тем самым мы помогаем 
-								| сохранить вам ваши деньги и уберечь от банков и кредитов:)
-					.application
-						h3
-							| Оставить заявку на 
-							span
-								| бесплатную 
-								| консультацию 
-							| и выбор авто
-						form.application__form
-							input(type="hidden" name="project_name" value="Youwheels")
-							input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
-							input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
-							.main-input-wrapper
-								input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
-							button.main-button(type="submit")
-								span
-									| Оставить заявку
+									| бесплатную 
+									| консультацию 
+								| и выбор авто
+							form.application__form
+								input(type="hidden" name="project_name" value="Youwheels")
+								input(type="hidden" name="admin_email" value="maxgraph23@gmail.com")
+								input(type="hidden" name="form_subject" value="Заявка с сайта Youwheels")
+								.main-input-wrapper
+									input.main-input(type="tel" maxlength="19" name="Телефон" placeholder="+375  (XX) XXX-XX-XX")
+								button.main-button(type="submit")
+									span
+										| Оставить заявку
 	
 	.modal.mfp-with-anim.characteristics#characteristics
 		a.popup-close
@@ -999,25 +999,25 @@
 							.detail-val
 								img(src="../../images/dot.png", alt="")
 								| Новый
-				.char-slider-buttons.desktop-buttons
+				.char-slider-buttons
 					.char-prev.char-button
 						img(src="../../images/char-prev.png", alt="")
 					.char-next.char-button
 						img(src="../../images/char-next.png", alt="")
 			.details-box.sb
-				.detail
+				.detail.extra-border
 					.detail-h
 						| Двигатель:
 					.detail-val
 						img(src="../../images/dot.png", alt="")
 						| Бензин, 90 л.с.
-				.detail
+				.detail.extra-border
 					.detail-h
 						| Коробка:
 					.detail-val
 						img(src="../../images/dot.png", alt="")
 						| Автомат
-				.detail
+				.detail.extra-border
 					.detail-h
 						| Привод:
 					.detail-val
@@ -1036,7 +1036,8 @@
 						img(src="../../images/dot.png", alt="")
 						| Синий
 			.complect
-				| Комплектация
+				h6
+					| Комплектация
 				.complect-tab-nav
 					ul
 						li
@@ -1076,7 +1077,7 @@
 									| 4 опции
 								+svg("charact-arrow")
 				.tabs
-					.tab-pane.interior-pane.faded#interior
+					.tab-pane.complect-pane.interior-pane.faded#interior
 						ul.main-ul
 							li
 								| Тканевый салон, черный
@@ -1084,42 +1085,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									div
-										| В подарок
-										img(src="../../images/info.png", alt="")
-										//- ul.hover-tip
-										//- 	li
-										//- 		| Аптечка
-										//- 	li
-										//- 		| Огнетушитель
-										//- 	li
-										//- 		| Набор&nbsp;инструментов
-										//- 	li
-										//- 		| Коврики
-										//- 	li
-										//- 		| Запасное&nbsp;колесо
-					.tab-pane.exterior-pane.faded#exterior
+
+					.tab-pane.complect-pane.exterior-pane.faded#exterior
 						ul.main-ul
 							li
 								| Экстерьер
@@ -1127,31 +1094,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									span
-										| В подарок
-										img(src="../../images/info.png", alt="")
-					.tab-pane.comfort-pane.faded#comfort
+					
+					.tab-pane.complect-pane.comfort-pane.faded#comfort
 						ul.main-ul
 							li
 								| Комфорт
@@ -1159,31 +1103,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									span
-										| В подарок
-										img(src="../../images/info.png", alt="")
-					.tab-pane.safety-pane.faded#safety
+			
+					.tab-pane.complect-pane.safety-pane.faded#safety
 						ul.main-ul
 							li
 								| Безопасность
@@ -1191,31 +1112,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									span
-										| В подарок
-										img(src="../../images/info.png", alt="")
-					.tab-pane.tech-pane.faded#tech
+	
+					.tab-pane.complect-pane.tech-pane.faded#tech
 						ul.main-ul
 							li
 								| Технические
@@ -1224,42 +1122,43 @@
 							li
 								| Полная регулировка сидений
 				.bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-							ul.bottom-ul
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									.gift
-										| В подарок
-										img(src="../../images/info.png", alt="")
-										.hover-tip
-											ul
-												li
-													| Аптечка
-												li
-													| Огнетушитель
-												li
-													| Набор&nbsp;инструментов
-												li
-													| Коврики
-												li
-													| Запасное&nbsp;колесо
+					.title
+						| Авто готов #[br]
+						| к эксплуатации #[br]
+						span
+							| Забрал, сел, поехал
+					.uls
+						ul.bottom-ul
+							li
+								| Пройден тех. осмотр
+							li
+								| Зимняя и летняя резина #[br]
+								| в комплекте
+							li
+								| Застрахован
+						ul.bottom-ul
+							li
+								| Зарегистрирован в ГАИ
+							li
+								| Обслужен
+							li
+								| Набор для комфортной #[br]
+								| эксплуатации #[br]
+								.gift
+									| В подарок
+									img(src="../../images/info.png", alt="")
+									.hover-tip
+										ul
+											li
+												| Аптечка
+											li
+												| Огнетушитель
+											li
+												| Набор&nbsp;инструментов
+											li
+												| Коврики
+											li
+												| Запасное&nbsp;колесо
 			.price-consult-application
 				.price-consult-application__heading
 					.left
@@ -1426,7 +1325,7 @@
 									| 4 опции
 								+svg("charact-arrow")
 				.tabs
-					.tab-pane.interior-pane.faded#interior
+					.tab-pane.complect-pane.interior-pane.faded#interior
 						ul.main-ul
 							li
 								| Тканевый салон, черный
@@ -1434,42 +1333,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									div
-										| В подарок
-										img(src="../../images/info.png", alt="")
-										//- ul.hover-tip
-										//- 	li
-										//- 		| Аптечка
-										//- 	li
-										//- 		| Огнетушитель
-										//- 	li
-										//- 		| Набор&nbsp;инструментов
-										//- 	li
-										//- 		| Коврики
-										//- 	li
-										//- 		| Запасное&nbsp;колесо
-					.tab-pane.exterior-pane.faded#exterior
+
+					.tab-pane.complect-pane.exterior-pane.faded#exterior
 						ul.main-ul
 							li
 								| Экстерьер
@@ -1477,31 +1342,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									span
-										| В подарок
-										img(src="../../images/info.png", alt="")
-					.tab-pane.comfort-pane.faded#comfort
+
+					.tab-pane.complect-pane.comfort-pane.faded#comfort
 						ul.main-ul
 							li
 								| Комфорт
@@ -1509,31 +1351,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									span
-										| В подарок
-										img(src="../../images/info.png", alt="")
-					.tab-pane.safety-pane.faded#safety
+
+					.tab-pane.complect-pane.safety-pane.faded#safety
 						ul.main-ul
 							li
 								| Безопасность
@@ -1541,31 +1360,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									span
-										| В подарок
-										img(src="../../images/info.png", alt="")
-					.tab-pane.tech-pane.faded#tech
+
+					.tab-pane.complect-pane.tech-pane.faded#tech
 						ul.main-ul
 							li
 								| Технические
@@ -1585,7 +1381,7 @@
 							| Пройден тех. осмотр
 						li
 							| Зимняя и летняя резина #[br]
-							| в комплекта
+							| в комплекте
 						li
 							| Застрахован
 					ul.bottom-ul
@@ -1777,7 +1573,7 @@
 									| 4 опции
 								+svg("charact-arrow")
 				.tabs
-					.tab-pane.interior-pane.faded#interior
+					.tab-pane.complect-pane.interior-pane.faded#interior
 						ul.main-ul
 							li
 								| Тканевый салон, черный
@@ -1785,42 +1581,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									div
-										| В подарок
-										img(src="../../images/info.png", alt="")
-										//- ul.hover-tip
-										//- 	li
-										//- 		| Аптечка
-										//- 	li
-										//- 		| Огнетушитель
-										//- 	li
-										//- 		| Набор&nbsp;инструментов
-										//- 	li
-										//- 		| Коврики
-										//- 	li
-										//- 		| Запасное&nbsp;колесо
-					.tab-pane.exterior-pane.faded#exterior
+
+					.tab-pane.complect-pane.exterior-pane.faded#exterior
 						ul.main-ul
 							li
 								| Экстерьер
@@ -1828,31 +1590,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									span
-										| В подарок
-										img(src="../../images/info.png", alt="")
-					.tab-pane.comfort-pane.faded#comfort
+
+					.tab-pane.complect-pane.comfort-pane.faded#comfort
 						ul.main-ul
 							li
 								| Комфорт
@@ -1860,31 +1599,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									span
-										| В подарок
-										img(src="../../images/info.png", alt="")
-					.tab-pane.safety-pane.faded#safety
+
+					.tab-pane.complect-pane.safety-pane.faded#safety
 						ul.main-ul
 							li
 								| Безопасность
@@ -1892,31 +1608,8 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									span
-										| В подарок
-										img(src="../../images/info.png", alt="")
-					.tab-pane.tech-pane.faded#tech
+
+					.tab-pane.complect-pane.tech-pane.faded#tech
 						ul.main-ul
 							li
 								| Технические
@@ -1924,31 +1617,7 @@
 								| Спортивный руль
 							li
 								| Полная регулировка сидений
-						//- .bottom-descr
-							.title
-								| Авто готов #[br]
-								| к эксплуатации #[br]
-								span
-									| Забрал, сел, поехал
-							ul.bottom-ul
-								li
-									| Пройден тех. осмотр
-								li
-									| Зимняя и летняя резина #[br]
-									| в комплекта
-								li
-									| Застрахован
-								li
-									| Зарегистрирован в ГАИ
-								li
-									| Обслужен
-								li
-									| Набор для комфортной #[br]
-									| эксплуатации #[br]
-									span
-										| В подарок
-										img(src="../../images/info.png", alt="")
-							.bottom-descr
+
 				.bottom-descr
 					.title
 						| Авто готов #[br]
@@ -1960,7 +1629,7 @@
 							| Пройден тех. осмотр
 						li
 							| Зимняя и летняя резина #[br]
-							| в комплекта
+							| в комплекте
 						li
 							| Застрахован
 					ul.bottom-ul
@@ -2250,8 +1919,8 @@
 							| Оставить заявку
 
 	.modal.thanks-modal.mfp-with-anim#thanks-modal
-		a.modal-close(href="#")
-			img(src="/images/close-modal.png" alt="")
+		a.popup-close(href="#")
+			//- img(src="/images/close-modal.png" alt="")
 		.title
 			| Спасибо! За доверие, #[br]
 			| ваша заявка принята
@@ -2261,48 +1930,52 @@
 			| позвонить по номеру +375 (XX) XXX-XX-XX
 
 	.modal.video-modal.mfp-with-anim#video-1
-		a.modal-close(href="#")
+		a.popup-close(href="#")
+		iframe(width="560" height="315" data-src="https://www.youtube.com/embed/4HJCNCPKpXo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 	.modal.video-modal.mfp-with-anim#video-2
-		a.modal-close(href="#")
+		a.popup-close(href="#")
+		iframe(width="560" height="315" data-src="https://www.youtube.com/embed/4HJCNCPKpXo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 	.modal.video-modal.mfp-with-anim#video-3
-		a.modal-close(href="#")
+		a.popup-close(href="#")
+		iframe(width="560" height="315" data-src="https://www.youtube.com/embed/4HJCNCPKpXo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 	.modal.video-modal.mfp-with-anim#video-4
-		a.modal-close(href="#")
+		a.popup-close(href="#")
+		iframe(width="560" height="315" data-src="https://www.youtube.com/embed/4HJCNCPKpXo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 
 	.modal.photo-modal.mfp-with-anim#photo-1
-		a.modal-close(href="#")
-			img(src="../images/photo-1.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/photo-1.png", alt="")
 	.modal.photo-modal.mfp-with-anim#photo-2
-		a.modal-close(href="#")
-			img(src="../images/photo-1.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/photo-1.png", alt="")
 	.modal.photo-modal.mfp-with-anim#photo-3
-		a.modal-close(href="#")
-			img(src="../images/photo-1.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/photo-1.png", alt="")
 	.modal.photo-modal.mfp-with-anim#photo-4
-		a.modal-close(href="#")
-			img(src="../images/photo-1.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/photo-1.png", alt="")
 
 	.modal.written-modal.mfp-with-anim#written-1
-		a.modal-close(href="#")
-			img(src="../images/testimonial.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/testimonial.png", alt="")
 	.modal.written-modal.mfp-with-anim#written-2
-		a.modal-close(href="#")
-			img(src="../images/testimonial.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/testimonial.png", alt="")
 	.modal.written-modal.mfp-with-anim#written-3
-		a.modal-close(href="#")
-			img(src="../images/testimonial.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/testimonial.png", alt="")
 	.modal.written-modal.mfp-with-anim#written-4
-		a.modal-close(href="#")
-			img(src="../images/testimonial.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/testimonial.png", alt="")
 	.modal.written-modal.mfp-with-anim#written-5
-		a.modal-close(href="#")
-			img(src="../images/testimonial.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/testimonial.png", alt="")
 	.modal.written-modal.mfp-with-anim#written-6
-		a.modal-close(href="#")
-			img(src="../images/testimonial.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/testimonial.png", alt="")
 	.modal.written-modal.mfp-with-anim#written-7
-		a.modal-close(href="#")
-			img(src="../images/testimonial.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/testimonial.png", alt="")
 	.modal.written-modal.mfp-with-anim#written-8
-		a.modal-close(href="#")
-			img(src="../images/testimonial.png", alt="")
+		a.popup-close(href="#")
+		img(src="../images/testimonial.png", alt="")

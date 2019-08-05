@@ -184,17 +184,29 @@
 
 		.car1 {
 			position: absolute;
-			right: vw(-230);
+			right: vw(-3030);
 			top: vw(150);
 			z-index: 1;
 			width: vw(866);
 			height: vw(434);
+			transition: all 0.7s ease-in-out;
 
 			@include mobile {
         top: vmin(50);
         left: vmin(-723);
 				width: vmin(866);
         height: vmin(434);
+			}
+		}
+
+		.car1.anim {
+			right: vw(-230);
+			top: vw(150);
+			transition: all 0.7s ease-in-out;
+
+			@include mobile {
+				top: vmin(50);
+				left: vmin(-723);
 			}
 		}
   }
@@ -274,14 +286,21 @@
 		width: vw(141);
 		height: vw(417);
 		position: absolute;
-		right: 0;
+		right: vw(-2000);
 		top: 0;
+		transition: all 0.7s ease-in-out;
 
 		@include mobile {
 			width: vmin(70);
 			height: vmin(207);
 		}
-  }
+	}
+
+	.tree.anim {
+		right: 0;
+		top: 0;
+		transition: all 0.7s ease-in-out;
+	}
 
   
   .desctop-perks {

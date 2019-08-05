@@ -8,10 +8,21 @@
 		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 
 		@include mobile {
+			position: relative;
 			margin-top: vmin(-300);
 			border-radius: vmin(10);
 			height: vmin(500);
 			margin-bottom: vmin(30);
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 5;
+			}
 		}
 	}
 

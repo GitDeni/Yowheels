@@ -20,7 +20,25 @@
 
 		@include mobile {
 			margin-bottom: vmin(40);
+			flex-wrap: wrap;
+			justify-content: center;
 		}
+	}
+
+	.logo {
+		img {
+			width: vw(187);
+			height: vw(43);
+
+			@include mobile {
+				width: vmin(187);
+				height: vmin(43);
+			}
+    }
+    
+    @include mobile {
+      margin: 0 vmin(26) vmin(23);
+    }
 	}
 
 	.lead-me {
@@ -34,6 +52,11 @@
 			@include mobile {
 				margin-left: vmin(20);
 			}
+		}
+	}
+	.button_taxi {
+		@include mobile{
+			margin-top: vmin(20);
 		}
 	}
 }

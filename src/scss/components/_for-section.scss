@@ -8,7 +8,6 @@
 	background-repeat: no-repeat;
 
 	@include mobile {
-    display: none;
 		padding-top: vmin(115);
 		padding-bottom: vmin(45);
 		background-image: none;
@@ -36,6 +35,7 @@
 
 				@include mobile {
 					top: vmin(-30);
+					left: 35%;
 				}
 			}
 
